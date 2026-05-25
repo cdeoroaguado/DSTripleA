@@ -1,72 +1,74 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Módulo 2: Estructuración y manipulación de datos con Python &#8212; Visualización de datos</title>
+    <title>Módulo 2: Estructuración y manipulación de datos con Python &#8212; Ciencia de datos con Python para la toma de decisiones</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=6c7211e7" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_2';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Módulo 3: Visualización de datos interactivos" href="modulo_3.html" />
-    <link rel="prev" title="Módulo 1: Introducción a la ciencia de datos con Python" href="modulo_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -76,23 +78,19 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -114,20 +112,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -142,13 +132,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="intro.html">
-  
   
   
   
@@ -158,38 +144,23 @@
       
     
     
-    <img src="_static/logo.jpg" class="logo__image only-light" alt="Visualización de datos - Home"/>
-    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Visualización de datos - Home"/>`);</script>
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Visualización de datos con Python
+                    Ciencia de datos con Python para la toma de decisiones
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="modulo_1.html"><strong>Módulo 1: Introducción a la ciencia de datos con Python</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Módulo 2: Estructuración y manipulación de datos con Python</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="modulo_3.html"><strong>Módulo 3: Visualización de datos interactivos</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="modulo_4.html"><strong>Modulo 4: Introducción a Streamlit</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="modulo_5.html"><strong>Modulo 5: Despliegue de Dashboard</strong></a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="modulo_1.html"><strong>Módulo 1: Fundamentos de Python para análisis de datos</strong></a></li>
 </ul>
 
     </div>
@@ -205,7 +176,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -214,14 +185,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -343,28 +314,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -457,20 +426,20 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modulo-2-estructuracion-y-manipulacion-de-datos-con-python">
-<h1><strong>Módulo 2: Estructuración y manipulación de datos con Python</strong><a class="headerlink" href="#modulo-2-estructuracion-y-manipulacion-de-datos-con-python" title="Link to this heading">#</a></h1>
+<h1><strong>Módulo 2: Estructuración y manipulación de datos con Python</strong><a class="headerlink" href="#modulo-2-estructuracion-y-manipulacion-de-datos-con-python" title="Permalink to this heading">#</a></h1>
 <p>El manejo de datos es el corazón de cualquier proyecto de análisis, y Python se ha consolidado como uno de los lenguajes más poderosos y versátiles para este propósito. En este módulo, nos sumergiremos en las técnicas fundamentales para la estructuración y manipulación de datos utilizando Python, proporcionando las bases necesarias para transformar datos crudos en información útil y procesable.</p>
 <p>Comenzaremos explorando las estructuras de datos disponibles en Python, como listas, dataframes, pilas, colas, árboles y grafos. Estas estructuras permiten organizar y acceder a la información de manera eficiente, lo que es crucial cuando se trabaja con grandes volúmenes de datos o datos complejos. Además, abordaremos cómo manipular y transformar datos no estructurados, como textos, imágenes y datos provenientes de redes sociales, que requieren enfoques y herramientas específicas para su análisis.</p>
 <p>El módulo también se centrará en el uso de librerías especializadas como NumPy y Pandas, que son esenciales para el análisis de datos en Python. Estas librerías ofrecen potentes funciones para la manipulación y el análisis de datos estructurados, permitiendo realizar operaciones avanzadas con facilidad y eficiencia.</p>
 <p>Además, aprenderemos a trabajar con secuencias de datos utilizando herramientas como <code class="docutils literal notranslate"><span class="pre">re</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code> e <code class="docutils literal notranslate"><span class="pre">itertools</span></code>, que son fundamentales para el procesamiento y análisis de cadenas de texto y otras secuencias de información. La habilidad para manipular secuencias es clave en tareas como la limpieza de datos y la preparación de datos para modelos de machine learning.</p>
 <p>Finalmente, exploraremos las bases de la visualización de datos para representar de manera gráfica los resultados del análisis, facilitando la interpretación y comunicación de los hallazgos. Este módulo también incluirá casos prácticos que permitirán a los participantes aplicar las técnicas aprendidas en escenarios reales, consolidando así los conceptos y habilidades adquiridos.</p>
 <section id="archivos-planos-con-numpy-y-pandas">
-<h2><strong>Archivos planos con Numpy y Pandas</strong><a class="headerlink" href="#archivos-planos-con-numpy-y-pandas" title="Link to this heading">#</a></h2>
+<h2><strong>Archivos planos con Numpy y Pandas</strong><a class="headerlink" href="#archivos-planos-con-numpy-y-pandas" title="Permalink to this heading">#</a></h2>
 <p>En esta sección aprenderás a importar datos a Python desde todo tipo de archivos planos, que son una forma sencilla y frecuente de almacenamiento de datos. Ya has aprendido a utilizar NumPy y Pandas: aprenderás a utilizar estos paquetes para importar archivos planos y personalizar tus importaciones.</p>
 <section id="archivos-planos">
-<h3><strong>Archivos planos</strong><a class="headerlink" href="#archivos-planos" title="Link to this heading">#</a></h3>
+<h3><strong>Archivos planos</strong><a class="headerlink" href="#archivos-planos" title="Permalink to this heading">#</a></h3>
 <p>Los archivos de texto plano se pueden clasificar en dos grandes tipos:</p>
 <ol class="arabic simple">
 <li><p><strong>Archivos que contienen texto sin formato</strong> . Por ejemplo:</p></li>
@@ -622,7 +591,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </div>
 </section>
 <section id="importacion-y-exportacion-de-archivos-planos-con-numpy">
-<h3><strong>Importación y exportación de archivos planos con Numpy</strong><a class="headerlink" href="#importacion-y-exportacion-de-archivos-planos-con-numpy" title="Link to this heading">#</a></h3>
+<h3><strong>Importación y exportación de archivos planos con Numpy</strong><a class="headerlink" href="#importacion-y-exportacion-de-archivos-planos-con-numpy" title="Permalink to this heading">#</a></h3>
 <p>Ahora que sabes cómo usar la función incorporada <code class="docutils literal notranslate"><span class="pre">open</span></code> de Python para abrir archivos de texto, veamos cómo importar un archivo plano y asignarlo a una variable. Si todos los datos son numéricos, puedes usar el paquete NumPy para importarlos como una matriz NumPy. ¿Por qué querríamos hacer esto?</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características de las matrices NumPy</strong></p>
@@ -633,8 +602,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 <li><p>Son ideales para manejar grandes volúmenes de datos de manera limpia y ordenada.</p></li>
 </ul>
 <figure class="align-center" id="imagen-de-numpy">
-<a class="reference internal image-reference" href="_images/NumPy.png"><img alt="_images/NumPy.png" src="_images/NumPy.png" style="width: 192.0px; height: 86.4px;" />
-</a>
+<a class="reference internal image-reference" href="_images/NumPy.png"><img alt="_images/NumPy.png" src="_images/NumPy.png" style="width: 192.0px; height: 86.4px;" /></a>
 </figure>
 </li>
 <li><p><strong>Compatibilidad con otros paquetes</strong>:</p>
@@ -642,8 +610,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 <li><p>NumPy es esencial para muchos otros paquetes en Python, como <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>, un popular paquete de aprendizaje automático.</p></li>
 </ul>
 <figure class="align-center" id="imagen-de-scikitlearn">
-<a class="reference internal image-reference" href="_images/scikitlearn.png"><img alt="_images/scikitlearn.png" src="_images/scikitlearn.png" style="width: 122.4px; height: 66.0px;" />
-</a>
+<a class="reference internal image-reference" href="_images/scikitlearn.png"><img alt="_images/scikitlearn.png" src="_images/scikitlearn.png" style="width: 122.4px; height: 66.0px;" /></a>
 </figure>
 <ul class="simple">
 <li><p>Al trabajar con scikit-learn, es común que los datos estén en formato de matriz NumPy.</p></li>
@@ -753,7 +720,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </div>
 </section>
 <section id="importacion-y-exportacion-de-archivos-planos-con-pandas">
-<h3><strong>Importación y exportación de archivos planos con Pandas</strong><a class="headerlink" href="#importacion-y-exportacion-de-archivos-planos-con-pandas" title="Link to this heading">#</a></h3>
+<h3><strong>Importación y exportación de archivos planos con Pandas</strong><a class="headerlink" href="#importacion-y-exportacion-de-archivos-planos-con-pandas" title="Permalink to this heading">#</a></h3>
 <p>En la ciencia de datos, se requiere manejar <em>estructuras de datos etiquetadas bidimensionales con columnas de tipos potencialmente diferentes</em>, algo que las matrices <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> no pueden satisfacer completamente. Esta necesidad impulsó a <strong>Wes McKinney</strong> a desarrollar la biblioteca <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> para <code class="docutils literal notranslate"><span class="pre">Python</span></code>, que se ha convertido en una herramienta esencial para los científicos de datos.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Pandas</span></code> es una biblioteca de <code class="docutils literal notranslate"><span class="pre">Python</span></code> que permite llevar a cabo todo el flujo de trabajo de análisis de datos sin cambiar a otro lenguaje específico como <code class="docutils literal notranslate"><span class="pre">R</span></code>. La estructura de datos más relevante en <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> es el DataFrame, que es el análogo Pythonic del marco de datos en <code class="docutils literal notranslate"><span class="pre">R</span></code>.</p>
 <div class="note admonition">
@@ -917,7 +884,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </section>
 </section>
 <section id="importacion-e-exportacion-de-datos-de-otros-tipos-de-archivos">
-<h2><strong>Importación e exportación de datos de otros tipos de archivos</strong><a class="headerlink" href="#importacion-e-exportacion-de-datos-de-otros-tipos-de-archivos" title="Link to this heading">#</a></h2>
+<h2><strong>Importación e exportación de datos de otros tipos de archivos</strong><a class="headerlink" href="#importacion-e-exportacion-de-datos-de-otros-tipos-de-archivos" title="Permalink to this heading">#</a></h2>
 <p>Como científico de datos, es crucial saber cómo importar datos desde una variedad de tipos de archivo. En esta sección, exploraremos cómo importar datos en <code class="docutils literal notranslate"><span class="pre">Python</span></code> desde varios formatos importantes. Cubriremos:</p>
 <ul class="simple">
 <li><p><strong>Archivos serializados (Pickle)</strong>: Usados para almacenar datos de manera eficiente en <code class="docutils literal notranslate"><span class="pre">Python</span></code>. El concepto de serializados (Pickle)  un archivo está motivado por lo siguiente: si bien puede ser fácil guardar una matriz <code class="docutils literal notranslate"><span class="pre">numpy</span></code> o un <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> de <code class="docutils literal notranslate"><span class="pre">pandas</span></code> en un archivo plano, hay muchos otros tipos de datos, como diccionarios y listas, para los cuales no es obvio cómo almacenarlos.</p></li>
@@ -926,7 +893,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </ul>
 <p>Aprenderás a manejar estos formatos para que puedas trabajar con una amplia gama de datos en tus proyectos de ciencia de datos.</p>
 <section id="importacion-y-exportacion-de-datos-serializados">
-<h3><strong>Importación y exportación de datos serializados</strong><a class="headerlink" href="#importacion-y-exportacion-de-datos-serializados" title="Link to this heading">#</a></h3>
+<h3><strong>Importación y exportación de datos serializados</strong><a class="headerlink" href="#importacion-y-exportacion-de-datos-serializados" title="Permalink to this heading">#</a></h3>
 <p>Los <strong>datos serializados</strong> es el proceso de convertir los datos que han sido convertidos de su formato original (por ejemplo, un diccionario, una lista, un objeto de clase, etc.) a una secuencia de bytes. Este proceso se llama <strong>serialización</strong> o <strong>marshalling</strong>. La serialización permite que estos datos se almacenen en un archivo, se envíen a través de una red o se transmitan entre diferentes partes de un programa de manera eficiente. En <code class="docutils literal notranslate"><span class="pre">Python</span></code>, la serialización es manejada por el módulo <code class="docutils literal notranslate"><span class="pre">pickle</span></code>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">¿Por qué serializar datos?</p>
@@ -996,7 +963,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </div>
 </section>
 <section id="importacion-y-exportacion-de-datos-en-excel">
-<h3><strong>Importación y exportación de datos en Excel</strong><a class="headerlink" href="#importacion-y-exportacion-de-datos-en-excel" title="Link to this heading">#</a></h3>
+<h3><strong>Importación y exportación de datos en Excel</strong><a class="headerlink" href="#importacion-y-exportacion-de-datos-en-excel" title="Permalink to this heading">#</a></h3>
 <p>Las hojas de cálculo de Excel son una herramienta universalmente conocida y ampliamente utilizada, especialmente en el ámbito del análisis de datos. Un archivo de Excel generalmente contiene múltiples hojas de cálculo, cada una de las cuales puede almacenar diferentes conjuntos de datos relacionados o independientes. En el contexto de la ciencia de datos, el manejo eficiente de estos archivos es fundamental, y la biblioteca <code class="docutils literal notranslate"><span class="pre">pandas</span></code> de <code class="docutils literal notranslate"><span class="pre">Python</span></code> se destaca como una herramienta poderosa para este propósito.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Pandas</span></code> permite importar archivos de Excel de manera sencilla y convertir sus hojas de cálculo en DataFrames, que son estructuras de datos optimizadas para el análisis y la manipulación de datos. La conversión de las hojas de Excel a DataFrames facilita enormemente el trabajo con los datos, ya que pandas proporciona una amplia gama de funciones para exploración, transformación y análisis.</p>
 <p>Para comenzar, se puede utilizar la función <code class="docutils literal notranslate"><span class="pre">ExcelFile</span></code> de pandas para cargar un archivo de Excel en una variable, generalmente llamada data o algún nombre descriptivo. Este objeto <code class="docutils literal notranslate"><span class="pre">ExcelFile</span></code> actúa como un contenedor del archivo de Excel, permitiendo el acceso a sus diferentes hojas sin necesidad de cargarlas todas en la memoria al mismo tiempo.</p>
@@ -1170,10 +1137,10 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </div>
 </section>
 <section id="importacion-de-archivos-sas-y-stata-usando-pandas">
-<h3><strong>Importación de archivos SAS y Stata usando Pandas</strong><a class="headerlink" href="#importacion-de-archivos-sas-y-stata-usando-pandas" title="Link to this heading">#</a></h3>
+<h3><strong>Importación de archivos SAS y Stata usando Pandas</strong><a class="headerlink" href="#importacion-de-archivos-sas-y-stata-usando-pandas" title="Permalink to this heading">#</a></h3>
 <p>Hay una amplia variedad de paquetes de software estadístico disponibles, y aunque no siempre necesites utilizarlos, como científico de datos es fundamental que puedas importar archivos de estos paquetes a tu entorno Python de manera efectiva. Esta habilidad te permitirá integrar y analizar datos de diversas fuentes, ampliando tu capacidad para realizar análisis más completos y profundos.</p>
 <section id="importacion-de-archivos-sas">
-<h4><strong>Importación de archivos SAS</strong>.<a class="headerlink" href="#importacion-de-archivos-sas" title="Link to this heading">#</a></h4>
+<h4><strong>Importación de archivos SAS</strong>.<a class="headerlink" href="#importacion-de-archivos-sas" title="Permalink to this heading">#</a></h4>
 <p><strong>SAS</strong>: Acrónimo de <em>Statistical Analysis System</em> (Sistema de Análisis Estadístico). Es un software popular en análisis de negocios y bioestadística. Los archivos SAS son formatos utilizados en el software SAS para realizar análisis avanzados, multivariados, inteligencia empresarial, gestión de datos, análisis predictivos y es un estándar para que los estadísticos realicen análisis computacionales. La extensión común es <code class="docutils literal notranslate"><span class="pre">.sas7bdat</span></code> que sirve para archivos de conjunto de datos.</p>
 <p>Miremos un ejemplo de la importación de estos archivos:</p>
 <p>Antes de usar el paquete <code class="docutils literal notranslate"><span class="pre">sas7bdat</span></code>, se debe instalar con <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sas7bdat</span></code></p>
@@ -1199,7 +1166,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 <p>Para exportar directamente a <code class="docutils literal notranslate"><span class="pre">.sas7bdat</span></code>, <em>tendrás que usar herramientas externas o software como SAS</em> . Alternativamente, podrías buscar librerías específicas para manejar archivos SAS en lugar de intentar escribir directamente en ese formato desde pandas.</p>
 </section>
 <section id="importacion-de-archivos-stata">
-<h4><strong>Importación de Archivos Stata</strong>.<a class="headerlink" href="#importacion-de-archivos-stata" title="Link to this heading">#</a></h4>
+<h4><strong>Importación de Archivos Stata</strong>.<a class="headerlink" href="#importacion-de-archivos-stata" title="Permalink to this heading">#</a></h4>
 <p><strong>Stata</strong>: Un software de análisis estadístico y gestión de datos, especialmente valorado en investigación académica, incluyendo economía y epidemiología. Su área de uso es predominantemente utilizado en ciencias sociales y en investigación académica.</p>
 <p>Los archivos Stata tienen la extensión <code class="docutils literal notranslate"><span class="pre">.dta</span></code> y podemos importarlos usando <code class="docutils literal notranslate"><span class="pre">pandas</span></code>. ¡Ni siquiera necesitamos inicializar un administrador de contexto en este caso! Simplemente pasamos el nombre del archivo a la función <code class="docutils literal notranslate"><span class="pre">read_stata</span></code> y lo asignamos a una variable, tal como se muestra a continuación:</p>
 <div class="cell docutils container">
@@ -1300,7 +1267,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </section>
 </section>
 <section id="importacion-de-ficheros-planos-desde-la-web">
-<h3><strong>Importación de ficheros planos desde la web</strong><a class="headerlink" href="#importacion-de-ficheros-planos-desde-la-web" title="Link to this heading">#</a></h3>
+<h3><strong>Importación de ficheros planos desde la web</strong><a class="headerlink" href="#importacion-de-ficheros-planos-desde-la-web" title="Permalink to this heading">#</a></h3>
 <p>Ahora puedes importar datos en Python desde todo tipo de archivos planos como <code class="docutils literal notranslate"><span class="pre">.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">.csv</span></code>, otros tipos de archivos como archivos <code class="docutils literal notranslate"><span class="pre">pickled</span></code>, hojas de cálculo de Excel y archivos SAS y Stata. También has adquirido una valiosa experiencia en la consulta de bases de datos relacionales para importar datos de ellas mediante SQL. Sin embargo, <em>todas estas habilidades implican la importación de datos de archivos que tiene localmente</em>. Sin embargo, estas habilidades usualmente implican trabajar con archivos locales. En muchos casos, como científico de datos, necesitarás <strong>importar datos directamente desde la web</strong>.</p>
 <p>Por ejemplo, supongamos que necesitas obtener el conjunto de datos de unas campañas de marketing directo (llamadas telefónicas) de una institución bancaria portuguesa desde el repositorio de GitHub de cdeoroaguado. Aunque puedes hacerlo manualmente usando un navegador, este método no es reproducible ni escalable. Es más eficiente y profesional utilizar código Python para automatizar la descarga e importación de estos datos.</p>
 <p>Para hacer el proceso de importación desde la Web debemos tener algunos conceptos claros.</p>
@@ -1361,11 +1328,10 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </section>
 </section>
 <section id="manipulacion-de-datos-con-pandas">
-<h2><strong>Manipulación de datos con pandas</strong><a class="headerlink" href="#manipulacion-de-datos-con-pandas" title="Link to this heading">#</a></h2>
+<h2><strong>Manipulación de datos con pandas</strong><a class="headerlink" href="#manipulacion-de-datos-con-pandas" title="Permalink to this heading">#</a></h2>
 <p>La librería <code class="docutils literal notranslate"><span class="pre">pandas</span></code> (cuyo nombre deriva de <em>panel data</em>, un término utilizado para describir conjuntos de datos estructurados y multidimensionales) ofrece potentes estructuras de datos y funciones de alto nivel que facilitan el trabajo con datos estructurados de manera eficiente y cómoda. Es una herramienta esencial en el análisis de datos, ampliamente utilizada por su versatilidad y funcionalidad.</p>
 <figure class="align-center" id="imagen-de-pandas">
-<a class="reference internal image-reference" href="_images/pandas.png"><img alt="_images/pandas.png" src="_images/pandas.png" style="width: 176.5px; height: 71.5px;" />
-</a>
+<a class="reference internal image-reference" href="_images/pandas.png"><img alt="_images/pandas.png" src="_images/pandas.png" style="width: 176.5px; height: 71.5px;" /></a>
 </figure>
 <p>Entre los principales objetos que proporciona pandas se encuentran el <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>, una estructura tabular bidimensional, la <code class="docutils literal notranslate"><span class="pre">Serie</span></code>, ambos construidos sobre arrays multidimensionales de <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> y el <code class="docutils literal notranslate"><span class="pre">Panel</span></code>, que representa un cubo de datos tridimensional. Aunque <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> es excelente para el almacenamiento eficiente de datos con su estructura `ndarray, presenta ciertas limitaciones en análisis más complejos. Estas limitaciones incluyen la falta de flexibilidad para aplicar etiquetas a los datos, gestionar valores faltantes, realizar agrupaciones, entre otros. Pandas supera estas barreras con sus estructuras de datos avanzadas, proporcionando una mayor flexibilidad y funcionalidad.</p>
 <p>Para más información, puedes consultar la <a class="reference external" href="https://pandas.pydata.org/">documentación oficial de pandas</a>, donde encontrarás recursos y ejemplos detallados para aprovechar al máximo esta poderosa librería.</p>
@@ -1383,7 +1349,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </div>
 <p>Ahora, daremos los conceptos y ejemplos de una <code class="docutils literal notranslate"><span class="pre">series</span></code>.</p>
 <section id="series">
-<h3><strong>Series</strong><a class="headerlink" href="#series" title="Link to this heading">#</a></h3>
+<h3><strong>Series</strong><a class="headerlink" href="#series" title="Permalink to this heading">#</a></h3>
 <p>Las <code class="docutils literal notranslate"><span class="pre">series</span></code> son estructuras similares a los arrays unidimensionales que ya hemos visto, con la diferencia de que también son homogéneas. Esto significa que todos sus elementos deben ser del mismo tipo y que su tamaño es fijo, es decir, no se puede modificar una vez definido.</p>
 <p>Vamos a comenzar creando una serie a partir de una lista. Primero, necesitamos definir una lista con algunos datos. Por ejemplo:</p>
 <div class="cell docutils container">
@@ -1653,11 +1619,11 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 <p>Con estos ejemplos, has aprendido cómo realizar diversas operaciones con series relacionadas con datos bancarios en Pandas. En la próximo sección, exploraremos cómo trabajar con DataFrames.</p>
 </section>
 <section id="pandas">
-<h3><strong>Pandas</strong><a class="headerlink" href="#pandas" title="Link to this heading">#</a></h3>
+<h3><strong>Pandas</strong><a class="headerlink" href="#pandas" title="Permalink to this heading">#</a></h3>
 <p>En este módulo, profundizaremos en la creación de <code class="docutils literal notranslate"><span class="pre">DataFrames</span></code>, una de las estructuras de datos más versátiles y poderosas para la manipulación de información financiera. Exploraremos tres métodos distintos para construir DataFrames, cada uno con aplicaciones específicas en la industria bancaria.</p>
 <p>Un <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> es una estructura bidimensional, similar a una tabla, que nos permite organizar y manipular datos con facilidad. En el contexto bancario, los DataFrames son ideales para manejar información de clientes, transacciones, productos financieros, y otros tipos de datos críticos.</p>
 <section id="metodo-1-creacion-de-dataframes-a-partir-de-diccionarios">
-<h4><strong>Método 1: Creación de DataFrames a partir de Diccionarios</strong><a class="headerlink" href="#metodo-1-creacion-de-dataframes-a-partir-de-diccionarios" title="Link to this heading">#</a></h4>
+<h4><strong>Método 1: Creación de DataFrames a partir de Diccionarios</strong><a class="headerlink" href="#metodo-1-creacion-de-dataframes-a-partir-de-diccionarios" title="Permalink to this heading">#</a></h4>
 <p>En este primer enfoque, utilizaremos un diccionario para organizar los datos de clientes bancarios. Las claves del diccionario representarán las columnas del DataFrame, tales como <code class="docutils literal notranslate"><span class="pre">Nombre</span></code>, <code class="docutils literal notranslate"><span class="pre">Edad</span></code>, <code class="docutils literal notranslate"><span class="pre">Saldo</span></code>, y <code class="docutils literal notranslate"><span class="pre">Calificación_Crédito</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1684,7 +1650,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 <p>Este enfoque es eficiente cuando se tiene un conjunto de datos bien estructurado, con columnas predefinidas y valores coherentes. Es comúnmente utilizado en situaciones donde los datos provienen de sistemas bancarios estructurados, como bases de datos relacionales.</p>
 </section>
 <section id="metodo-2-creacion-de-dataframes-a-partir-de-listas-anidadas">
-<h4><strong>Método 2: Creación de DataFrames a partir de Listas Anidadas</strong><a class="headerlink" href="#metodo-2-creacion-de-dataframes-a-partir-de-listas-anidadas" title="Link to this heading">#</a></h4>
+<h4><strong>Método 2: Creación de DataFrames a partir de Listas Anidadas</strong><a class="headerlink" href="#metodo-2-creacion-de-dataframes-a-partir-de-listas-anidadas" title="Permalink to this heading">#</a></h4>
 <p>El siguiente método consiste en utilizar listas de listas para estructurar los datos. Este enfoque puede ser útil cuando los datos provienen de una fuente menos estructurada, como archivos CSV o entrada manual.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1711,7 +1677,7 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 <p>Este método es particularmente útil cuando los datos no están previamente etiquetados y requieren un procesamiento adicional para ser organizados en un formato tabular. Es frecuente en la integración de datos desde múltiples fuentes no homogéneas, como encuestas o registros de transacciones.</p>
 </section>
 <section id="metodo-3-creacion-de-dataframes-a-partir-de-listas-de-diccionarios">
-<h4><strong>Método 3: Creación de DataFrames a partir de Listas de Diccionarios</strong><a class="headerlink" href="#metodo-3-creacion-de-dataframes-a-partir-de-listas-de-diccionarios" title="Link to this heading">#</a></h4>
+<h4><strong>Método 3: Creación de DataFrames a partir de Listas de Diccionarios</strong><a class="headerlink" href="#metodo-3-creacion-de-dataframes-a-partir-de-listas-de-diccionarios" title="Permalink to this heading">#</a></h4>
 <p>Finalmente, exploraremos cómo crear un DataFrame a partir de una lista de diccionarios. Este método es flexible y permite manejar datos con campos opcionales o información incompleta, algo común en grandes bases de datos bancarias.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1773,10 +1739,10 @@ necesidad de explicaciones. Mi dibujo número 2 era así:
 </section>
 </section>
 <section id="manipulacion">
-<h3><strong>Manipulación</strong><a class="headerlink" href="#manipulacion" title="Link to this heading">#</a></h3>
+<h3><strong>Manipulación</strong><a class="headerlink" href="#manipulacion" title="Permalink to this heading">#</a></h3>
 <p>La manipulación de datos con Pandas es una de las habilidades fundamentales en el análisis de datos. <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> es una biblioteca de Python que proporciona estructuras de datos fáciles de usar, como Series y DataFrames, que permiten realizar operaciones y transformaciones complejas de manera sencilla y eficiente.</p>
 <section id="introduccion-a-la-manipulacion-de-datos">
-<h4><strong>Introducción a la manipulación de datos</strong><a class="headerlink" href="#introduccion-a-la-manipulacion-de-datos" title="Link to this heading">#</a></h4>
+<h4><strong>Introducción a la manipulación de datos</strong><a class="headerlink" href="#introduccion-a-la-manipulacion-de-datos" title="Permalink to this heading">#</a></h4>
 <p>Ahora carguemos el conjunto de datos de <strong>marketing del banco</strong> <code class="docutils literal notranslate"><span class="pre">bank-full</span></code>.</p>
 <p>Los datos están relacionados con <code class="docutils literal notranslate"><span class="pre">campañas</span> <span class="pre">de</span> <span class="pre">marketing</span> <span class="pre">directo</span></code> (llamadas telefónicas) de una institución bancaria portuguesa.</p>
 <p>Este conjunto de datos tiene 4521 observaciones y 17 variables. Las variables son:</p>
@@ -2826,7 +2792,7 @@ dtype: object
 </div></div></div>
 </div>
 <section id="adicion-de-nuevas-columnas-al-dataframe">
-<h5><strong>Adición de nuevas columnas al DataFrame</strong><a class="headerlink" href="#adicion-de-nuevas-columnas-al-dataframe" title="Link to this heading">#</a></h5>
+<h5><strong>Adición de nuevas columnas al DataFrame</strong><a class="headerlink" href="#adicion-de-nuevas-columnas-al-dataframe" title="Permalink to this heading">#</a></h5>
 <p>En este ejercicio, vamos a añadir nuevas columnas al conjunto de datos de diamantes en la biblioteca pandas. Empezaremos con la adición simple de columnas y luego avanzaremos y veremos la adición condicional de columnas. Para ello, vamos a seguir los siguientes pasos:</p>
 <ul class="simple">
 <li><p>Anade una columna <code class="docutils literal notranslate"><span class="pre">balance_por_age</span></code> al <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>. Del mismo modo, también podemos utilizar la suma, la resta y otros operadores matemáticos sobre dos columnas numéricas.</p></li>
@@ -2873,11 +2839,11 @@ dtype: object
 </section>
 </section>
 <section id="descripcion-estadistica">
-<h4><strong>Descripción estadística</strong><a class="headerlink" href="#descripcion-estadistica" title="Link to this heading">#</a></h4>
+<h4><strong>Descripción estadística</strong><a class="headerlink" href="#descripcion-estadistica" title="Permalink to this heading">#</a></h4>
 <p>Exploraremos cómo obtener estadísticas de resumen detalladas para columnas específicas de un DataFrame, así como cómo realizar análisis estadísticos avanzados mediante agrupaciones y tablas dinámicas. Comenzaremos con el cálculo de métricas descriptivas básicas, tales como medias, medianas, y desviaciones estándar, para evaluar la distribución y variabilidad de los datos. A continuación, abordaremos técnicas para aplicar estas estadísticas a subconjuntos de datos mediante agrupaciones, permitiendo un análisis más granular y enfocado.</p>
 <p>Finalmente, dominaremos el uso de tablas dinámicas para sintetizar, visualizar y resumir datos complejos, facilitando la extracción de insights clave y patrones significativos en grandes volúmenes de información. Este enfoque integral fortalecerá tu capacidad para extraer, interpretar y comunicar hallazgos estadísticos de manera efectiva en el análisis de datos.</p>
 <section id="resumen-estadistico-univariado">
-<h5><strong>Resumen estadístico univariado</strong><a class="headerlink" href="#resumen-estadistico-univariado" title="Link to this heading">#</a></h5>
+<h5><strong>Resumen estadístico univariado</strong><a class="headerlink" href="#resumen-estadistico-univariado" title="Permalink to this heading">#</a></h5>
 <p>Calculemos las medidas descriptivas fundamentales, incluyendo la media, mediana, moda, varianza, desviación estándar y cuartiles, para proporcionar una visión general de la distribución de los datos. Usaremos el conjunto de datos.</p>
 <ol class="arabic simple">
 <li><p>Si la variable es <em>numérica</em></p></li>
@@ -3100,7 +3066,7 @@ unemployed    unknown        29    0.000641
 </div>
 </section>
 <section id="resumen-estadistico-bivariado">
-<h5><strong>Resumen estadístico bivariado</strong><a class="headerlink" href="#resumen-estadistico-bivariado" title="Link to this heading">#</a></h5>
+<h5><strong>Resumen estadístico bivariado</strong><a class="headerlink" href="#resumen-estadistico-bivariado" title="Permalink to this heading">#</a></h5>
 <p>El resumen estadístico bivariado se refiere al estudio de dos variables simultáneamente para determinar si existe alguna relación o asociación entre ellas. Solo realizaremos las tablas para dicho análisis estadístico.</p>
 <ol class="arabic simple">
 <li><p><strong>Variable categórica vs variable numérica</strong></p></li>
@@ -3187,7 +3153,7 @@ yes            733.0              210.0             2159.0
 </div>
 </section>
 <section id="resumen-estadistico-con-tablas-dinamicas">
-<h5><strong>Resumen estadístico con tablas dinámicas</strong><a class="headerlink" href="#resumen-estadistico-con-tablas-dinamicas" title="Link to this heading">#</a></h5>
+<h5><strong>Resumen estadístico con tablas dinámicas</strong><a class="headerlink" href="#resumen-estadistico-con-tablas-dinamicas" title="Permalink to this heading">#</a></h5>
 <p>Las tablas dinámicas son otras formas de calcular estadística de resumen agrupada. Por ejemplo</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3468,7 +3434,7 @@ Total      45211
 </section>
 </section>
 <section id="indices-explicitos">
-<h4><strong>Indices explicitos</strong><a class="headerlink" href="#indices-explicitos" title="Link to this heading">#</a></h4>
+<h4><strong>Indices explicitos</strong><a class="headerlink" href="#indices-explicitos" title="Permalink to this heading">#</a></h4>
 <p>En Python, los <strong>índices</strong> son utilizados para acceder a elementos en estructuras de datos como listas, tuplas, y matrices (arrays). Un índice explícito se refiere a la práctica de definir de manera específica el índice que se va a utilizar para acceder a un elemento, en lugar de depender de la indexación automática por la posición.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características de los Índices Explícitos</strong></p>
@@ -4466,7 +4432,7 @@ Total      45211
 </section>
 </section>
 <section id="visualizacion-sencilla-de-datos">
-<h2><strong>Visualización sencilla de datos</strong><a class="headerlink" href="#visualizacion-sencilla-de-datos" title="Link to this heading">#</a></h2>
+<h2><strong>Visualización sencilla de datos</strong><a class="headerlink" href="#visualizacion-sencilla-de-datos" title="Permalink to this heading">#</a></h2>
 <p><strong>Matplotlib</strong> es una biblioteca de visualización de datos en Python ampliamente utilizada, especialmente en los campos de la ciencia de datos, la ingeniería y la investigación. Permite crear una amplia gama de gráficos, desde simples gráficos de líneas y dispersión hasta complejas visualizaciones tridimensionales y gráficos interactivos.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características principales de Matplotlib</strong></p>
@@ -4506,8 +4472,7 @@ Total      45211
 <p><strong>Temas de Estilo Integrados</strong>: <code class="docutils literal notranslate"><span class="pre">Seaborn</span></code> tiene temas de estilo incorporados como darkgrid, whitegrid, dark, white, y ticks, que se pueden aplicar fácilmente a los gráficos para mejorar la estética.</p>
 <p>Para el desarrollo de las visualización trabajaremos con datos sobre los almacenes Walmart, que es un cadena de grande almacenes de Ewa.</p>
 <figure class="align-center" id="walmart">
-<a class="reference internal image-reference" href="_images/walmart.png"><img alt="_images/walmart.png" src="_images/walmart.png" style="width: 488.5px; height: 268.5px;" />
-</a>
+<a class="reference internal image-reference" href="_images/walmart.png"><img alt="_images/walmart.png" src="_images/walmart.png" style="width: 488.5px; height: 268.5px;" /></a>
 </figure>
 <p>El conjunto de datos completos lo puede encontrar este <a class="reference external" href="https://www.kaggle.com/datasets/yasserh/walmart-dataset/data">link</a>. Trabajaremos un subconjunto de datos contiene las ventas semanales en dolares, cada tienda tiene un número de identificación y un tipo de tienda específico, las ventas estan separadas por ID de departamento. Junto con las ventas hay variables como si fue de vacaciones o no, la temperatura media durante la semana en esa localidad, el tiempo medio del combustible en dolares por litro esa semana y la tasa de desempleo de esa semana</p>
 <p>Aquí tienes una explicación de las variables en el conjunto de datos de ventas proporcionado:</p>
@@ -4772,7 +4737,7 @@ memory usage: 768.2+ KB
 </div>
 <p><strong>Matplotlib</strong> es especialmente útil cuando necesitas crear gráficos personalizados y detallados, y es una herramienta esencial para cualquier persona que trabaje con visualización de datos en Python. Haremos unas gráficas univariadas</p>
 <section id="histograma">
-<h3><strong>Histograma</strong><a class="headerlink" href="#histograma" title="Link to this heading">#</a></h3>
+<h3><strong>Histograma</strong><a class="headerlink" href="#histograma" title="Permalink to this heading">#</a></h3>
 <p>Un <strong>histograma</strong> es una representación gráfica que muestra la distribución de una variable continua. Se divide el rango de valores en intervalos (<code class="docutils literal notranslate"><span class="pre">bins</span></code>) y se cuenta cuántos valores caen en cada intervalo.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características del histograma</strong></p>
@@ -4849,7 +4814,7 @@ memory usage: 768.2+ KB
 </div>
 </section>
 <section id="densidad">
-<h3><strong>Densidad</strong><a class="headerlink" href="#densidad" title="Link to this heading">#</a></h3>
+<h3><strong>Densidad</strong><a class="headerlink" href="#densidad" title="Permalink to this heading">#</a></h3>
 <p>Una <strong>gráfica de densidad</strong> es una representación gráfica suave de la distribución de una variable continua. Se basa en la estimación de la función de densidad de probabilidad (KDE, por sus siglas en inglés), lo que permite visualizar la forma general de la distribución sin depender de intervalos rígidos como en los histogramas.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características de la gráfica de densidad</strong></p>
@@ -4914,7 +4879,7 @@ memory usage: 768.2+ KB
 </div>
 </section>
 <section id="histograma-con-funcion-de-densidad">
-<h3><strong>Histograma con función de densidad</strong><a class="headerlink" href="#histograma-con-funcion-de-densidad" title="Link to this heading">#</a></h3>
+<h3><strong>Histograma con función de densidad</strong><a class="headerlink" href="#histograma-con-funcion-de-densidad" title="Permalink to this heading">#</a></h3>
 <p>Un <strong>histograma con función de densidad</strong> combina la representación clásica del histograma (que agrupa los datos en intervalos) con una <strong>curva de densidad suave</strong> (estimación KDE). Esta combinación permite visualizar tanto la frecuencia aproximada de los valores como la forma general de la distribución de los datos.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características del histograma con función de densidad</strong></p>
@@ -5021,7 +4986,7 @@ muestra los valores transformados en logaritmos de la variable del precio, y vem
 </div>
 </section>
 <section id="cajas-y-bigotes">
-<h3><strong>Cajas y bigotes</strong><a class="headerlink" href="#cajas-y-bigotes" title="Link to this heading">#</a></h3>
+<h3><strong>Cajas y bigotes</strong><a class="headerlink" href="#cajas-y-bigotes" title="Permalink to this heading">#</a></h3>
 <p>Un gráfico de cajas y bigotes visualiza la distribución de un conjunto de datos, mostrando la mediana y los cuartiles, así como los posibles outliers.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características de la cajas y bigotes</strong></p>
@@ -5105,7 +5070,7 @@ muestra los valores transformados en logaritmos de la variable del precio, y vem
 </div>
 </section>
 <section id="barras">
-<h3><strong>Barras</strong><a class="headerlink" href="#barras" title="Link to this heading">#</a></h3>
+<h3><strong>Barras</strong><a class="headerlink" href="#barras" title="Permalink to this heading">#</a></h3>
 <p>Una gráfica de barras se utiliza para mostrar y comparar cantidades entre diferentes categorías. Cada barra representa una categoría, y su altura es proporcional al valor que representa.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características de las barras</strong></p>
@@ -5194,7 +5159,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </div>
 </section>
 <section id="otras-forma-de-realizar-graficos-de-barras">
-<h3><strong>Otras forma de realizar gráficos de barras</strong><a class="headerlink" href="#otras-forma-de-realizar-graficos-de-barras" title="Link to this heading">#</a></h3>
+<h3><strong>Otras forma de realizar gráficos de barras</strong><a class="headerlink" href="#otras-forma-de-realizar-graficos-de-barras" title="Permalink to this heading">#</a></h3>
 <p>Aprenderemos a crear una tabla utilizando la función <code class="docutils literal notranslate"><span class="pre">pandas</span> <span class="pre">crosstab</span></code>. Utilizaremos una tabla para generar un gráfico de barras. A continuación, exploraremos un gráfico de barras generado con la biblioteca <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> y calcularemos la distribución del promedio de <code class="docutils literal notranslate"><span class="pre">weekly_sales</span></code> según el <code class="docutils literal notranslate"><span class="pre">store</span></code>. Para ello, vamos a realizar los siguientes pasos:</p>
 <ul class="simple">
 <li><p>Imprime los valores únicos de la columna corte. usemos <code class="docutils literal notranslate"><span class="pre">unique()</span></code> devuelve un array. El número de valores únicos se puede obtener utilizando <code class="docutils literal notranslate"><span class="pre">nunique()</span></code> en <code class="docutils literal notranslate"><span class="pre">pandas</span></code>.</p></li>
@@ -5447,7 +5412,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </div>
 </section>
 <section id="circulares">
-<h3><strong>Circulares</strong><a class="headerlink" href="#circulares" title="Link to this heading">#</a></h3>
+<h3><strong>Circulares</strong><a class="headerlink" href="#circulares" title="Permalink to this heading">#</a></h3>
 <p>Un diagrama circular (o gráfico de pastel) es una representación gráfica que muestra la proporción de diferentes categorías dentro de un conjunto de datos como segmentos de un círculo. Cada segmento del círculo representa una categoría y su tamaño es proporcional a su frecuencia o porcentaje en relación con el total.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características del diagrama circular</strong></p>
@@ -5523,7 +5488,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 <p>Ahora haremos unas gráficas bivariadas.</p>
 </section>
 <section id="lineas">
-<h3><strong>Lineas</strong><a class="headerlink" href="#lineas" title="Link to this heading">#</a></h3>
+<h3><strong>Lineas</strong><a class="headerlink" href="#lineas" title="Permalink to this heading">#</a></h3>
 <p>Una gráfica de líneas conecta una serie de puntos de datos con líneas, generalmente utilizada para mostrar cambios o tendencias a lo largo del tiempo.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características del diagrama de lineas</strong></p>
@@ -5653,7 +5618,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </div>
 </section>
 <section id="dispersion-scatter-plots">
-<h3><strong>Dispersión (Scatter Plots)</strong><a class="headerlink" href="#dispersion-scatter-plots" title="Link to this heading">#</a></h3>
+<h3><strong>Dispersión (Scatter Plots)</strong><a class="headerlink" href="#dispersion-scatter-plots" title="Permalink to this heading">#</a></h3>
 <p>Una gráfica de dispersión muestra la relación entre dos variables numéricas mediante puntos dispersos en un plano cartesiano.</p>
 <div class="note admonition">
 <p class="admonition-title"><strong>Características del diagrama de dispersión</strong></p>
@@ -5714,7 +5679,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </div>
 </section>
 <section id="histogramas-con-variable-categorica">
-<h3><strong>Histogramas con variable categórica</strong><a class="headerlink" href="#histogramas-con-variable-categorica" title="Link to this heading">#</a></h3>
+<h3><strong>Histogramas con variable categórica</strong><a class="headerlink" href="#histogramas-con-variable-categorica" title="Permalink to this heading">#</a></h3>
 <p>Para hacer estos histogramas debemos tener una variable numérica según una variable categórica</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5763,7 +5728,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </div>
 </section>
 <section id="cajas-y-bigotes-con-variable-categorica">
-<h3><strong>Cajas y bigotes con variable categórica</strong><a class="headerlink" href="#cajas-y-bigotes-con-variable-categorica" title="Link to this heading">#</a></h3>
+<h3><strong>Cajas y bigotes con variable categórica</strong><a class="headerlink" href="#cajas-y-bigotes-con-variable-categorica" title="Permalink to this heading">#</a></h3>
 <p>Para hacer estos diagramas de cajas y bigotes debemos tener una variable numérica según una variable categórica</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5835,7 +5800,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </div>
 </section>
 <section id="diagrama-de-barras-con-variables-categoricas">
-<h3><strong>Diagrama de barras con variables categóricas</strong><a class="headerlink" href="#diagrama-de-barras-con-variables-categoricas" title="Link to this heading">#</a></h3>
+<h3><strong>Diagrama de barras con variables categóricas</strong><a class="headerlink" href="#diagrama-de-barras-con-variables-categoricas" title="Permalink to this heading">#</a></h3>
 <p>Realizaremos un diagrama de barras con dos variables categóricas</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5923,7 +5888,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 <p>Este módulo ha proporcionado una base sólida en la importación, manipulación y visualización de datos en Python. Las habilidades adquiridas permitirán crear visualizaciones efectivas que faciliten la interpretación y comunicación de los datos, y la capacidad de manipular y preparar datos adecuadamente es esencial para realizar análisis significativos. La combinación de pandas para la manipulación de datos y Matplotlib para la visualización forma una potente herramienta en el análisis de datos y ciencia de datos.</p>
 </section>
 <section id="diagrama-hexagonal">
-<h3><strong>Diagrama hexagonal</strong><a class="headerlink" href="#diagrama-hexagonal" title="Link to this heading">#</a></h3>
+<h3><strong>Diagrama hexagonal</strong><a class="headerlink" href="#diagrama-hexagonal" title="Permalink to this heading">#</a></h3>
 <p>Existe una versión más elegante de los gráficos de dispersión, llamada <code class="docutils literal notranslate"><span class="pre">hexagonal</span> <span class="pre">binning</span> <span class="pre">plot</span></code> (<code class="docutils literal notranslate"><span class="pre">hexbin</span> <span class="pre">plot</span></code>). En este ejercicio, utilizaremos <code class="docutils literal notranslate"><span class="pre">Seaborn</span></code> para crear una gráfica de dispersión hexagonal (<code class="docutils literal notranslate"><span class="pre">Hexbin</span> <span class="pre">Plot</span></code>) que muestre la relación entre las <strong>ventas semanales</strong> (<code class="docutils literal notranslate"><span class="pre">weekly_sales</span></code>) y el precio de la gasolina en <strong>USD por litro</strong> (<code class="docutils literal notranslate"><span class="pre">fuel_price_usd_per_l</span></code>). Este gráfico es útil para representar la densidad de datos cuando estos se superponen.</p>
 <ol class="arabic simple">
 <li><p>Importemos las bibliotecas necesarias:</p></li>
@@ -5968,7 +5933,7 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </div>
 </section>
 <section id="diagrama-de-contorno">
-<h3><strong>Diagrama de contorno</strong><a class="headerlink" href="#diagrama-de-contorno" title="Link to this heading">#</a></h3>
+<h3><strong>Diagrama de contorno</strong><a class="headerlink" href="#diagrama-de-contorno" title="Permalink to this heading">#</a></h3>
 <p>Los gráficos de contorno son útiles cuando los puntos de datos están densamente poblados en ciertas áreas, ya que muestran la concentración de los datos mediante líneas de contorno. En este ejercicio, crearemos un gráfico de contorno para analizar la relación entre las <strong>ventas semanales</strong> (<code class="docutils literal notranslate"><span class="pre">weekly_sales</span></code>) y el <strong>precio de la gasolina en USD por litro</strong> (<code class="docutils literal notranslate"><span class="pre">fuel_price_usd_per_l</span></code>).</p>
 <ol class="arabic simple">
 <li><p>Importar las bibliotecas necesarias:</p></li>
@@ -6019,14 +5984,14 @@ Fácil de interpretar y comparar diferentes categorías.</p></li>
 </section>
 </section>
 <section id="exploracion-de-datos-con-ydata-profiling">
-<h2><strong>Exploración de Datos con <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code></strong><a class="headerlink" href="#exploracion-de-datos-con-ydata-profiling" title="Link to this heading">#</a></h2>
+<h2><strong>Exploración de Datos con <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code></strong><a class="headerlink" href="#exploracion-de-datos-con-ydata-profiling" title="Permalink to this heading">#</a></h2>
 <section id="que-es-ydata-profiling">
-<h3><strong>¿Qué es <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code>?</strong><a class="headerlink" href="#que-es-ydata-profiling" title="Link to this heading">#</a></h3>
+<h3><strong>¿Qué es <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code>?</strong><a class="headerlink" href="#que-es-ydata-profiling" title="Permalink to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code> es una herramienta de Python que genera <strong>informes exploratorios automáticos y visuales</strong> a partir de un DataFrame de <code class="docutils literal notranslate"><span class="pre">pandas</span></code>.</p>
 <p>Su objetivo es facilitar la <strong>exploración inicial de datos (EDA)</strong>, mostrando estadísticas, valores nulos, duplicados, correlaciones y más, todo en un informe HTML.</p>
 </section>
 <section id="que-incluye-el-informe">
-<h3><strong>¿Qué incluye el informe?</strong><a class="headerlink" href="#que-incluye-el-informe" title="Link to this heading">#</a></h3>
+<h3><strong>¿Qué incluye el informe?</strong><a class="headerlink" href="#que-incluye-el-informe" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Estadísticas descriptivas (media, mediana, desvío estándar, etc.)</p></li>
 <li><p>Detección de valores faltantes y duplicados</p></li>
@@ -43002,30 +42967,16 @@ document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
 
               
               
-              
-              
-                <footer class="prev-next-footer d-print-none">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="modulo_1.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Módulo 1: Introducción a la ciencia de datos con Python</strong></p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="modulo_3.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Módulo 3: Visualización de datos interactivos</strong></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -43033,7 +42984,6 @@ document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -43125,7 +43075,6 @@ By Carlos de Oro Aguado
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
       © Copyright 2026, Msc Carlos de Oro Aguado.
@@ -43152,8 +43101,8 @@ By Carlos de Oro Aguado
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
