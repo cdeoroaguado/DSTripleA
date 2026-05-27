@@ -411,10 +411,23 @@ document.write(`
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
-<span class="n">b</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
-<span class="n">d</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
-<span class="n">c</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creando obejtos y asignando valores a variables</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">a</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -424,7 +437,12 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uso de la función básica input</span>
-<span class="c1"># tu codigo aquí</span>
+<span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Escribe algo: &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;26&#39;
 </pre></div>
 </div>
 </div>
@@ -432,7 +450,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uso de la función input con prompt</span>
-<span class="n">x</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un número real: &#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -440,7 +458,12 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tipo de dato de x</span>
-<span class="c1"># tu codigo aquí</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
 </pre></div>
 </div>
 </div>
@@ -448,8 +471,13 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conversión de una string numérico entero a un entero</span>
-<span class="n">x</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un número real: &#39;</span><span class="p">))</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
 </pre></div>
 </div>
 </div>
@@ -457,8 +485,13 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conversión de una string numérico decimal a un número decimal</span>
-<span class="n">x</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un número real: &#39;</span><span class="p">))</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>float
 </pre></div>
 </div>
 </div>
@@ -469,16 +502,24 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uso del print</span>
-<span class="c1"># tu codigo aquí</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
 
 <span class="c1"># Uso de la función básica print</span>
-<span class="c1"># tu codigo aquí</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El número ingresado es:&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># Uso del print con varias palabras sin separarla</span>
-<span class="c1"># tu codigo aquí</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ciencia&#39;</span> <span class="s1">&#39;de&#39;</span> <span class="s1">&#39;Datos&#39;</span><span class="p">)</span>
 
 <span class="c1"># Uso del print con varias palabras con separación</span>
-<span class="c1"># tu codigo aquí</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ciencia&#39;</span><span class="p">,</span> <span class="s1">&#39;de&#39;</span><span class="p">,</span> <span class="s1">&#39;Datos&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python
+El número ingresado es: 3.0
+CienciadeDatos
+Ciencia de Datos
 </pre></div>
 </div>
 </div>
@@ -493,11 +534,23 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ciencia de datos
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uso del print con salto de línea</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ciencia&#39;</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="s1">&#39;de&#39;</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="s1">&#39;datos&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ciencia
+de
+datos
 </pre></div>
 </div>
 </div>
@@ -512,11 +565,23 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ciencia
+de
+datos
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uso de print separado por un caracter</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ciencia&#39;</span><span class="p">,</span><span class="s1">&#39;de&#39;</span><span class="p">,</span><span class="s1">&#39;datos&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ciencia\de\datos
 </pre></div>
 </div>
 </div>
@@ -528,13 +593,18 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uso de las operaciones aritmeticas</span>
 <span class="c1"># Definición de variables</span>
-<span class="n">a</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
-<span class="n">b</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
-<span class="n">c</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="c1"># Combinación de varios operadores aritméticos en una sola línea</span>
-<span class="n">resultado</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="p">((</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="n">c</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span> <span class="o">**</span> <span class="n">c</span> <span class="o">%</span> <span class="n">b</span> <span class="o">//</span> <span class="n">c</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Resultado: ((</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">) * </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">) - (</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> / </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">) ** </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1"> % </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1"> // </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resultado: ((5 + 3) * 2) - (5 / 3) ** 2 % 3 // 2 = 15.0
 </pre></div>
 </div>
 </div>
@@ -542,9 +612,14 @@ document.write(`
 <p><strong>Observación</strong>: La concatenación de caracteres en Python se realiza utilizando el operador <code class="docutils literal notranslate"><span class="pre">+</span></code>. Este operador permite unir dos o más cadenas de texto en una sola cadena. Es importante asegurarse de que ambos operandos sean cadenas de texto para evitar errores de tipo. Aquí tienes un ejemplo:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cadena1</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
-<span class="n">cadena2</span> <span class="o">=</span> <span class="c1"># tu codigo aquí</span>
-<span class="c1"># tu codigo aquí</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cadena1</span> <span class="o">=</span> <span class="s1">&#39;Hola&#39;</span>
+<span class="n">cadena2</span> <span class="o">=</span> <span class="s1">&#39;¿Cómo estás?&#39;</span>
+<span class="n">cadena1</span> <span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span> <span class="n">cadena2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hola ¿Cómo estás?&#39;
 </pre></div>
 </div>
 </div>
@@ -559,11 +634,16 @@ document.write(`
 <span class="n">a</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span>
 
 <span class="c1"># asignación aumenta</span>
-<span class="c1"># tu codigo aquí</span>
-<span class="c1"># tu codigo aquí</span>
+<span class="n">a</span> <span class="o">+=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">*=</span> <span class="mi">3</span>
 
 <span class="c1"># imprimir las nuevas asignaciones</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El valor de a es </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">, el valor de b es </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El valor de a es 5, el valor de b es 6
 </pre></div>
 </div>
 </div>
