@@ -1,74 +1,71 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Módulo 3: Visualización de datos interactivos &#8212; Ciencia de datos con Python para la toma de decisiones</title>
+    <title>Módulo 3: Tratamiento de datos y dataviz interactivo &#8212; Ciencia de datos con Python para la toma de decisiones</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=ca93fcec" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=6c7211e7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_3';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Módulo 2: Análisis Exploratorio de Datos (EDA)" href="modulo_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -78,19 +75,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -112,12 +113,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -132,9 +141,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -144,12 +157,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -159,9 +183,10 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="modulo_1.html"><strong>Módulo 1: Fundamentos de Python para análisis de datos</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modulo_2.html"><strong>Módulo 2: Análisis Exploratorio de Datos (EDA)</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Módulo 3: Tratamiento de datos y dataviz interactivo</strong></a></li>
 </ul>
 
     </div>
@@ -177,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -186,14 +211,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -315,26 +340,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -345,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Módulo 3: Visualización de datos interactivos</h1>
+    <h1>Módulo 3: Tratamiento de datos y dataviz interactivo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,7 +417,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-funciona-la-imputacion-multiple-iterativa-idea-general"><strong>¿Cómo funciona la imputación múltiple iterativa? (idea general)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-significa-multiple-en-imputacion-multiple"><strong>¿Qué significa “múltiple” en imputación múltiple?</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#emparejamiento-predictivo-medio-pmm"><strong>Emparejamiento predictivo medio (PMM)</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#puente-hacia-la-implementacion-en-r"><strong>Puente hacia la implementación en R</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformacion-de-datos-con-iterativeimputer"><strong>Transformación de datos con <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
@@ -440,10 +466,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="modulo-3-visualizacion-de-datos-interactivos">
-<h1><strong>Módulo 3: Visualización de datos interactivos</strong><a class="headerlink" href="#modulo-3-visualizacion-de-datos-interactivos" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="modulo-3-tratamiento-de-datos-y-dataviz-interactivo">
+<h1><strong>Módulo 3: Tratamiento de datos y dataviz interactivo</strong><a class="headerlink" href="#modulo-3-tratamiento-de-datos-y-dataviz-interactivo" title="Link to this heading">#</a></h1>
 <p>En este módulo, exploraremos la visualización de datos, una herramienta esencial para transformar grandes volúmenes de información en representaciones visuales claras y útiles para la toma de decisiones. A través de gráficos y visualizaciones, podremos identificar patrones, tendencias y relaciones en los datos, facilitando la comunicación y el análisis.</p>
 <p>Comenzaremos con un enfoque fundamental: el <strong>tratamiento de datos faltantes y atípicos</strong>. Aprenderemos a identificar y manejar estos problemas comunes que pueden afectar la calidad y precisión de nuestras visualizaciones. Un manejo adecuado de estos datos es crucial para asegurar que nuestras representaciones visuales sean confiables y significativas.</p>
 <p>A continuación, avanzaremos hacia la <strong>visualización interactiva</strong>, que nos permitirá desarrollar gráficos dinámicos y personalizables, mejorando la interacción y el análisis de datos.</p>
@@ -452,14 +478,14 @@ document.write(`
 <p>Finalmente, introduciremos <strong>Dash</strong>, una herramienta potente y de fácil uso para crear aplicaciones web interactivas centradas en la visualización de datos. Con Dash, aprenderás a transformar scripts de Python en aplicaciones web completamente funcionales, permitiéndote combinar todas las técnicas de visualización vistas en el módulo en una interfaz interactiva y accesible para el usuario final.</p>
 <p>Al completar este módulo, contarás con un conjunto sólido de habilidades para crear visualizaciones de datos desde cero, manejar datos atípicos y faltantes, y desarrollar aplicaciones visuales interactivas que sean impactantes y útiles.</p>
 <section id="tratamiento-de-datos-faltantes-y-atipicos">
-<h2><strong>Tratamiento de datos faltantes y atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-faltantes-y-atipicos" title="Permalink to this heading">#</a></h2>
+<h2><strong>Tratamiento de datos faltantes y atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-faltantes-y-atipicos" title="Link to this heading">#</a></h2>
 <section id="introduccion">
-<h3><strong>Introducción</strong><a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h3>
+<h3><strong>Introducción</strong><a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h3>
 <p>En esta sección se enumeran y explican los posibles errores que pueden surgir durante diversas etapas del proceso de visualización de datos, tales como <strong>la representación de elementos no correlacionados</strong> para sugerir una relación o <strong>la incorporación de características interactivas inadecuadas</strong>.</p>
 <p>Aunque el proceso de visualización de datos puede parecer sencillo <strong>tomar algunos datos, trazar gráficos y añadir funciones interactivas</strong> en realidad es fácil cometer errores en diferentes fases del mismo. Estos errores pueden resultar en visualizaciones defectuosas que no logran comunicar de manera clara y eficaz la información contenida en los datos, lo que las convierte en herramientas inútiles para el público al que van dirigidas.</p>
 </section>
 <section id="tratamiento-de-valores-faltantes">
-<h3><strong>Tratamiento de valores faltantes</strong><a class="headerlink" href="#tratamiento-de-valores-faltantes" title="Permalink to this heading">#</a></h3>
+<h3><strong>Tratamiento de valores faltantes</strong><a class="headerlink" href="#tratamiento-de-valores-faltantes" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Los datos perdidos son, como su nombre indica, valores que están en blanco (<strong>NaN</strong>, -, <strong>0</strong> cuando no deberían ser <strong>0</strong>, etc.). Al igual que los valores atípicos, los valores perdidos pueden ser problemáticos tanto en el caso de las visualizaciones como en el de los modelos predictivos.</p></li>
 <li><p>Los valores faltantes en las visualizaciones pueden mostrar una tendencia que en realidad no existe o no representa una relación entre dos variables que, en realidad, es significativa. Aunque es posible crear visualizaciones con un conjunto de datos que contenga valores perdidos, no se recomienda hacerlo. Al hacerlo, se ignoran los casos en los que se encuentran esos valores perdidos, creando así una visualización basada en algunos de los datos pero no en todos.</p></li>
@@ -467,7 +493,7 @@ document.write(`
 </ul>
 <p>Este conjunto de datos contiene información relacionada con los <strong>empleos de profesionales de datos</strong>, recopilada durante varios años. Cada fila representa un empleo único y proporciona detalles sobre el puesto, nivel de experiencia, modalidad de trabajo, ubicación del empleado, y otros factores relevantes para el contexto laboral y el salario recibido. Este conjunto de datos es útil para analizar tendencias en el mercado laboral de la ciencia de datos, permitiendo comparaciones entre diferentes tipos de empleos, niveles de experiencia, y ubicaciones geográficas.</p>
 <p><strong>Descripción de las columnas</strong></p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Columna</strong></p></th>
 <th class="head"><p><strong>Descripción</strong></p></th>
@@ -509,6 +535,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -639,7 +666,7 @@ memory usage: 38.1+ KB
 </div>
 <p>Hay varias formas de tratar los datos faltantes. Como modo de ejemplo, se explicaran los procesos de cada uno.</p>
 <section id="eliminacion-de-datos-faltantes">
-<h4><strong>Eliminación de datos faltantes</strong><a class="headerlink" href="#eliminacion-de-datos-faltantes" title="Permalink to this heading">#</a></h4>
+<h4><strong>Eliminación de datos faltantes</strong><a class="headerlink" href="#eliminacion-de-datos-faltantes" title="Link to this heading">#</a></h4>
 <p>La estrategia <strong>eliminar valores faltantes</strong> implica quitar aquellas filas de tu conjunto de datos que contienen valores faltantes (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>). Sin embargo, para evitar eliminar demasiados datos y reducir significativamente el tamaño del conjunto de datos, esta estrategia se aplica solo cuando los valores faltantes constituyen un pequeño porcentaje del total, en este caso, el <strong>5% o menos</strong>.</p>
 <ul class="simple">
 <li><p><strong>5% o menos del total de valores</strong>: Si la cantidad de valores faltantes en una columna o fila representa el 5% o menos del total de registros, es una pérdida aceptable de información. Por lo tanto, puedes eliminar esas filas o columnas sin comprometer demasiado la integridad del análisis.</p></li>
@@ -898,10 +925,10 @@ memory usage: 40.6+ KB
 <p>Hay una diferencia muy importante entre ambos método; el <strong>primer enfoque es más flexible y te permite manejar datos faltantes de manera más controlada</strong>, mientras que el segundo es <strong>más directo y elimina todas las filas que tengan valores faltantes</strong>.</p>
 </section>
 <section id="comparacion-de-variables-con-la-original-y-la-data-limpia">
-<h4><strong>Comparación de variables con la original y la data limpia</strong><a class="headerlink" href="#comparacion-de-variables-con-la-original-y-la-data-limpia" title="Permalink to this heading">#</a></h4>
+<h4><strong>Comparación de variables con la original y la data limpia</strong><a class="headerlink" href="#comparacion-de-variables-con-la-original-y-la-data-limpia" title="Link to this heading">#</a></h4>
 <p>Si nosotros realizamos la eliminación de datos o la imputación de datos debemos tener en cuenta que las distribuciones no cambien.</p>
 <section id="datos-categoricos">
-<h5><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Permalink to this heading">#</a></h5>
+<h5><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -973,7 +1000,7 @@ Valor p: 0.9950192620159025
 </div>
 </section>
 <section id="datos-numerico">
-<h5><strong>Datos numérico</strong><a class="headerlink" href="#datos-numerico" title="Permalink to this heading">#</a></h5>
+<h5><strong>Datos numérico</strong><a class="headerlink" href="#datos-numerico" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1034,9 +1061,9 @@ Valor p: 1.0
 </section>
 </section>
 <section id="imputacion-de-datos-faltantes">
-<h4><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Permalink to this heading">#</a></h4>
+<h4><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Link to this heading">#</a></h4>
 <section id="id1">
-<h5><strong>Datos categóricos</strong><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h5>
+<h5><strong>Datos categóricos</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h5>
 <p>Para los datos categóricos (como “País”, “Categoría”, “Género”, etc.), los métodos comunes de imputación incluyen:</p>
 <ul class="simple">
 <li><p><strong>Moda</strong>: Imputar los valores faltantes con la categoría que más se repite. Este enfoque es simple y suele ser efectivo cuando los datos tienen una categoría predominante.</p></li>
@@ -1106,7 +1133,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="datos-numericos">
-<h5><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Permalink to this heading">#</a></h5>
+<h5><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Link to this heading">#</a></h5>
 <p>Para los datos numéricos (como “Edad”, “Salario”, “Ingreso”, etc.), los métodos comunes de imputación incluyen:</p>
 <ul class="simple">
 <li><p><strong>Media</strong>: Reemplazar los valores faltantes con la media de la columna. Este método es útil cuando los datos tienen una distribución simétrica y no hay valores atípicos.</p></li>
@@ -1190,7 +1217,7 @@ memory usage: 38.1+ KB
 </section>
 </section>
 <section id="tratamiento-de-datos-atipicos">
-<h3><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Permalink to this heading">#</a></h3>
+<h3><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Link to this heading">#</a></h3>
 <p>Ell tratamiento de datos atípicos es fundamental para asegurar que las decisiones basadas en datos sean precisas y confiables, ya que los valores atípicos pueden distorsionar tanto las visualizaciones como los modelos predictivos utilizados en áreas clave, como la evaluación de riesgos, el análisis crediticio, y la detección de fraude.</p>
 <p>La primera fase del tratamiento es <strong>entender los datos frente a ti: entender lo que es, lo que significa y lo que transmite</strong>. Solo cuando entiendas los datos serás capaz de diseñar una visualización que ayude a otros a entenderlos.</p>
 <p>Además, es importante <strong>asegurarse de que los datos tienen sentido y contienen suficiente información, ya sea categórica, numérica o una mezcla de ambas</strong>, para ser visualizados. Por lo tanto, si tratas con datos erróneos o sucios, es probable que la visualización sea defectuosa.</p>
@@ -1370,14 +1397,14 @@ if (outputEl) {{
 <p>La escala del eje <span class="math notranslate nohighlight">\(y\)</span> es extrañamente grande, ya que todos los <strong>gráficos de caja están comprimidos en la octava parte inferior del gráfico</strong>, por lo que no representa una visualización clara de los datos. Esto se debe al valor atípico en la cuarta instancia de nuestro <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> <strong>790 kg</strong></p>
 <p>Todos los valores parecen estar bien, excepto ese valor atípico en la parte superior del gráfico con <strong>max=790</strong>. Ahora, veremos las formas de tratar los valores atípicos.</p>
 <section id="deteccion-de-valores-atipicos">
-<h4><strong>Detección de valores atípicos</strong><a class="headerlink" href="#deteccion-de-valores-atipicos" title="Permalink to this heading">#</a></h4>
+<h4><strong>Detección de valores atípicos</strong><a class="headerlink" href="#deteccion-de-valores-atipicos" title="Link to this heading">#</a></h4>
 <p>Si nuestro conjunto de datos es pequeño, podemos detectar el valor atípico simplemente mirando el conjunto de datos. Pero si tenemos un conjunto de datos enorme, ¿cómo podemos identificar los valores atípicos? Tenemos que utilizar técnicas de visualización y matemáticas. A continuación se presentan algunas de las técnicas de detección de valores atípicos</p>
 <ul class="simple">
 <li><p>Puntuación <span class="math notranslate nohighlight">\(Z\)</span></p></li>
 <li><p>Rango intercuantil (<strong>IQR</strong>)</p></li>
 </ul>
 <section id="deteccion-de-valores-atipicos-mediante-las-puntuaciones-z">
-<h5><strong>Detección de valores atípicos mediante las puntuaciones <span class="math notranslate nohighlight">\(Z\)</span></strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-las-puntuaciones-z" title="Permalink to this heading">#</a></h5>
+<h5><strong>Detección de valores atípicos mediante las puntuaciones <span class="math notranslate nohighlight">\(Z\)</span></strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-las-puntuaciones-z" title="Link to this heading">#</a></h5>
 <p>Datos cuyo valor absoluto de <span class="math notranslate nohighlight">\(Z\)</span>-score supere 3 son considerados valores atípicos.</p>
 <p><img alt="z" src="_images/z1.png" /></p>
 <p>Recorrer todos los datos y calcular la puntuación <span class="math notranslate nohighlight">\(Z\)</span> mediante la fórmula <span class="math notranslate nohighlight">\((X_i-\mu)/\sigma\)</span>. Definir un valor de umbral de 3 y marcar los puntos de datos cuyo valor absoluto de puntuación <span class="math notranslate nohighlight">\(Z\)</span> sea mayor que el umbral como valores atípicos. Recuerde que por el <strong>Teorema de Chebyshev un 99.7% de los datos están contenidos en el intervalo</strong> <span class="math notranslate nohighlight">\(\mu\pm 3\sigma\)</span>.</p>
@@ -1416,7 +1443,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr">
-<h5><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr" title="Permalink to this heading">#</a></h5>
+<h5><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr" title="Link to this heading">#</a></h5>
 <p>Valores fuera de 1.5 veces el rango intercuartil son atípicos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1458,9 +1485,9 @@ if (outputEl) {{
 </section>
 </section>
 <section id="tratamiento">
-<h4><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Permalink to this heading">#</a></h4>
+<h4><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Link to this heading">#</a></h4>
 <section id="eliminacion-de-datos-atipicos">
-<h5><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Permalink to this heading">#</a></h5>
+<h5><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Link to this heading">#</a></h5>
 <p>Eliminaremos el dato que contiene el valor atípico del conjunto de datos utilizado previamente y, a continuación, visualizaremos el nuevo conjunto de datos mediante un gráfico de caja actualizado.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1744,7 +1771,7 @@ Forma de datos sin outliers:  (542, 3)
 </div>
 </section>
 <section id="imputacion-de-datos-atipicos">
-<h5><strong>Imputación de datos atípicos</strong><a class="headerlink" href="#imputacion-de-datos-atipicos" title="Permalink to this heading">#</a></h5>
+<h5><strong>Imputación de datos atípicos</strong><a class="headerlink" href="#imputacion-de-datos-atipicos" title="Link to this heading">#</a></h5>
 <p>Veamos un diagrama de cajas y bigotes</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1861,11 +1888,11 @@ if (outputEl) {{
 </section>
 </section>
 <section id="imputacion-multiple-iterativa-mice-e-iterativeimputer">
-<h2><strong>Imputación múltiple iterativa (MICE) e <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#imputacion-multiple-iterativa-mice-e-iterativeimputer" title="Permalink to this heading">#</a></h2>
+<h2><strong>Imputación múltiple iterativa (MICE) e <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#imputacion-multiple-iterativa-mice-e-iterativeimputer" title="Link to this heading">#</a></h2>
 <p>Ahora contamos con una visualización <strong>sin valores perdidos</strong>, lo que significa que representa <strong>todas las instancias</strong> presentes en el conjunto de datos. Con esto resuelto, pasemos al <strong>tercer problema</strong> que puede generar una visualización defectuosa: <strong>la imputación</strong>.</p>
 <p>Además de las técnicas vistas en <strong>R</strong>, existen otras alternativas de imputación que pueden <strong>integrarse</strong> en flujos de trabajo con <strong>Python</strong>. Por ejemplo, en Python puede aplicarse un enfoque tipo <strong>MICE</strong> (<em>Multiple Imputation by Chained Equations</em>) mediante implementaciones disponibles en <code class="docutils literal notranslate"><span class="pre">sklearn.impute</span></code>, particularmente con <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html"><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></a>. Este método es muy usado y conveniente para <strong>experimentación y análisis</strong>, porque permite imputar valores faltantes utilizando <strong>modelos predictivos</strong> y la información contenida en las demás variables.</p>
 <section id="como-funciona-la-imputacion-multiple-iterativa-idea-general">
-<h3><strong>¿Cómo funciona la imputación múltiple iterativa? (idea general)</strong><a class="headerlink" href="#como-funciona-la-imputacion-multiple-iterativa-idea-general" title="Permalink to this heading">#</a></h3>
+<h3><strong>¿Cómo funciona la imputación múltiple iterativa? (idea general)</strong><a class="headerlink" href="#como-funciona-la-imputacion-multiple-iterativa-idea-general" title="Link to this heading">#</a></h3>
 <p>El principio de MICE (y de la imputación iterativa en general) es <strong>rellenar los valores faltantes de una variable usando al resto como predictores</strong>, repitiendo este proceso varias veces hasta estabilizar las imputaciones.</p>
 <ol class="arabic simple">
 <li><p><strong>Imputación inicial</strong><br />
@@ -1889,7 +1916,7 @@ Se obtiene un conjunto de datos completo con imputaciones que tienden a ser más
 </div>
 </section>
 <section id="que-significa-multiple-en-imputacion-multiple">
-<h3><strong>¿Qué significa “múltiple” en imputación múltiple?</strong><a class="headerlink" href="#que-significa-multiple-en-imputacion-multiple" title="Permalink to this heading">#</a></h3>
+<h3><strong>¿Qué significa “múltiple” en imputación múltiple?</strong><a class="headerlink" href="#que-significa-multiple-en-imputacion-multiple" title="Link to this heading">#</a></h3>
 <p>En <strong>MICE clásico</strong>, la palabra <em>múltiple</em> significa que se generan <strong>varios conjuntos imputados</strong> (por ejemplo, 5 o 10), incorporando la incertidumbre del proceso de imputación. Luego, los análisis se realizan sobre cada conjunto y se combinan los resultados.</p>
 <p>En <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code>, es posible aproximar este enfoque cuando se introduce aleatoriedad (por ejemplo, con <code class="docutils literal notranslate"><span class="pre">sample_posterior=True</span></code> y distintas semillas), permitiendo generar <strong>múltiples versiones imputadas</strong> del mismo dataset.</p>
 <p><img alt="Imputacion multiple" src="_images/multiple_imputation.png" /></p>
@@ -1903,7 +1930,7 @@ Se obtiene un conjunto de datos completo con imputaciones que tienden a ser más
 <p>Esto resume exactamente el enfoque de <strong>ecuaciones encadenadas</strong>: <em>modelo por variable + actualización iterativa</em>.</p>
 </section>
 <section id="emparejamiento-predictivo-medio-pmm">
-<h3><strong>Emparejamiento predictivo medio (PMM)</strong><a class="headerlink" href="#emparejamiento-predictivo-medio-pmm" title="Permalink to this heading">#</a></h3>
+<h3><strong>Emparejamiento predictivo medio (PMM)</strong><a class="headerlink" href="#emparejamiento-predictivo-medio-pmm" title="Link to this heading">#</a></h3>
 <p><img alt="pmm_imputation" src="_images/pmm_imputation.png" /></p>
 <p>La figura de <strong>PMM</strong> (<em>Predictive Mean Matching</em>) representa una estrategia muy común dentro de MICE (especialmente en R). A diferencia de imputar el valor predicho directamente, PMM busca imputaciones más <strong>realistas</strong>:</p>
 <ol class="arabic simple">
@@ -1932,12 +1959,8 @@ Se obtiene un conjunto de datos completo con imputaciones que tienden a ser más
 <p><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> no implementa PMM de forma idéntica a <code class="docutils literal notranslate"><span class="pre">mice</span></code> en R, pero sí comparte la estructura MICE de <strong>ecuaciones encadenadas</strong>. PMM sería una “regla de imputación” específica dentro de ese marco.</p>
 </div>
 </section>
-<section id="puente-hacia-la-implementacion-en-r">
-<h3><strong>Puente hacia la implementación en R</strong><a class="headerlink" href="#puente-hacia-la-implementacion-en-r" title="Permalink to this heading">#</a></h3>
-<p>Con esto, aunque <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> ofrece una implementación práctica en Python para imputación iterativa, el análisis continuará implementando este enfoque en <strong>R</strong>, donde MICE y estrategias como <strong>PMM</strong> suelen utilizarse para obtener imputaciones más plausibles y robustas.</p>
-</section>
 <section id="aplicacion-de-iterativeimputer">
-<h3><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Permalink to this heading">#</a></h3>
+<h3><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Link to this heading">#</a></h3>
 <p>En este ejemplo trabajaremos con el conjunto de datos <a class="reference external" href="https://github.com/cdeoroaguado/Datos/blob/main/dataviz/horse-colic.names.txt"><strong>Horse Colic</strong></a>, que recoge características médicas de caballos con cólico y el desenlace del caso. El archivo contiene <strong>300 filas</strong> y <strong>26 variables de entrada</strong>, además de <strong>una variable de salida</strong>. En términos prácticos, es una tarea de <strong>clasificación</strong>, porque buscamos predecir el resultado del caso.</p>
 <p>Aunque existen varias variables que podríamos usar como objetivo, aquí nos enfocaremos en predecir si el caballo <strong>requirió cirugía o no</strong> (<strong>columna 23</strong>). Por lo tanto, el problema se formula como una <strong>clasificación binaria</strong>.</p>
 <ul>
@@ -2644,7 +2667,7 @@ memory usage: 65.8 KB
 </ul>
 </section>
 <section id="transformacion-de-datos-con-iterativeimputer">
-<h3><strong>Transformación de datos con <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#transformacion-de-datos-con-iterativeimputer" title="Permalink to this heading">#</a></h3>
+<h3><strong>Transformación de datos con <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#transformacion-de-datos-con-iterativeimputer" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> realiza una <strong>imputación iterativa</strong>: en lugar de rellenar los faltantes de una sola vez, ajusta modelos sucesivos para <strong>estimar</strong> cada variable con valores perdidos a partir del resto de variables disponibles.</p>
 <p>Por defecto, este método suele apoyarse en un modelo tipo <strong><code class="docutils literal notranslate"><span class="pre">BayesianRidge()</span></code></strong>, que aprende relaciones entre variables y usa esa información para proponer valores plausibles donde hay <code class="docutils literal notranslate"><span class="pre">NA</span></code>.</p>
 <p>Un detalle clave del procedimiento es el <strong>orden de imputación</strong>: las variables se completan <strong>progresivamente</strong>, empezando por aquellas con <strong>menos valores faltantes</strong> y avanzando hacia las que tienen <strong>más</strong>. Esto ayuda a que, cuando se imputen las columnas más incompletas, ya exista información adicional imputada en las demás variables que puede mejorar la estimación.</p>
@@ -2719,7 +2742,7 @@ memory usage: 65.8 KB
 </div>
 </section>
 <section id="iterativeimputer-y-evaluacion-de-modelos">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Permalink to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Link to this heading">#</a></h3>
 <p>Para aplicar correctamente la imputación iterativa y <strong>evitar la fuga de datos</strong> (<em>data leakage</em>), lo más recomendable es construir un <strong>pipeline</strong> donde el flujo sea siempre:</p>
 <ol class="arabic simple">
 <li><p><strong>Primero:</strong> imputar los valores faltantes (dentro del proceso de entrenamiento).</p></li>
@@ -2777,7 +2800,7 @@ Aun así, queda una pregunta importante: <strong>¿la estrategia iterativa por d
 </ul>
 </section>
 <section id="iterativeimputer-y-diferentes-ordenes-de-imputacion">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Permalink to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Link to this heading">#</a></h3>
 <p>Por defecto, <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> completa los valores faltantes siguiendo un <strong>orden ascendente</strong>: comienza con la variable que tiene <strong>menos valores perdidos</strong> y avanza hasta la que tiene <strong>más</strong>.</p>
 <p>Sin embargo, este orden no es el único posible. También podemos <strong>experimentar</strong> con otras estrategias para ver si el rendimiento del modelo mejora, por ejemplo:</p>
 <ul class="simple">
@@ -2891,7 +2914,7 @@ Aun así, queda una pregunta importante: <strong>¿la estrategia iterativa por d
 <p>En resumen, aunque no hay cambios drásticos, la gráfica sugiere que <strong>usar un orden distinto al predeterminado (ascendente)</strong>, especialmente <strong>descendente</strong>, puede dar una <strong>mejora marginal</strong> en este conjunto de datos.</p>
 </section>
 <section id="iterativeimputer-y-el-numero-de-iteraciones">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y el número de iteraciones</strong><a class="headerlink" href="#iterativeimputer-y-el-numero-de-iteraciones" title="Permalink to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y el número de iteraciones</strong><a class="headerlink" href="#iterativeimputer-y-el-numero-de-iteraciones" title="Link to this heading">#</a></h3>
 <p>Por defecto, <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> realiza <strong>10 iteraciones</strong> para completar los valores faltantes. En cada iteración, el método vuelve a estimar las columnas con datos perdidos usando la información del resto de variables.</p>
 <p>Sin embargo, <strong>más iteraciones no siempre significan mejores resultados</strong>. En algunos casos, un número muy alto puede introducir <strong>sesgo</strong>, aumentar el <strong>ruido</strong> en las estimaciones o simplemente aportar mejoras mínimas a cambio de más tiempo de cómputo. Por eso, a veces conviene trabajar con <strong>pocas iteraciones</strong>.</p>
 <p>El número de iteraciones se controla con el parámetro <code class="docutils literal notranslate"><span class="pre">max_iter</span></code>. En el siguiente ejemplo compararemos distintos valores de <code class="docutils literal notranslate"><span class="pre">max_iter</span></code> (por ejemplo, de <strong>1 a 20</strong>) para observar cómo cambia el desempeño del modelo.</p>
@@ -3014,7 +3037,7 @@ Aun así, queda una pregunta importante: <strong>¿la estrategia iterativa por d
 <p>En resumen, para este conjunto de datos parece razonable preferir <strong>un número bajo de iteraciones</strong>, ya que ofrece un rendimiento similar con menor costo computacional.</p>
 </section>
 <section id="iterativeimputer-al-hacer-una-prediccion">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> al hacer una predicción</strong><a class="headerlink" href="#iterativeimputer-al-hacer-una-prediccion" title="Permalink to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> al hacer una predicción</strong><a class="headerlink" href="#iterativeimputer-al-hacer-una-prediccion" title="Link to this heading">#</a></h3>
 <p>Una vez elegida la configuración final, podemos construir un <strong>pipeline</strong> que combine la <strong>imputación iterativa</strong> (<code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code>) con el modelo de <strong>bosque aleatorio</strong> (<em>Random Forest</em>). Esto permite que la preparación de datos y el entrenamiento queden integrados en un solo flujo.</p>
 <ul class="simple">
 <li><p>El procedimiento típico es:</p>
@@ -3485,7 +3508,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <p>Así que 2 se interpreta como: el modelo predice que el caballo murió.</p>
 </section>
 <section id="instancias-y-o-caracteristicas-duplicadas">
-<h3><strong>Instancias y/o características duplicadas</strong><a class="headerlink" href="#instancias-y-o-caracteristicas-duplicadas" title="Permalink to this heading">#</a></h3>
+<h3><strong>Instancias y/o características duplicadas</strong><a class="headerlink" href="#instancias-y-o-caracteristicas-duplicadas" title="Link to this heading">#</a></h3>
 <p>Un tercer problema común al analizar datos es la presencia de <strong>instancias (filas) y/o características (columnas) duplicadas</strong>. En general, estos duplicados no aportan información nueva y, si no se detectan y eliminan, pueden <strong>distorsionar</strong> los patrones del conjunto de datos y llevar a <strong>conclusiones equivocadas</strong> en una visualización.</p>
 <p>Por ejemplo, imagina que construyes una gráfica para explorar la relación entre el <strong>género</strong> de un adolescente y si <strong>toca el piano</strong>. Si el conjunto de datos incluye <strong>valores atípicos</strong>, <strong>errores</strong>, <strong>registros repetidos</strong> o <strong>faltantes</strong>, la visualización puede terminar mostrando una tendencia engañosa.</p>
 <p>A partir de una gráfica así, podrías llegar a concluir que <strong>hay más mujeres que tocan el piano que hombres</strong>. Sin embargo, antes de aceptar esa interpretación, conviene revisar si la visualización proviene de un conjunto de datos con duplicados o problemas de calidad, como el que se muestra a continuación.</p>
@@ -3495,7 +3518,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <p>La forma más directa de manejar este problema suele ser <strong>eliminar los duplicados</strong>. En <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, esto se puede hacer fácilmente con la función <code class="docutils literal notranslate"><span class="pre">drop_duplicates()</span></code>.</p>
 </section>
 <section id="mala-seleccion-de-caracteristicas">
-<h3><strong>Mala selección de características</strong><a class="headerlink" href="#mala-seleccion-de-caracteristicas" title="Permalink to this heading">#</a></h3>
+<h3><strong>Mala selección de características</strong><a class="headerlink" href="#mala-seleccion-de-caracteristicas" title="Link to this heading">#</a></h3>
 <p>En un conjunto de datos, una <strong>característica</strong> es una <strong>columna</strong> (variable), mientras que una <strong>instancia</strong> es una <strong>fila</strong> (registro).<br />
 Por ejemplo, en una tabla donde aparecen <code class="docutils literal notranslate"><span class="pre">nombre</span></code>, <code class="docutils literal notranslate"><span class="pre">sexo</span></code>, <code class="docutils literal notranslate"><span class="pre">toca_piano</span></code> y <code class="docutils literal notranslate"><span class="pre">edad</span></code>, esas serían <strong>características</strong>; en cambio, un registro específico (por ejemplo, <em>Pooja Rajesh, F, 15, yes</em>) corresponde a <strong>una instancia</strong>.</p>
 <p>Como el objetivo de una visualización es mostrar <strong>tendencias, patrones o relaciones</strong> entre variables, la selección de características debe hacerse con <strong>cuidado</strong>. Elegir variables poco relevantes puede producir gráficos “bonitos”, pero <strong>sin un mensaje claro</strong> o, peor aún, con interpretaciones engañosas.</p>
@@ -3504,7 +3527,7 @@ Por ejemplo, en una tabla donde aparecen <code class="docutils literal notransla
 </section>
 </section>
 <section id="visualizacion-interactiva">
-<h2><strong>Visualización interactiva</strong><a class="headerlink" href="#visualizacion-interactiva" title="Permalink to this heading">#</a></h2>
+<h2><strong>Visualización interactiva</strong><a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
 <p>Las visualizaciones de datos interactivas superan a las estáticas al permitir una mayor participación del usuario. El término <em>interactivo</em> se refiere a la comunicación y colaboración entre dos o más entidades. En este contexto, las visualizaciones interactivas son representaciones gráficas de datos, ya sean estáticos o dinámicos, que permiten a los usuarios explorar, modificar y analizar la información en tiempo real, respondiendo a sus acciones de manera inmediata. Esta capacidad para adaptarse a las interacciones ofrece una comprensión más profunda y una toma de decisiones más ágil y efectiva.</p>
 <div class="warning admonition">
 <p class="admonition-title"><strong>Observación</strong></p>
@@ -3520,19 +3543,21 @@ Por ejemplo, en una tabla donde aparecen <code class="docutils literal notransla
 </div>
 <p>Estas características hacen que las visualizaciones interactivas sean herramientas poderosas para la toma de decisiones y el análisis de datos.</p>
 <section id="aspecto-claves-de-las-visualizaciones-interactivas">
-<h3><strong>Aspecto claves de las visualizaciones interactivas</strong><a class="headerlink" href="#aspecto-claves-de-las-visualizaciones-interactivas" title="Permalink to this heading">#</a></h3>
+<h3><strong>Aspecto claves de las visualizaciones interactivas</strong><a class="headerlink" href="#aspecto-claves-de-las-visualizaciones-interactivas" title="Link to this heading">#</a></h3>
 <p>El aspecto clave de las visualizaciones de datos interactivas es su capacidad de responder y adaptarse a las entradas del usuario en tiempo real o en intervalos muy cortos. A continuación, se exploran algunas de las principales entradas humanas, cómo se integran en las visualizaciones y el impacto que tienen en la comprensión de los datos:</p>
 <ol class="arabic">
 <li><p><strong>Deslizador</strong> (<code class="docutils literal notranslate"><span class="pre">Slider</span></code>): Permite al usuario ajustar un rango de valores y visualizar cómo el gráfico cambia dinámicamente en respuesta a esta acción. Esto es ideal para analizar datos en diferentes intervalos de tiempo o comparar categorías en tiempo real.</p>
 <figure class="align-center" id="slice">
-<a class="reference internal image-reference" href="_images/fig1.png"><img alt="_images/fig1.png" src="_images/fig1.png" style="width: 296.4px; height: 73.2px;" /></a>
+<a class="reference internal image-reference" href="_images/fig1.png"><img alt="_images/fig1.png" src="_images/fig1.png" style="width: 296.4px; height: 73.2px;" />
+</a>
 </figure>
 </li>
 </ol>
 <ol class="arabic" start="2">
 <li><p><code class="docutils literal notranslate"><span class="pre">Hover</span></code>: Al pasar el cursor sobre un elemento del gráfico, se muestra información adicional que no es visible en la visualización principal. Esto es útil para detallar valores precisos o proporcionar descripciones sin saturar el gráfico con demasiada información.</p>
 <figure class="align-center" id="hover">
-<a class="reference internal image-reference" href="_images/fig2.png"><img alt="_images/fig2.png" src="_images/fig2.png" style="width: 315.0px; height: 248.4px;" /></a>
+<a class="reference internal image-reference" href="_images/fig2.png"><img alt="_images/fig2.png" src="_images/fig2.png" style="width: 315.0px; height: 248.4px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -3542,7 +3567,8 @@ Por ejemplo, en una tabla donde aparecen <code class="docutils literal notransla
 <ol class="arabic" start="4">
 <li><p><strong>Parámetros clicables</strong> (<code class="docutils literal notranslate"><span class="pre">Clickable</span> <span class="pre">Parameters</span></code>): Elementos como casillas de verificación o menús desplegables permiten al usuario seleccionar qué aspectos de los datos desea visualizar. Estas opciones brindan flexibilidad al usuario para personalizar su análisis de manera intuitiva.</p>
 <figure class="align-center" id="click">
-<a class="reference internal image-reference" href="_images/fig3.png"><img alt="_images/fig3.png" src="_images/fig3.png" style="width: 178.0px; height: 91.0px;" /></a>
+<a class="reference internal image-reference" href="_images/fig3.png"><img alt="_images/fig3.png" src="_images/fig3.png" style="width: 178.0px; height: 91.0px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -3559,11 +3585,12 @@ Por ejemplo, en una tabla donde aparecen <code class="docutils literal notransla
 </ul>
 <p>Estas bibliotecas permiten la creación de visualizaciones interactivas que reaccionan a las entradas del usuario, enriqueciendo el análisis de datos. En los próximos ejercicios, exploraremos cómo utilizar tanto bokeh como plotly para diseñar visualizaciones interactivas de datos.</p>
 <figure class="align-center" id="boken">
-<a class="reference internal image-reference" href="_images/fig4.png"><img alt="_images/fig4.png" src="_images/fig4.png" style="width: 442.0px; height: 205.0px;" /></a>
+<a class="reference internal image-reference" href="_images/fig4.png"><img alt="_images/fig4.png" src="_images/fig4.png" style="width: 442.0px; height: 205.0px;" />
+</a>
 </figure>
 </section>
 <section id="preparacion-de-nuestro-dataset">
-<h3><strong>Preparación de nuestro dataset</strong><a class="headerlink" href="#preparacion-de-nuestro-dataset" title="Permalink to this heading">#</a></h3>
+<h3><strong>Preparación de nuestro dataset</strong><a class="headerlink" href="#preparacion-de-nuestro-dataset" title="Link to this heading">#</a></h3>
 <p>Descargaremos y prepararemos nuestro conjunto de datos utilizando las bibliotecas de Python <code class="docutils literal notranslate"><span class="pre">pandas</span></code> y <code class="docutils literal notranslate"><span class="pre">numpy</span></code>. Al final de este ejercicio, tendremos un <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> listo para la creación de nuestras visualizaciones de datos interactivas. Utilizaremos dos archivos de datos: <code class="docutils literal notranslate"><span class="pre">co2.csv</span></code>, que contiene información sobre las emisiones de dióxido de carbono por persona, año y país, y <code class="docutils literal notranslate"><span class="pre">gapminder.csv</span></code>, que registra el PIB por año y país.</p>
 <ol class="arabic simple">
 <li><p>Importar las bibliotecas necesarias:</p></li>
@@ -3923,7 +3950,8 @@ Por ejemplo, en una tabla donde aparecen <code class="docutils literal notransla
 <li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Join</span> <span class="pre">or</span> <span class="pre">Right</span> <span class="pre">outer</span> <span class="pre">join</span></code>: Para incluir todas las filas de su marco de datos <span class="math notranslate nohighlight">\(Y\)</span> y sólo las de <span class="math notranslate nohighlight">\(X\)</span> que coincidan, especifique: <code class="docutils literal notranslate"><span class="pre">how='right'</span></code>.</p></li>
 </ul>
 <figure class="align-center" id="joins">
-<a class="reference internal image-reference" href="_images/fig5.png"><img alt="_images/fig5.png" src="_images/fig5.png" style="width: 447.0px; height: 122.0px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5.png"><img alt="_images/fig5.png" src="_images/fig5.png" style="width: 447.0px; height: 122.0px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -4507,7 +4535,7 @@ dtype: int64
 <p>El resultado muestra una correlación significativa (0.78) entre las emisiones de CO2 y el PIB, lo que indica que estos datos son adecuados para un análisis más profundo y visualización interactiva.</p>
 </section>
 <section id="creacion-del-grafico-estatico-con-visualizacion-interactiva">
-<h3><strong>Creación del gráfico estático con visualización interactiva</strong><a class="headerlink" href="#creacion-del-grafico-estatico-con-visualizacion-interactiva" title="Permalink to this heading">#</a></h3>
+<h3><strong>Creación del gráfico estático con visualización interactiva</strong><a class="headerlink" href="#creacion-del-grafico-estatico-con-visualizacion-interactiva" title="Link to this heading">#</a></h3>
 <p>En este ejercicio, crearemos un gráfico estático utilizando Bokeh para visualizar nuestro conjunto de datos, al cual añadiremos glifos circulares. A continuación, se detallan los pasos para lograrlo:</p>
 <ol class="arabic simple">
 <li><p>Se debe instalar la biblioteca <code class="docutils literal notranslate"><span class="pre">bokeh</span></code> y <code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code>.</p></li>
@@ -5013,7 +5041,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="anadiendo-la-herramienta-hover">
-<h3><strong>Añadiendo la herramienta Hover</strong><a class="headerlink" href="#anadiendo-la-herramienta-hover" title="Permalink to this heading">#</a></h3>
+<h3><strong>Añadiendo la herramienta Hover</strong><a class="headerlink" href="#anadiendo-la-herramienta-hover" title="Link to this heading">#</a></h3>
 <p>Vamos a permitir que el usuario pase por encima de un punto de datos en nuestro gráfico para ver el nombre del país, las emisiones de dióxido de carbono y el PIB. Los siguientes pasos te ayudarán con la solución:</p>
 <p>Crear una herramienta de rastreo llamada <code class="docutils literal notranslate"><span class="pre">hover</span></code>. Añade la herramienta hover a la gráfica</p>
 <div class="cell docutils container">
@@ -5060,7 +5088,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="anadiendo-un-slicer-al-grafico-estatico">
-<h3><strong>Añadiendo un slicer al gráfico estático</strong><a class="headerlink" href="#anadiendo-un-slicer-al-grafico-estatico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Añadiendo un slicer al gráfico estático</strong><a class="headerlink" href="#anadiendo-un-slicer-al-grafico-estatico" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Nombramos el archivo <strong>HTML</strong> de salida como <strong>co2_emissions</strong></p></li>
 </ol>
@@ -5154,10 +5182,10 @@ function(Bokeh) {
 </section>
 </section>
 <section id="visualizacion-de-datos-a-traves-de-capas">
-<h2><strong>Visualización de datos a través de capas</strong><a class="headerlink" href="#visualizacion-de-datos-a-traves-de-capas" title="Permalink to this heading">#</a></h2>
+<h2><strong>Visualización de datos a través de capas</strong><a class="headerlink" href="#visualizacion-de-datos-a-traves-de-capas" title="Link to this heading">#</a></h2>
 <p>Presentaremos <code class="docutils literal notranslate"><span class="pre">Altair</span></code>, una potente biblioteca de Python diseñada específicamente para la creación de gráficos interactivos. En esta sesión, demostraremos cómo utilizar Altair para generar visualizaciones interactivas en datos estratificados según diferentes variables categóricas. Para ilustrar sus capacidades, emplearemos un conjunto de datos real y crearemos gráficos de dispersión y de barras, destacando las principales características de los datos. Además, añadiremos una amplia gama de elementos interactivos para mejorar la experiencia visual y permitir una exploración dinámica de los datos.</p>
 <section id="funcionalidad-hover-y-tooltip">
-<h3><strong>Funcionalidad Hover y Tooltip</strong><a class="headerlink" href="#funcionalidad-hover-y-tooltip" title="Permalink to this heading">#</a></h3>
+<h3><strong>Funcionalidad Hover y Tooltip</strong><a class="headerlink" href="#funcionalidad-hover-y-tooltip" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Importa el módulo <code class="docutils literal notranslate"><span class="pre">altair</span></code> como <code class="docutils literal notranslate"><span class="pre">alt</span></code>. Antes debe instalar altair usando <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">altair</span> <span class="pre">vega_datasets</span></code>.</p></li>
 </ol>
@@ -5526,7 +5554,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="seleccion-a-traves-de-multiples-parcelas">
-<h3><strong>Selección a través de múltiples parcelas</strong><a class="headerlink" href="#seleccion-a-traves-de-multiples-parcelas" title="Permalink to this heading">#</a></h3>
+<h3><strong>Selección a través de múltiples parcelas</strong><a class="headerlink" href="#seleccion-a-traves-de-multiples-parcelas" title="Link to this heading">#</a></h3>
 <p>La función de selección se vuelve mucho más poderosa cuando se aplica a múltiples gráficos de manera conjunta. Tomemos como ejemplo dos gráficos de dispersión:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">wellbeing</span></code> vs <code class="docutils literal notranslate"><span class="pre">happy</span> <span class="pre">planet</span> <span class="pre">index</span></code></p></li>
@@ -5705,7 +5733,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="seleccion-de-los-valores-de-una-variable-categorica">
-<h3><strong>Selección de los valores de una variable categórica</strong><a class="headerlink" href="#seleccion-de-los-valores-de-una-variable-categorica" title="Permalink to this heading">#</a></h3>
+<h3><strong>Selección de los valores de una variable categórica</strong><a class="headerlink" href="#seleccion-de-los-valores-de-una-variable-categorica" title="Link to this heading">#</a></h3>
 <p>Ahora, crearemos un gráfico interactivo que permitirá visualizar los puntos de datos correspondientes a una región específica. Utilizaremos la función <code class="docutils literal notranslate"><span class="pre">selection_single()</span></code> para seleccionar un conjunto determinado de puntos de datos. Al analizar el código, notará que los parámetros de esta función son bastante intuitivos. Para obtener más detalles o aclaraciones sobre su funcionamiento, puede consultar la documentación oficial en: <a class="reference external" href="https://altair-viz.github.io/user_guide/generated/api/altair.selection_single.html.">Altair Selection Single</a>.</p>
 <p>Cree una variable <code class="docutils literal notranslate"><span class="pre">input_dropdown</span></code> utilizando la función <code class="docutils literal notranslate"><span class="pre">binding_select()</span></code> y configure el parámetro <code class="docutils literal notranslate"><span class="pre">options</span></code> con la lista de regiones disponibles en nuestro conjunto de datos. A continuación, utilice la función <code class="docutils literal notranslate"><span class="pre">selection_single()</span></code> para permitir la selección de un conjunto específico de puntos de datos. Almacene la condición de selección en una variable llamada <code class="docutils literal notranslate"><span class="pre">color</span></code>, la cual determinará bajo qué condiciones se resaltarán los puntos seleccionados en el gráfico.</p>
 <div class="cell docutils container">
@@ -5890,7 +5918,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="funcion-de-zoom-en-un-mapa-de-calor-estatico">
-<h3><strong>Función de zoom en un mapa de calor estático</strong><a class="headerlink" href="#funcion-de-zoom-en-un-mapa-de-calor-estatico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Función de zoom en un mapa de calor estático</strong><a class="headerlink" href="#funcion-de-zoom-en-un-mapa-de-calor-estatico" title="Link to this heading">#</a></h3>
 <p>A continuación, añadiremos la función de zoom al mapa de calor de las correlaciones.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5972,7 +6000,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor">
-<h3><strong>Dinámica de un gráfico de barras y un mapa de calor</strong><a class="headerlink" href="#dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor" title="Permalink to this heading">#</a></h3>
+<h3><strong>Dinámica de un gráfico de barras y un mapa de calor</strong><a class="headerlink" href="#dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor" title="Link to this heading">#</a></h3>
 <p>Vamos a vincular dinámicamente un gráfico de barras con un mapa de calor. Imagina un escenario en el que, al hacer clic en una barra del gráfico, el mapa de calor se actualiza automáticamente para mostrar los datos correspondientes a la región seleccionada. Por ejemplo, podrías hacer clic en una barra que representa una región y, a partir de eso, el mapa de calor de <code class="docutils literal notranslate"><span class="pre">Life</span> <span class="pre">Expectancy</span></code> frente a <code class="docutils literal notranslate"><span class="pre">Wellbeing</span></code> se ajustaría para mostrar únicamente los datos de los países de esa región específica. Esto permite una exploración más detallada y enfocada en los datos.</p>
 <ol class="arabic simple">
 <li><p>Seleccione la región mediante el método de <code class="docutils literal notranslate"><span class="pre">selection</span></code> y crea el <code class="docutils literal notranslate"><span class="pre">heatmap</span></code></p></li>
@@ -6096,13 +6124,13 @@ function(Bokeh) {
 </section>
 </section>
 <section id="visualizacion-interactiva-de-mapas-con-datos-geograficos">
-<h2><strong>Visualización interactiva de mapas con datos geográficos</strong><a class="headerlink" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos" title="Permalink to this heading">#</a></h2>
+<h2><strong>Visualización interactiva de mapas con datos geográficos</strong><a class="headerlink" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos" title="Link to this heading">#</a></h2>
 <p>En la actualidad, muchos conjuntos de datos contienen características relacionadas con aspectos espaciales o geográficos, como la ubicación de los usuarios de redes sociales, las métricas de desarrollo mundial calculadas para diferentes países o rutas de transporte que conectan diversos lugares del planeta. Es fundamental aprender a comprender y presentar esta información de manera clara y perspicaz.</p>
 <p>Esta sección te proporcionará las herramientas necesarias para generar gráficos que representen datos geográficos de manera efectiva. Aunque bibliotecas como <code class="docutils literal notranslate"><span class="pre">Altair</span></code> y <code class="docutils literal notranslate"><span class="pre">Geopandas</span></code> ofrecen posibilidades interesantes para visualizar estos datos, <code class="docutils literal notranslate"><span class="pre">Plotly</span></code> destaca por su capacidad de crear gráficos geográficos variados que son fáciles de construir, personalizar y depurar. Además, utilizaremos <code class="docutils literal notranslate"><span class="pre">Plotly</span></code> para mostrar cómo generar distintos tipos de visualizaciones geográficas utilizando conjuntos de datos públicos. Un ejemplo clave es el mapa coroplético, que colorea diferentes divisiones geográficas, como países o regiones, para mostrar el valor de una característica específica en cada una. Por ejemplo, podrías visualizar el acceso a internet en diferentes países del mundo utilizando un <strong>mapa coroplético</strong>.</p>
 <section id="creacion-de-un-mapa-coropletico">
-<h3><strong>Creación de un mapa coroplético</strong><a class="headerlink" href="#creacion-de-un-mapa-coropletico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Creación de un mapa coroplético</strong><a class="headerlink" href="#creacion-de-un-mapa-coropletico" title="Link to this heading">#</a></h3>
 <section id="visualizacion-del-uso-de-internet-a-nivel-mundial">
-<h4><strong>Visualización del uso de internet a Nivel Mundial</strong><a class="headerlink" href="#visualizacion-del-uso-de-internet-a-nivel-mundial" title="Permalink to this heading">#</a></h4>
+<h4><strong>Visualización del uso de internet a Nivel Mundial</strong><a class="headerlink" href="#visualizacion-del-uso-de-internet-a-nivel-mundial" title="Link to this heading">#</a></h4>
 <p>En la primera visualización, utilizaremos las estadísticas de uso de internet publicadas por <a class="reference external" href="https://ourworldindata.org/internet">Our World in Data</a> para mostrar el porcentaje de la población que utiliza internet en cada país, desde 1990 hasta 2017.</p>
 <p>¿Te has dado cuenta de la columna llamada <code class="docutils literal notranslate"><span class="pre">Code</span></code> en el conjunto de datos? Este campo contiene un código asignado a cada país bajo el estándar <strong>ISO 3166-1</strong>, el cual es utilizado globalmente por desarrolladores para referirse a los nombres de los países de manera uniforme en los datos.</p>
 <p>Dado que el <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> incluye registros de múltiples años, primero filtraremos los datos para un año específico, como 2016. Luego, utilizaremos este subconjunto de datos para generar un mapa mundial, donde se visualizará el uso de internet por país.</p>
@@ -6283,7 +6311,7 @@ if (outputEl) {{
 </section>
 </section>
 <section id="ajuste-de-un-mapa-coropletico-mundial">
-<h3><strong>Ajuste de un mapa coroplético mundial</strong><a class="headerlink" href="#ajuste-de-un-mapa-coropletico-mundial" title="Permalink to this heading">#</a></h3>
+<h3><strong>Ajuste de un mapa coroplético mundial</strong><a class="headerlink" href="#ajuste-de-un-mapa-coropletico-mundial" title="Link to this heading">#</a></h3>
 <p>Supongamos que solo nos interesa visualizar el uso de internet en el continente de <strong>Sudamérica</strong>. Para lograr esto, podemos utilizar el parámetro <strong><code class="docutils literal notranslate"><span class="pre">geo_scope</span></code></strong> en la función <strong><code class="docutils literal notranslate"><span class="pre">update_layout()</span></code></strong> para hacer un <em>zoom</em> en esa región geográfica.</p>
 <p>El siguiente código muestra cómo hacerlo de manera rápida y sencilla:</p>
 <div class="cell docutils container">
@@ -6431,7 +6459,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="anadiendo-animacion-a-un-mapa-coropletico">
-<h3><strong>Añadiendo animación a un mapa coroplético</strong><a class="headerlink" href="#anadiendo-animacion-a-un-mapa-coropletico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Añadiendo animación a un mapa coroplético</strong><a class="headerlink" href="#anadiendo-animacion-a-un-mapa-coropletico" title="Link to this heading">#</a></h3>
 <p>A continuación, añadiremos un componente deslizante al mapa para ver los registros en diferentes puntos temporales</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6490,7 +6518,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="mapas-coropleticos-con-graph-objects">
-<h3><strong>Mapas coropléticos con <code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong><a class="headerlink" href="#mapas-coropleticos-con-graph-objects" title="Permalink to this heading">#</a></h3>
+<h3><strong>Mapas coropléticos con <code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong><a class="headerlink" href="#mapas-coropleticos-con-graph-objects" title="Link to this heading">#</a></h3>
 <p><strong><code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong> es una parte avanzada de la biblioteca <code class="docutils literal notranslate"><span class="pre">Plotly</span></code> que permite un mayor control y personalización sobre los gráficos. Al crear mapas coropléticos con graph_objects, puedes definir manualmente cada aspecto del gráfico, desde la estructura de los datos hasta las características visuales, como los colores, las etiquetas y la proyección del mapa.</p>
 <p>Esto ofrece más flexibilidad que <strong><code class="docutils literal notranslate"><span class="pre">px.choropleth</span></code></strong>, lo que resulta útil cuando necesitas una personalización detallada, como ajustar propiedades específicas de los datos, personalizar interacciones o modificar configuraciones visuales avanzadas. Sin embargo, requiere más código que las opciones más sencillas de <code class="docutils literal notranslate"><span class="pre">plotly.express</span></code>. Hagamos el siguiente ejemplo:</p>
 <ol class="arabic simple">
@@ -6903,7 +6931,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="construccion-de-un-grafico-de-dispersion-en-un-mapa-geografico">
-<h3><strong>Construcción de un gráfico de dispersión en un mapa geográfico</strong><a class="headerlink" href="#construccion-de-un-grafico-de-dispersion-en-un-mapa-geografico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Construcción de un gráfico de dispersión en un mapa geográfico</strong><a class="headerlink" href="#construccion-de-un-grafico-de-dispersion-en-un-mapa-geografico" title="Link to this heading">#</a></h3>
 <p>Vamos a trazar las ubicaciones de las tiendas <strong>Walmart</strong> en un mapa de los Estados Unidos, utilizando un conjunto de datos disponible públicamente sobre las aperturas de tiendas Walmart entre 1962 y 2006. Este ejemplo nos permitirá ver la ubicación exacta de las tiendas Walmart, y utilizaremos las coordenadas de latitud y longitud para representarlas en un gráfico de dispersión.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6963,7 +6991,7 @@ if (outputEl) {{
 <p>Este código genera un gráfico de dispersión que muestra las ubicaciones de las tiendas Walmart en los Estados Unidos. Las ubicaciones se representan con marcadores, y la información de la dirección aparece al pasar el cursor sobre los puntos.</p>
 </section>
 <section id="construccion-de-un-grafico-de-burbujas-en-un-mapa-geografico">
-<h3><strong>Construcción de un gráfico de burbujas en un mapa geográfico</strong><a class="headerlink" href="#construccion-de-un-grafico-de-burbujas-en-un-mapa-geografico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Construcción de un gráfico de burbujas en un mapa geográfico</strong><a class="headerlink" href="#construccion-de-un-grafico-de-burbujas-en-un-mapa-geografico" title="Link to this heading">#</a></h3>
 <p>Dado que hay muchas tiendas <strong>Walmart</strong> en el este de EE. UU., puede ser útil visualizar el número de tiendas Walmart por estado utilizando un gráfico de burbujas. En este tipo de gráfico, el tamaño de cada burbuja representa <strong>el número de tiendas en cada estado</strong>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -7078,7 +7106,7 @@ if (outputEl) {{
 <p>Este gráfico de burbujas muestra la cantidad de usuarios de Internet por país en 2016. Las burbujas más grandes indican una mayor cantidad de usuarios.</p>
 </section>
 <section id="construccion-de-un-grafico-de-burbujas-con-animacion-del-crecimiento-de-usuarios-de-internet">
-<h3><strong>Construcción de un gráfico de burbujas con animación del crecimiento de usuarios de internet</strong><a class="headerlink" href="#construccion-de-un-grafico-de-burbujas-con-animacion-del-crecimiento-de-usuarios-de-internet" title="Permalink to this heading">#</a></h3>
+<h3><strong>Construcción de un gráfico de burbujas con animación del crecimiento de usuarios de internet</strong><a class="headerlink" href="#construccion-de-un-grafico-de-burbujas-con-animacion-del-crecimiento-de-usuarios-de-internet" title="Link to this heading">#</a></h3>
 <p>Podemos añadir animación para visualizar cómo ha crecido el número de usuarios de Internet en diferentes países a lo largo de los años.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -7134,7 +7162,7 @@ if (outputEl) {{
 <p>Este gráfico muestra la evolución del número de usuarios de Internet en el mundo a lo largo del tiempo. Las burbujas crecen a medida que aumenta el número de usuarios en cada país.</p>
 </section>
 <section id="construccion-de-graficos-de-lineas-en-un-mapa-geografico">
-<h3><strong>Construcción de gráficos de líneas en un mapa geográfico</strong><a class="headerlink" href="#construccion-de-graficos-de-lineas-en-un-mapa-geografico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Construcción de gráficos de líneas en un mapa geográfico</strong><a class="headerlink" href="#construccion-de-graficos-de-lineas-en-un-mapa-geografico" title="Link to this heading">#</a></h3>
 <p>En este ejemplo, generaremos un gráfico de dispersión para mostrar la ubicación de los aeropuertos de Estados Unidos y luego dibujaremos líneas que representen vuelos retrasados entre los aeropuertos de origen y destino el 1 de enero de 2015.</p>
 <ol class="arabic">
 <li><p><strong>Cargar y visualizar los aeropuertos de EE.UU.</strong></p>
@@ -7329,16 +7357,21 @@ if (outputEl) {{
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
+    <a class="left-prev"
+       href="modulo_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Módulo 2: Análisis Exploratorio de Datos (EDA)</strong></p>
+      </div>
+    </a>
 </div>
-
                 </footer>
               
             </div>
@@ -7346,6 +7379,7 @@ if (outputEl) {{
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -7388,7 +7422,6 @@ if (outputEl) {{
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-funciona-la-imputacion-multiple-iterativa-idea-general"><strong>¿Cómo funciona la imputación múltiple iterativa? (idea general)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-significa-multiple-en-imputacion-multiple"><strong>¿Qué significa “múltiple” en imputación múltiple?</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#emparejamiento-predictivo-medio-pmm"><strong>Emparejamiento predictivo medio (PMM)</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#puente-hacia-la-implementacion-en-r"><strong>Puente hacia la implementación en R</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformacion-de-datos-con-iterativeimputer"><strong>Transformación de datos con <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
@@ -7450,6 +7483,7 @@ By Carlos de Oro Aguado
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2026, Msc Carlos de Oro Aguado.
@@ -7476,8 +7510,8 @@ By Carlos de Oro Aguado
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

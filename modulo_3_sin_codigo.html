@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Módulo 3: Visualización de datos interactivos &#8212; Ciencia de datos con Python para la toma de decisiones</title>
   
@@ -15,58 +14,55 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=6c7211e7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_3_sin_codigo';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -78,19 +74,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -112,12 +112,22 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -132,9 +142,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -144,12 +158,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -162,6 +187,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="modulo_1.html"><strong>Módulo 1: Fundamentos de Python para análisis de datos</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modulo_2.html"><strong>Módulo 2: Análisis Exploratorio de Datos (EDA)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="modulo_3.html"><strong>Módulo 3: Tratamiento de datos y dataviz interactivo</strong></a></li>
 </ul>
 
     </div>
@@ -177,7 +203,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -186,14 +212,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -315,26 +341,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -406,12 +434,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modulo-3-visualizacion-de-datos-interactivos">
-<h1><strong>Módulo 3: Visualización de datos interactivos</strong><a class="headerlink" href="#modulo-3-visualizacion-de-datos-interactivos" title="Permalink to this heading">#</a></h1>
+<h1><strong>Módulo 3: Visualización de datos interactivos</strong><a class="headerlink" href="#modulo-3-visualizacion-de-datos-interactivos" title="Link to this heading">#</a></h1>
 <section id="tratamiento-de-datos-faltantes-y-atipicos">
-<h2><strong>Tratamiento de datos faltantes y atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-faltantes-y-atipicos" title="Permalink to this heading">#</a></h2>
+<h2><strong>Tratamiento de datos faltantes y atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-faltantes-y-atipicos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -455,7 +483,7 @@ document.write(`
 </div>
 </div>
 <section id="eliminacion-de-datos-faltantes">
-<h3><strong>Eliminación de datos faltantes</strong><a class="headerlink" href="#eliminacion-de-datos-faltantes" title="Permalink to this heading">#</a></h3>
+<h3><strong>Eliminación de datos faltantes</strong><a class="headerlink" href="#eliminacion-de-datos-faltantes" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Coloquemos un umbral</span>
@@ -630,9 +658,9 @@ Valor p: 1.0
 </div>
 </section>
 <section id="imputacion-de-datos-faltantes">
-<h3><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Permalink to this heading">#</a></h3>
+<h3><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Link to this heading">#</a></h3>
 <section id="datos-categoricos">
-<h4><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Permalink to this heading">#</a></h4>
+<h4><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Usando la <strong>moda</strong>:</p></li>
 </ol>
@@ -673,7 +701,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="datos-numericos">
-<h4><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Permalink to this heading">#</a></h4>
+<h4><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Usando <strong>la media o el promedio</strong></p></li>
 </ol>
@@ -723,7 +751,7 @@ Valor p: 1.0
 </section>
 </section>
 <section id="tratamiento-de-datos-atipicos">
-<h3><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Permalink to this heading">#</a></h3>
+<h3><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Link to this heading">#</a></h3>
 <p>Vamos a crear un gráfico de caja para comprobar si nuestro conjunto de datos contiene valores atípicos. Vamos a utilizar el conjunto de datos <code class="docutils literal notranslate"><span class="pre">gym.csv</span></code>, que contiene información sobre los clientes de un determinado gimnasio.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -770,7 +798,7 @@ Valor p: 1.0
 </div>
 </div>
 <section id="deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr">
-<h4><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr" title="Permalink to this heading">#</a></h4>
+<h4><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr" title="Link to this heading">#</a></h4>
 <p>Valores fuera de 1.5 veces el rango intercuartil son atípicos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -805,9 +833,9 @@ Valor p: 1.0
 </div>
 </section>
 <section id="tratamiento">
-<h4><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Permalink to this heading">#</a></h4>
+<h4><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Link to this heading">#</a></h4>
 <section id="eliminacion-de-datos-atipicos">
-<h5><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Permalink to this heading">#</a></h5>
+<h5><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Link to this heading">#</a></h5>
 <p>Eliminaremos el dato que contiene el valor atípico del conjunto de datos utilizado previamente y, a continuación, visualizaremos el nuevo conjunto de datos mediante un gráfico de caja actualizado.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -857,7 +885,7 @@ Valor p: 1.0
 </section>
 </section>
 <section id="aplicacion-de-iterativeimputer">
-<h3><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Permalink to this heading">#</a></h3>
+<h3><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -941,7 +969,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="iterativeimputer-y-evaluacion-de-modelos">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Permalink to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
@@ -978,7 +1006,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="iterativeimputer-y-diferentes-ordenes-de-imputacion">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Permalink to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
@@ -1058,13 +1086,13 @@ Valor p: 1.0
 </section>
 </section>
 <section id="visualizacion-interactiva">
-<h2><strong>Visualización interactiva</strong><a class="headerlink" href="#visualizacion-interactiva" title="Permalink to this heading">#</a></h2>
+<h2><strong>Visualización interactiva</strong><a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
 <section id="aspecto-claves-de-las-visualizaciones-interactivas">
-<h3><strong>Aspecto claves de las visualizaciones interactivas</strong><a class="headerlink" href="#aspecto-claves-de-las-visualizaciones-interactivas" title="Permalink to this heading">#</a></h3>
+<h3><strong>Aspecto claves de las visualizaciones interactivas</strong><a class="headerlink" href="#aspecto-claves-de-las-visualizaciones-interactivas" title="Link to this heading">#</a></h3>
 <p>El aspecto clave de las visualizaciones de datos interactivas es su capacidad de responder y adaptarse a las entradas del usuario en tiempo real o en intervalos muy cortos. A continuación, se exploran algunas de las principales entradas humanas, cómo se integran en las visualizaciones y el impacto que tienen en la comprensión de los datos:</p>
 </section>
 <section id="preparacion-de-nuestro-dataset">
-<h3><strong>Preparación de nuestro dataset</strong><a class="headerlink" href="#preparacion-de-nuestro-dataset" title="Permalink to this heading">#</a></h3>
+<h3><strong>Preparación de nuestro dataset</strong><a class="headerlink" href="#preparacion-de-nuestro-dataset" title="Link to this heading">#</a></h3>
 <p>Descargaremos y prepararemos nuestro conjunto de datos utilizando las bibliotecas de Python <code class="docutils literal notranslate"><span class="pre">pandas</span></code> y <code class="docutils literal notranslate"><span class="pre">numpy</span></code>. Al final de este ejercicio, tendremos un <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> listo para la creación de nuestras visualizaciones de datos interactivas. Utilizaremos dos archivos de datos: <code class="docutils literal notranslate"><span class="pre">co2.csv</span></code>, que contiene información sobre las emisiones de dióxido de carbono por persona, año y país, y <code class="docutils literal notranslate"><span class="pre">gapminder.csv</span></code>, que registra el PIB por año y país.</p>
 <ol class="arabic simple">
 <li><p>Importar las bibliotecas necesarias:</p></li>
@@ -1274,7 +1302,7 @@ Valor p: 1.0
 <p>El resultado muestra una correlación significativa (0.78) entre las emisiones de CO2 y el PIB, lo que indica que estos datos son adecuados para un análisis más profundo y visualización interactiva.</p>
 </section>
 <section id="creacion-del-grafico-estatico-con-visualizacion-interactiva">
-<h3><strong>Creación del gráfico estático con visualización interactiva</strong><a class="headerlink" href="#creacion-del-grafico-estatico-con-visualizacion-interactiva" title="Permalink to this heading">#</a></h3>
+<h3><strong>Creación del gráfico estático con visualización interactiva</strong><a class="headerlink" href="#creacion-del-grafico-estatico-con-visualizacion-interactiva" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importamos la función &#39;curdoc&#39; que maneja el documento gráfico actual en Bokeh</span>
@@ -1742,7 +1770,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="anadiendo-la-herramienta-hover">
-<h3><strong>Añadiendo la herramienta Hover</strong><a class="headerlink" href="#anadiendo-la-herramienta-hover" title="Permalink to this heading">#</a></h3>
+<h3><strong>Añadiendo la herramienta Hover</strong><a class="headerlink" href="#anadiendo-la-herramienta-hover" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hover</span> <span class="o">=</span> <span class="n">HoverTool</span><span class="p">(</span><span class="n">tooltips</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="s1">&#39;@country&#39;</span><span class="p">),(</span><span class="s1">&#39;GDP&#39;</span><span class="p">,</span><span class="s1">&#39;@x&#39;</span><span class="p">),(</span><span class="s1">&#39;CO2&#39;</span><span class="p">,</span><span class="s1">&#39;@y&#39;</span><span class="p">)])</span>
@@ -1760,7 +1788,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="anadiendo-un-slicer-al-grafico-estatico">
-<h3><strong>Añadiendo un slicer al gráfico estático</strong><a class="headerlink" href="#anadiendo-un-slicer-al-grafico-estatico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Añadiendo un slicer al gráfico estático</strong><a class="headerlink" href="#anadiendo-un-slicer-al-grafico-estatico" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Nombramos el archivo <strong>HTML</strong> de salida como <strong>co2_emissions</strong></p></li>
 </ol>
@@ -1844,10 +1872,10 @@ function(Bokeh) {
 </section>
 </section>
 <section id="visualizacion-de-datos-a-traves-de-capas">
-<h2><strong>Visualización de datos a través de capas</strong><a class="headerlink" href="#visualizacion-de-datos-a-traves-de-capas" title="Permalink to this heading">#</a></h2>
+<h2><strong>Visualización de datos a través de capas</strong><a class="headerlink" href="#visualizacion-de-datos-a-traves-de-capas" title="Link to this heading">#</a></h2>
 <p>Presentaremos <code class="docutils literal notranslate"><span class="pre">Altair</span></code>, una potente biblioteca de Python diseñada específicamente para la creación de gráficos interactivos. En esta sesión, demostraremos cómo utilizar Altair para generar visualizaciones interactivas en datos estratificados según diferentes variables categóricas. Para ilustrar sus capacidades, emplearemos un conjunto de datos real y crearemos gráficos de dispersión y de barras, destacando las principales características de los datos. Además, añadiremos una amplia gama de elementos interactivos para mejorar la experiencia visual y permitir una exploración dinámica de los datos.</p>
 <section id="funcionalidad-hover-y-tooltip">
-<h3><strong>Funcionalidad Hover y Tooltip</strong><a class="headerlink" href="#funcionalidad-hover-y-tooltip" title="Permalink to this heading">#</a></h3>
+<h3><strong>Funcionalidad Hover y Tooltip</strong><a class="headerlink" href="#funcionalidad-hover-y-tooltip" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Importa el módulo <code class="docutils literal notranslate"><span class="pre">altair</span></code> como <code class="docutils literal notranslate"><span class="pre">alt</span></code>. Antes debe instalar altair usando <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">altair</span> <span class="pre">vega_datasets</span></code>.</p></li>
 </ol>
@@ -1895,7 +1923,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="seleccion-de-los-valores-de-una-variable-categorica">
-<h3><strong>Selección de los valores de una variable categórica</strong><a class="headerlink" href="#seleccion-de-los-valores-de-una-variable-categorica" title="Permalink to this heading">#</a></h3>
+<h3><strong>Selección de los valores de una variable categórica</strong><a class="headerlink" href="#seleccion-de-los-valores-de-una-variable-categorica" title="Link to this heading">#</a></h3>
 <p>Ahora, crearemos un gráfico interactivo que permitirá visualizar los puntos de datos correspondientes a una región específica. Utilizaremos la función <code class="docutils literal notranslate"><span class="pre">selection_single()</span></code> para seleccionar un conjunto determinado de puntos de datos. Al analizar el código, notará que los parámetros de esta función son bastante intuitivos. Para obtener más detalles o aclaraciones sobre su funcionamiento, puede consultar la documentación oficial en: <a class="reference external" href="https://altair-viz.github.io/user_guide/generated/api/altair.selection_single.html.">Altair Selection Single</a>.</p>
 <p>Cree una variable <code class="docutils literal notranslate"><span class="pre">input_dropdown</span></code> utilizando la función <code class="docutils literal notranslate"><span class="pre">binding_select()</span></code> y configure el parámetro <code class="docutils literal notranslate"><span class="pre">options</span></code> con la lista de regiones disponibles en nuestro conjunto de datos. A continuación, utilice la función <code class="docutils literal notranslate"><span class="pre">selection_single()</span></code> para permitir la selección de un conjunto específico de puntos de datos. Almacene la condición de selección en una variable llamada <code class="docutils literal notranslate"><span class="pre">color</span></code>, la cual determinará bajo qué condiciones se resaltarán los puntos seleccionados en el gráfico.</p>
 <div class="cell docutils container">
@@ -1946,7 +1974,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="funcion-de-zoom-en-un-mapa-de-calor-estatico">
-<h3><strong>Función de zoom en un mapa de calor estático</strong><a class="headerlink" href="#funcion-de-zoom-en-un-mapa-de-calor-estatico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Función de zoom en un mapa de calor estático</strong><a class="headerlink" href="#funcion-de-zoom-en-un-mapa-de-calor-estatico" title="Link to this heading">#</a></h3>
 <p>A continuación, añadiremos la función de zoom al mapa de calor de las correlaciones.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1961,7 +1989,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor">
-<h3><strong>Dinámica de un gráfico de barras y un mapa de calor</strong><a class="headerlink" href="#dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor" title="Permalink to this heading">#</a></h3>
+<h3><strong>Dinámica de un gráfico de barras y un mapa de calor</strong><a class="headerlink" href="#dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor" title="Link to this heading">#</a></h3>
 <p>Vamos a vincular dinámicamente un gráfico de barras con un mapa de calor. Imagina un escenario en el que, al hacer clic en una barra del gráfico, el mapa de calor se actualiza automáticamente para mostrar los datos correspondientes a la región seleccionada. Por ejemplo, podrías hacer clic en una barra que representa una región y, a partir de eso, el mapa de calor de <code class="docutils literal notranslate"><span class="pre">Life</span> <span class="pre">Expectancy</span></code> frente a <code class="docutils literal notranslate"><span class="pre">Wellbeing</span></code> se ajustaría para mostrar únicamente los datos de los países de esa región específica. Esto permite una exploración más detallada y enfocada en los datos.</p>
 <ol class="arabic simple">
 <li><p>Seleccione la región mediante el método de <code class="docutils literal notranslate"><span class="pre">selection</span></code> y crea el <code class="docutils literal notranslate"><span class="pre">heatmap</span></code></p></li>
@@ -2018,9 +2046,9 @@ function(Bokeh) {
 </section>
 </section>
 <section id="visualizacion-interactiva-de-mapas-con-datos-geograficos">
-<h2><strong>Visualización interactiva de mapas con datos geográficos</strong><a class="headerlink" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos" title="Permalink to this heading">#</a></h2>
+<h2><strong>Visualización interactiva de mapas con datos geográficos</strong><a class="headerlink" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos" title="Link to this heading">#</a></h2>
 <section id="creacion-de-un-mapa-coropletico">
-<h3><strong>Creación de un mapa coroplético</strong><a class="headerlink" href="#creacion-de-un-mapa-coropletico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Creación de un mapa coroplético</strong><a class="headerlink" href="#creacion-de-un-mapa-coropletico" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -2082,7 +2110,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="ajuste-de-un-mapa-coropletico-mundial">
-<h3><strong>Ajuste de un mapa coroplético mundial</strong><a class="headerlink" href="#ajuste-de-un-mapa-coropletico-mundial" title="Permalink to this heading">#</a></h3>
+<h3><strong>Ajuste de un mapa coroplético mundial</strong><a class="headerlink" href="#ajuste-de-un-mapa-coropletico-mundial" title="Link to this heading">#</a></h3>
 <p>Supongamos que solo nos interesa visualizar el uso de internet en el continente de <strong>Sudamérica</strong>. Para lograr esto, podemos utilizar el parámetro <strong><code class="docutils literal notranslate"><span class="pre">geo_scope</span></code></strong> en la función <strong><code class="docutils literal notranslate"><span class="pre">update_layout()</span></code></strong> para hacer un <em>zoom</em> en esa región geográfica.</p>
 <p>El siguiente código muestra cómo hacerlo de manera rápida y sencilla:</p>
 <div class="cell docutils container">
@@ -2152,7 +2180,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="anadiendo-animacion-a-un-mapa-coropletico">
-<h3><strong>Añadiendo animación a un mapa coroplético</strong><a class="headerlink" href="#anadiendo-animacion-a-un-mapa-coropletico" title="Permalink to this heading">#</a></h3>
+<h3><strong>Añadiendo animación a un mapa coroplético</strong><a class="headerlink" href="#anadiendo-animacion-a-un-mapa-coropletico" title="Link to this heading">#</a></h3>
 <p>A continuación, añadiremos un componente deslizante al mapa para ver los registros en diferentes puntos temporales</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2183,7 +2211,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="mapas-coropleticos-con-graph-objects">
-<h3><strong>Mapas coropléticos con <code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong><a class="headerlink" href="#mapas-coropleticos-con-graph-objects" title="Permalink to this heading">#</a></h3>
+<h3><strong>Mapas coropléticos con <code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong><a class="headerlink" href="#mapas-coropleticos-con-graph-objects" title="Link to this heading">#</a></h3>
 <p><strong><code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong> es una parte avanzada de la biblioteca <code class="docutils literal notranslate"><span class="pre">Plotly</span></code> que permite un mayor control y personalización sobre los gráficos. Al crear mapas coropléticos con graph_objects, puedes definir manualmente cada aspecto del gráfico, desde la estructura de los datos hasta las características visuales, como los colores, las etiquetas y la proyección del mapa.</p>
 <p>Esto ofrece más flexibilidad que <strong><code class="docutils literal notranslate"><span class="pre">px.choropleth</span></code></strong>, lo que resulta útil cuando necesitas una personalización detallada, como ajustar propiedades específicas de los datos, personalizar interacciones o modificar configuraciones visuales avanzadas. Sin embargo, requiere más código que las opciones más sencillas de <code class="docutils literal notranslate"><span class="pre">plotly.express</span></code>. Hagamos el siguiente ejemplo:</p>
 <ol class="arabic simple">
@@ -2375,16 +2403,12 @@ function(Bokeh) {
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -2392,6 +2416,7 @@ function(Bokeh) {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2462,6 +2487,7 @@ By Carlos de Oro Aguado
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2026, Msc Carlos de Oro Aguado.
@@ -2488,8 +2514,8 @@ By Carlos de Oro Aguado
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
