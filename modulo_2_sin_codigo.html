@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Módulo 2: Análisis Exploratorio de Datos (EDA) &#8212; Ciencia de datos con Python para la toma de decisiones</title>
   
@@ -14,53 +15,56 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=6c7211e7" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_2_sin_codigo';</script>
+    <script src="_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_2_sin_codigo';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -72,23 +76,19 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -110,22 +110,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,13 +130,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="intro.html">
-  
   
   
   
@@ -156,23 +142,12 @@
       
     
     
-    <img src="_static/logo.jpg" class="logo__image only-light" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>
-    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>`);</script>
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -186,6 +161,7 @@
 <li class="toctree-l1"><a class="reference internal" href="modulo_1.html"><strong>Módulo 1: Fundamentos de Python para análisis de datos</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modulo_2.html"><strong>Módulo 2: Análisis Exploratorio de Datos (EDA)</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modulo_3.html"><strong>Módulo 3: Tratamiento de datos y dataviz interactivo</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="modulo_4.html"><strong>Modulo 5: Despliegue de Dashboard</strong></a></li>
 </ul>
 
     </div>
@@ -201,7 +177,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -210,14 +186,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -339,28 +315,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -408,10 +382,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modulo-2-analisis-exploratorio-de-datos-eda">
-<h1><strong>Módulo 2: Análisis Exploratorio de Datos (EDA)</strong><a class="headerlink" href="#modulo-2-analisis-exploratorio-de-datos-eda" title="Link to this heading">#</a></h1>
+<h1><strong>Módulo 2: Análisis Exploratorio de Datos (EDA)</strong><a class="headerlink" href="#modulo-2-analisis-exploratorio-de-datos-eda" title="Permalink to this heading">#</a></h1>
 <p>Analicemos el siguiente conjunto de datos:</p>
 <p><strong>Contexto empresarial</strong>. Los préstamos entre pares (P2P) en línea han facilitado la práctica de pedir y prestar dinero. En esta forma de préstamo, no hay una entrevista en persona y el prestatario puede simplemente completar un formulario en línea y obtener la aprobación del préstamo. La información proporcionada únicamente por el prestatario es propensa a exageraciones y distorsiones, especialmente cuando se trata de ingresos. Todas las empresas de préstamos entre pares se basan en un procedimiento bien diseñado que rechaza a los prestatarios con una alta probabilidad de no pagar sus deudas.</p>
 <p>Rechazar a cualquier persona que no tenga una fuente de ingresos verificada es una política relevante que las plataformas de préstamos pueden implementar para ayudar a reducir la tasa de préstamos incobrables. Es natural sospechar que si no se puede verificar la fuente de ingresos de una persona, es posible que no pueda pagar el préstamo. Sin embargo, desde la perspectiva de un prestatario, el proceso de verificación puede ser engorroso y llevar mucho tiempo, y es posible que simplemente cambie de plataforma debido a este inconveniente.</p>
@@ -781,9 +755,9 @@ Name: annual_inc, dtype: float64
 </div>
 </div>
 <section id="descriptivo-bivariado">
-<h2><strong>2.1.4. Descriptivo bivariado</strong><a class="headerlink" href="#descriptivo-bivariado" title="Link to this heading">#</a></h2>
+<h2><strong>2.1.4. Descriptivo bivariado</strong><a class="headerlink" href="#descriptivo-bivariado" title="Permalink to this heading">#</a></h2>
 <section id="variable-categorica-vs-variable-numerica">
-<h3><strong>Variable categórica vs variable numérica</strong><a class="headerlink" href="#variable-categorica-vs-variable-numerica" title="Link to this heading">#</a></h3>
+<h3><strong>Variable categórica vs variable numérica</strong><a class="headerlink" href="#variable-categorica-vs-variable-numerica" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># descriptivo ingreso anual según la suscripcion solo una variable</span>
@@ -820,7 +794,7 @@ Fully Paid     42000.0    85000.0
 </div>
 </section>
 <section id="variable-categorica-vs-variable-categorica">
-<h3><strong>Variable categórica vs variable categórica</strong><a class="headerlink" href="#variable-categorica-vs-variable-categorica" title="Link to this heading">#</a></h3>
+<h3><strong>Variable categórica vs variable categórica</strong><a class="headerlink" href="#variable-categorica-vs-variable-categorica" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear la tabla pivote con conteo de personas</span>
@@ -875,7 +849,7 @@ Fully Paid           14449 (87.58%)   8406 (85.61%)  10410 (84.04%)
 </div>
 </section>
 <section id="correlacion">
-<h3><strong>Correlación</strong><a class="headerlink" href="#correlacion" title="Link to this heading">#</a></h3>
+<h3><strong>Correlación</strong><a class="headerlink" href="#correlacion" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importemos</span>
@@ -906,9 +880,9 @@ loan_amnt     0.425268   0.25359   1.000000
 </section>
 </section>
 <section id="distribuciones">
-<h2><strong>2.2. Distribuciones</strong><a class="headerlink" href="#distribuciones" title="Link to this heading">#</a></h2>
+<h2><strong>2.2. Distribuciones</strong><a class="headerlink" href="#distribuciones" title="Permalink to this heading">#</a></h2>
 <section id="comparacion-de-2-grupos-poblacionales-independientes-parametrica">
-<h3><strong>Comparación de 2 grupos poblacionales independientes paramétrica</strong><a class="headerlink" href="#comparacion-de-2-grupos-poblacionales-independientes-parametrica" title="Link to this heading">#</a></h3>
+<h3><strong>Comparación de 2 grupos poblacionales independientes paramétrica</strong><a class="headerlink" href="#comparacion-de-2-grupos-poblacionales-independientes-parametrica" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1248,7 +1222,7 @@ memory usage: 2.0 KB
 </div>
 </section>
 <section id="comparacion-de-2-grupos-poblacionales-dependientes-parametrica-pareadas">
-<h3><strong>Comparación de 2 grupos poblacionales dependientes paramétrica (pareadas)</strong><a class="headerlink" href="#comparacion-de-2-grupos-poblacionales-dependientes-parametrica-pareadas" title="Link to this heading">#</a></h3>
+<h3><strong>Comparación de 2 grupos poblacionales dependientes paramétrica (pareadas)</strong><a class="headerlink" href="#comparacion-de-2-grupos-poblacionales-dependientes-parametrica-pareadas" title="Permalink to this heading">#</a></h3>
 <p>En el contexto de marketing para la banca, este análisis podría utilizarse para evaluar la efectividad de una nueva campaña de marketing o estrategia de promoción. Por ejemplo:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">antes</span></code>: Representa la tasa de conversión de clientes antes de implementar una nueva campaña de marketing.</p></li>
@@ -1888,7 +1862,7 @@ memory usage: 1.1+ KB
 <p>Los resultados sugieren que la intervención realizada en la empresa de agua (por ejemplo, un programa de rotación de puestos o mejora operativa) no tuvo un impacto significativo en la satisfacción del personal, no se evidencia cambios relevantes en los puntajes entre el pretest y el postest tras la implementación del programa.</p>
 </section>
 <section id="anova-para-mas-de-2-grupos-parametricas">
-<h3><strong>ANOVA para mas de 2 grupos paramétricas</strong><a class="headerlink" href="#anova-para-mas-de-2-grupos-parametricas" title="Link to this heading">#</a></h3>
+<h3><strong>ANOVA para mas de 2 grupos paramétricas</strong><a class="headerlink" href="#anova-para-mas-de-2-grupos-parametricas" title="Permalink to this heading">#</a></h3>
 <p>A continuación, te proporciono un ejemplo de datos para un banco con tres grupos de clientes (Clientes A, Clientes B, Clientes C), y la columna satisfaction_score representando un score de satisfacción. Inicialmente importemos los paquetes a usar</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2229,7 +2203,7 @@ Sector Centro   Sector Sur     -3.5 0.5711 -12.0107  5.0107  False
 </div>
 </section>
 <section id="comparacion-de-2-variables-categoricas">
-<h3><strong>Comparación de 2 variables categóricas</strong><a class="headerlink" href="#comparacion-de-2-variables-categoricas" title="Link to this heading">#</a></h3>
+<h3><strong>Comparación de 2 variables categóricas</strong><a class="headerlink" href="#comparacion-de-2-variables-categoricas" title="Permalink to this heading">#</a></h3>
 <p>La comparación de dos variables categóricas se realiza generalmente mediante la creación de una <em>tabla de contingencia</em> que muestre cómo se distribuyen las frecuencias conjuntas de las categorías de ambas variables.</p>
 <p>Una tabla de contingencia es una tabla que muestra la distribución de dos o más variables categóricas, donde cada celda representa la frecuencia conjunta de ocurrencia para una combinación de categorías de las variables. Se utiliza para examinar la relación entre variables categóricas y, en particular, es útil para probar la independencia entre ellas.</p>
 <p>El test de Chi-cuadrado para independencia es una prueba estadística que permite determinar si existe una relación significativa entre dos variables categóricas. Si el valor de la prueba es lo suficientemente grande, se puede rechazar la hipótesis nula de independencia.</p>
@@ -2293,14 +2267,14 @@ Grados de libertad: 2
 </section>
 </section>
 <section id="exploracion-de-datos-con-ydata-profiling">
-<h2><strong>Exploración de Datos con <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code></strong><a class="headerlink" href="#exploracion-de-datos-con-ydata-profiling" title="Link to this heading">#</a></h2>
+<h2><strong>Exploración de Datos con <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code></strong><a class="headerlink" href="#exploracion-de-datos-con-ydata-profiling" title="Permalink to this heading">#</a></h2>
 <section id="que-es-ydata-profiling">
-<h3><strong>¿Qué es <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code>?</strong><a class="headerlink" href="#que-es-ydata-profiling" title="Link to this heading">#</a></h3>
+<h3><strong>¿Qué es <code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code>?</strong><a class="headerlink" href="#que-es-ydata-profiling" title="Permalink to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">ydata-profiling</span></code> es una herramienta de Python que genera <strong>informes exploratorios automáticos y visuales</strong> a partir de un DataFrame de <code class="docutils literal notranslate"><span class="pre">pandas</span></code>.</p>
 <p>Su objetivo es facilitar la <strong>exploración inicial de datos (EDA)</strong>, mostrando estadísticas, valores nulos, duplicados, correlaciones y más, todo en un informe HTML.</p>
 </section>
 <section id="que-incluye-el-informe">
-<h3><strong>¿Qué incluye el informe?</strong><a class="headerlink" href="#que-incluye-el-informe" title="Link to this heading">#</a></h3>
+<h3><strong>¿Qué incluye el informe?</strong><a class="headerlink" href="#que-incluye-el-informe" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Estadísticas descriptivas (media, mediana, desvío estándar, etc.)</p></li>
 <li><p>Detección de valores faltantes y duplicados</p></li>
@@ -2727,12 +2701,16 @@ iVBORw0KGgoAAAANSUhEUgAAAAoAAJcxCAYAAADJ4HBhAABCLUlEQVR4nO3KMWoYQBTFQEe9r5r7N8HG
 
               
               
-              
-              
-                <footer class="prev-next-footer d-print-none">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -2740,7 +2718,6 @@ iVBORw0KGgoAAAANSUhEUgAAAAoAAJcxCAYAAADJ4HBhAABCLUlEQVR4nO3KMWoYQBTFQEe9r5r7N8HG
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2787,7 +2764,6 @@ By Carlos de Oro Aguado
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
       © Copyright 2026, Msc Carlos de Oro Aguado.
@@ -2814,8 +2790,8 @@ By Carlos de Oro Aguado
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Módulo 3: Visualización de datos interactivos &#8212; Ciencia de datos con Python para la toma de decisiones</title>
   
@@ -14,55 +15,58 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=6c7211e7" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_3_sin_codigo';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -74,23 +78,19 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -112,22 +112,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -142,13 +132,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="intro.html">
-  
   
   
   
@@ -158,23 +144,12 @@
       
     
     
-    <img src="_static/logo.jpg" class="logo__image only-light" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>
-    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Ciencia de datos con Python para la toma de decisiones - Home"/>`);</script>
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -188,6 +163,7 @@
 <li class="toctree-l1"><a class="reference internal" href="modulo_1.html"><strong>Módulo 1: Fundamentos de Python para análisis de datos</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modulo_2.html"><strong>Módulo 2: Análisis Exploratorio de Datos (EDA)</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modulo_3.html"><strong>Módulo 3: Tratamiento de datos y dataviz interactivo</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="modulo_4.html"><strong>Modulo 5: Despliegue de Dashboard</strong></a></li>
 </ul>
 
     </div>
@@ -203,7 +179,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -212,14 +188,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -341,28 +317,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -391,7 +365,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-atipicos"><strong>Tratamiento de datos atípicos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr"><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento"><strong>Tratamiento</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-atipicos"><strong>Eliminación de datos atípicos</strong></a></li>
 </ul>
@@ -401,21 +374,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva"><strong>Visualización interactiva</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aspecto-claves-de-las-visualizaciones-interactivas"><strong>Aspecto claves de las visualizaciones interactivas</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-nuestro-dataset"><strong>Preparación de nuestro dataset</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-del-grafico-estatico-con-visualizacion-interactiva"><strong>Creación del gráfico estático con visualización interactiva</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadiendo-la-herramienta-hover"><strong>Añadiendo la herramienta Hover</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadiendo-un-slicer-al-grafico-estatico"><strong>Añadiendo un slicer al gráfico estático</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-datos-a-traves-de-capas"><strong>Visualización de datos a través de capas</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcionalidad-hover-y-tooltip"><strong>Funcionalidad Hover y Tooltip</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccion-de-los-valores-de-una-variable-categorica"><strong>Selección de los valores de una variable categórica</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-de-zoom-en-un-mapa-de-calor-estatico"><strong>Función de zoom en un mapa de calor estático</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor"><strong>Dinámica de un gráfico de barras y un mapa de calor</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos"><strong>Visualización interactiva de mapas con datos geográficos</strong></a><ul class="nav section-nav flex-column">
@@ -434,12 +392,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modulo-3-visualizacion-de-datos-interactivos">
-<h1><strong>Módulo 3: Visualización de datos interactivos</strong><a class="headerlink" href="#modulo-3-visualizacion-de-datos-interactivos" title="Link to this heading">#</a></h1>
+<h1><strong>Módulo 3: Visualización de datos interactivos</strong><a class="headerlink" href="#modulo-3-visualizacion-de-datos-interactivos" title="Permalink to this heading">#</a></h1>
 <section id="tratamiento-de-datos-faltantes-y-atipicos">
-<h2><strong>Tratamiento de datos faltantes y atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-faltantes-y-atipicos" title="Link to this heading">#</a></h2>
+<h2><strong>Tratamiento de datos faltantes y atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-faltantes-y-atipicos" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -483,7 +441,7 @@ document.write(`
 </div>
 </div>
 <section id="eliminacion-de-datos-faltantes">
-<h3><strong>Eliminación de datos faltantes</strong><a class="headerlink" href="#eliminacion-de-datos-faltantes" title="Link to this heading">#</a></h3>
+<h3><strong>Eliminación de datos faltantes</strong><a class="headerlink" href="#eliminacion-de-datos-faltantes" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Coloquemos un umbral</span>
@@ -658,9 +616,9 @@ Valor p: 1.0
 </div>
 </section>
 <section id="imputacion-de-datos-faltantes">
-<h3><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Link to this heading">#</a></h3>
+<h3><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Permalink to this heading">#</a></h3>
 <section id="datos-categoricos">
-<h4><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Link to this heading">#</a></h4>
+<h4><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Usando la <strong>moda</strong>:</p></li>
 </ol>
@@ -701,7 +659,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="datos-numericos">
-<h4><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Link to this heading">#</a></h4>
+<h4><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Usando <strong>la media o el promedio</strong></p></li>
 </ol>
@@ -751,7 +709,7 @@ Valor p: 1.0
 </section>
 </section>
 <section id="tratamiento-de-datos-atipicos">
-<h3><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Link to this heading">#</a></h3>
+<h3><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Permalink to this heading">#</a></h3>
 <p>Vamos a crear un gráfico de caja para comprobar si nuestro conjunto de datos contiene valores atípicos. Vamos a utilizar el conjunto de datos <code class="docutils literal notranslate"><span class="pre">gym.csv</span></code>, que contiene información sobre los clientes de un determinado gimnasio.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -797,45 +755,10 @@ Valor p: 1.0
 </div>
 </div>
 </div>
-<section id="deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr">
-<h4><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr" title="Link to this heading">#</a></h4>
-<p>Valores fuera de 1.5 veces el rango intercuartil son atípicos.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lista para almacenar los valores atípicos detectados</span>
-<span class="n">outliers</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1"># Función para detectar valores atípicos utilizando el rango intercuartil (IQR)</span>
-<span class="k">def</span> <span class="nf">detect_outliers_iqr</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># Ordenar los datos de menor a mayor</span>
-    <span class="n">q1</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI  # Calcular el primer cuartil (Q1)</span>
-    <span class="n">q3</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI  # Calcular el tercer cuartil (Q3)</span>
-    <span class="n">IQR</span> <span class="o">=</span> <span class="n">q3</span> <span class="o">-</span> <span class="n">q1</span>  <span class="c1"># Calcular el rango intercuartil (IQR)</span>
-    
-    <span class="c1"># Definir los límites inferior y superior para identificar atípicos</span>
-    <span class="n">lwr_bound</span> <span class="o">=</span>  <span class="c1"># TU CODIGO AQUI  # Límite inferior</span>
-    <span class="n">upr_bound</span> <span class="o">=</span>  <span class="c1"># TU CODIGO AQUI  # Límite superior</span>
-    
-    <span class="c1"># Iterar a través de los datos para detectar valores fuera de los límites</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">lwr_bound</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">upr_bound</span><span class="p">:</span>  <span class="c1"># Si el valor está fuera de los límites, es un valor atípico</span>
-            <span class="n">outliers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Añadir el valor atípico a la lista</span>
-    <span class="k">return</span> <span class="n">outliers</span>  <span class="c1"># Retornar la lista de valores atípicos</span>
-
-<span class="c1"># Aplicar la función a la columna &#39;weight&#39; del DataFrame gym</span>
-<span class="n">sample_outliers</span> <span class="o">=</span> <span class="n">detect_outliers_iqr</span><span class="p">(</span><span class="n">gym</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span>
-
-<span class="c1"># Imprimir los valores atípicos detectados utilizando el método del rango intercuartil (IQR)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valores atípicos detectados por el método del IQR:&quot;</span><span class="p">,</span> <span class="n">sample_outliers</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
 <section id="tratamiento">
-<h4><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Link to this heading">#</a></h4>
+<h4><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Permalink to this heading">#</a></h4>
 <section id="eliminacion-de-datos-atipicos">
-<h5><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Link to this heading">#</a></h5>
+<h5><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Permalink to this heading">#</a></h5>
 <p>Eliminaremos el dato que contiene el valor atípico del conjunto de datos utilizado previamente y, a continuación, visualizaremos el nuevo conjunto de datos mediante un gráfico de caja actualizado.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -885,7 +808,7 @@ Valor p: 1.0
 </section>
 </section>
 <section id="aplicacion-de-iterativeimputer">
-<h3><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Link to this heading">#</a></h3>
+<h3><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -969,7 +892,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="iterativeimputer-y-evaluacion-de-modelos">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Link to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
@@ -1006,7 +929,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="iterativeimputer-y-diferentes-ordenes-de-imputacion">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Link to this heading">#</a></h3>
+<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
@@ -1085,970 +1008,10 @@ Valor p: 1.0
 </div>
 </section>
 </section>
-<section id="visualizacion-interactiva">
-<h2><strong>Visualización interactiva</strong><a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
-<section id="aspecto-claves-de-las-visualizaciones-interactivas">
-<h3><strong>Aspecto claves de las visualizaciones interactivas</strong><a class="headerlink" href="#aspecto-claves-de-las-visualizaciones-interactivas" title="Link to this heading">#</a></h3>
-<p>El aspecto clave de las visualizaciones de datos interactivas es su capacidad de responder y adaptarse a las entradas del usuario en tiempo real o en intervalos muy cortos. A continuación, se exploran algunas de las principales entradas humanas, cómo se integran en las visualizaciones y el impacto que tienen en la comprensión de los datos:</p>
-</section>
-<section id="preparacion-de-nuestro-dataset">
-<h3><strong>Preparación de nuestro dataset</strong><a class="headerlink" href="#preparacion-de-nuestro-dataset" title="Link to this heading">#</a></h3>
-<p>Descargaremos y prepararemos nuestro conjunto de datos utilizando las bibliotecas de Python <code class="docutils literal notranslate"><span class="pre">pandas</span></code> y <code class="docutils literal notranslate"><span class="pre">numpy</span></code>. Al final de este ejercicio, tendremos un <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> listo para la creación de nuestras visualizaciones de datos interactivas. Utilizaremos dos archivos de datos: <code class="docutils literal notranslate"><span class="pre">co2.csv</span></code>, que contiene información sobre las emisiones de dióxido de carbono por persona, año y país, y <code class="docutils literal notranslate"><span class="pre">gapminder.csv</span></code>, que registra el PIB por año y país.</p>
-<ol class="arabic simple">
-<li><p>Importar las bibliotecas necesarias:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>Utilizaremos el path único para cargar los archivos de datos directamente en DataFrames:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url_co2</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-<span class="n">co2</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-<span class="n">co2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co2</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url_gm</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-<span class="n">gm</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-<span class="n">gm</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gm</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gm</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="c1"># TU CODIGO AQUI</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Creamos un nuevo <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> <code class="docutils literal notranslate"><span class="pre">df_gm</span></code> que contenga solo las columnas <em>Country</em> y <em>region</em>, y eliminamos duplicados:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_gm</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-<span class="n">df_gm</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="4">
-<li><p>Utilice <code class="docutils literal notranslate"><span class="pre">.merge()</span></code> para combinar el DataFrame <code class="docutils literal notranslate"><span class="pre">co2</span></code> con el DataFrame <code class="docutils literal notranslate"><span class="pre">df_gm</span></code>.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fusionamos el DataFrame &#39;co2&#39; con el DataFrame &#39;df_gm&#39; utilizando &#39;country&#39; y &#39;Country&#39; como claves</span>
-<span class="c1"># La fusión es interna (&#39;inner join&#39;) para mantener solo las filas comunes a ambos DataFrames</span>
-<span class="n">df_w_regions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">co2</span><span class="p">,</span> <span class="n">df_gm</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
-
-<span class="c1"># Eliminamos la columna duplicada &#39;Country&#39; ya que &#39;country&#39; contiene la misma información</span>
-<span class="n">df_w_regions</span> <span class="o">=</span> <span class="n">df_w_regions</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span>
-
-<span class="c1"># Mostramos las primeras 5 filas del DataFrame resultante para verificar la fusión</span>
-<span class="n">df_w_regions</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="5">
-<li><p>A continuación, aplicaremos la función <code class="docutils literal notranslate"><span class="pre">.melt()</span></code> al DataFrame y almacenaremos el resultado en un nuevo DataFrame llamado <code class="docutils literal notranslate"><span class="pre">new_co2</span></code>.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Aplicamos la función pd.melt() al DataFrame &#39;df_w_regions&#39;</span>
-<span class="c1"># &#39;id_vars&#39; indica las columnas que queremos mantener como identificadoras (en este caso, &#39;country&#39; y &#39;region&#39;)</span>
-<span class="c1"># El resto de las columnas (años) se transforman en una sola columna &#39;variable&#39; con sus respectivos valores en otra columna &#39;value&#39;</span>
-<span class="n">new_co2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df_w_regions</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="s1">&#39;region&#39;</span><span class="p">])</span>
-
-<span class="c1"># Renombramos las columnas del DataFrame resultante para mayor claridad</span>
-<span class="c1"># &#39;variable&#39; ahora se llamará &#39;year&#39; para representar los años, y &#39;value&#39; se renombra a &#39;co2&#39; para las emisiones de CO2</span>
-<span class="n">new_co2</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;region&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;co2&#39;</span><span class="p">]</span>
-
-<span class="c1"># muestra las 5 primeras</span>
-<span class="n">new_co2</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="6">
-<li><p>Estableceremos un límite inferior de 1964 en la columna <em>year</em> del DataFrame <code class="docutils literal notranslate"><span class="pre">new_co2</span></code>, filtrando los datos para mantener únicamente los años posteriores a 1963, y convertiremos los valores de esta columna al tipo <code class="docutils literal notranslate"><span class="pre">int64</span></code> utilizando <code class="docutils literal notranslate"><span class="pre">.astype('int64')</span></code>. El resultado se almacenará en un nuevo DataFrame llamado <code class="docutils literal notranslate"><span class="pre">df_co2</span></code>, que luego se ordenará por las columnas <code class="docutils literal notranslate"><span class="pre">['country',</span> <span class="pre">'year']</span></code> utilizando <code class="docutils literal notranslate"><span class="pre">.sort_values()</span></code> para garantizar que los datos estén organizados por país y año de manera coherente y lista para análisis posteriores.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filtramos el DataFrame &#39;new_co2&#39; para mantener solo los registros donde el valor de &#39;year&#39; es mayor a 1963</span>
-<span class="c1"># Convertimos los valores de la columna &#39;year&#39; al tipo int64 para asegurar que los años sean tratados como enteros</span>
-<span class="c1"># Luego, ordenamos el DataFrame resultante por las columnas &#39;country&#39; y &#39;year&#39;</span>
-<span class="n">df_co2</span> <span class="o">=</span> <span class="n">new_co2</span><span class="p">[</span><span class="n">new_co2</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1963</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">])</span>
-
-<span class="c1"># Convertimos nuevamente la columna &#39;year&#39; al tipo int64 para asegurarnos de que los valores tengan el formato adecuado</span>
-<span class="n">df_co2</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-
-<span class="c1"># Mostramos las primeras 5 filas del DataFrame &#39;df_co2&#39; para verificar que todo se ha realizado correctamente</span>
-<span class="n">df_co2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="7">
-<li><p>Creamos un nuevo DataFrame <code class="docutils literal notranslate"><span class="pre">df_gdp</span></code> que contenga las columnas <em>country</em>, <em>year</em> y <em>gdp</em> del DataFrame <code class="docutils literal notranslate"><span class="pre">gm</span></code>:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Seleccionamos las columnas &#39;Country&#39;, &#39;Year&#39; y &#39;gdp&#39; del DataFrame &#39;gm&#39;</span>
-<span class="c1"># Estas columnas contienen la información del país, año y PIB (gdp)</span>
-<span class="n">df_gdp</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-
-<span class="c1"># Renombramos las columnas para mantener consistencia en el formato</span>
-<span class="c1"># Cambiamos &#39;Country&#39; a &#39;country&#39; y &#39;Year&#39; a &#39;year&#39; para alinearlas con el formato del DataFrame &#39;df_co2&#39;</span>
-<span class="n">df_gdp</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="s1">&#39;gdp&#39;</span><span class="p">]</span>
-
-<span class="c1"># Mostramos las primeras 5 filas del DataFrame &#39;df_gdp&#39; para verificar que los nombres de columnas y los datos son correctos</span>
-<span class="n">df_gdp</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="8">
-<li><p>Identificamos las columnas con valores faltantes en ambos DataFrames:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_co2</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TU CODIGO AQUI</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="9">
-<li><p>Fusionamos los DataFrames <code class="docutils literal notranslate"><span class="pre">df_co2</span></code> y <code class="docutils literal notranslate"><span class="pre">df_gdp</span></code> en las columnas <em>country</em> y <em>year</em>, y eliminamos los valores faltantes:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combinamos los DataFrames &#39;df_co2&#39; y &#39;df_gdp&#39; utilizando un &#39;merge&#39; en las columnas &#39;country&#39; y &#39;year&#39;</span>
-<span class="c1"># Se utiliza &#39;how=left&#39; para hacer un left join, lo que asegura que se mantengan todos los registros de &#39;df_co2&#39;</span>
-<span class="c1"># y solo se añadan los datos de &#39;gdp&#39; donde haya coincidencias en país y año</span>
-<span class="n">data</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-
-<span class="c1"># Eliminamos las filas que contienen valores NaN en cualquier columna utilizando &#39;dropna()&#39;</span>
-<span class="c1"># Esto es necesario para asegurarnos de que trabajamos solo con datos completos</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-
-<span class="c1"># Mostramos las primeras 5 filas del DataFrame &#39;data&#39; para verificar que la combinación y la limpieza se realizaron correctamente</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="10">
-<li><p>Por último, comprobemos la correlación entre las emisiones de dióxido de carbono y el PIB para asegurarnos de que estamos analizando datos que merecen ser visualizados. Crea un array numpy con las columnas <code class="docutils literal notranslate"><span class="pre">co2</span></code> y <code class="docutils literal notranslate"><span class="pre">gdp</span></code>:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convertimos la columna &#39;co2&#39; del DataFrame &#39;data&#39; en un array de NumPy</span>
-<span class="c1"># Esto facilita la manipulación y el cálculo de correlaciones entre los valores</span>
-<span class="n">np_co2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">])</span>
-
-<span class="c1"># Convertimos la columna &#39;gdp&#39; del DataFrame &#39;data&#39; en un array de NumPy</span>
-<span class="c1"># Este paso es similar al anterior para preparar los datos para el análisis</span>
-<span class="n">np_gdp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;gdp&#39;</span><span class="p">])</span>
-
-<span class="c1"># Calculamos el coeficiente de correlación entre los arrays &#39;np_co2&#39; y &#39;np_gdp&#39;</span>
-<span class="c1"># Utilizamos la función &#39;corrcoef()&#39; de NumPy, que devuelve una matriz de correlación</span>
-<span class="c1"># El valor en la posición [0, 1] o [1, 0] será el coeficiente de correlación entre &#39;co2&#39; y &#39;gdp&#39;</span>
-<span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]),</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;gdp&#39;</span><span class="p">]))</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>El resultado muestra una correlación significativa (0.78) entre las emisiones de CO2 y el PIB, lo que indica que estos datos son adecuados para un análisis más profundo y visualización interactiva.</p>
-</section>
-<section id="creacion-del-grafico-estatico-con-visualizacion-interactiva">
-<h3><strong>Creación del gráfico estático con visualización interactiva</strong><a class="headerlink" href="#creacion-del-grafico-estatico-con-visualizacion-interactiva" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importamos la función &#39;curdoc&#39; que maneja el documento gráfico actual en Bokeh</span>
-<span class="kn">from</span> <span class="nn">bokeh.io</span> <span class="kn">import</span> <span class="n">curdoc</span><span class="p">,</span> <span class="n">output_notebook</span>
-
-<span class="c1"># Importamos las herramientas y métodos de Bokeh para crear interactividad</span>
-<span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="kn">import</span> <span class="n">HoverTool</span><span class="p">,</span> <span class="n">ColumnDataSource</span><span class="p">,</span> <span class="n">CategoricalColorMapper</span><span class="p">,</span> <span class="n">Slider</span><span class="p">,</span> <span class="n">CustomJS</span>
-
-<span class="c1"># Importamos la paleta de colores &#39;Spectral6&#39; que usaremos para colorear las regiones</span>
-<span class="kn">from</span> <span class="nn">bokeh.palettes</span> <span class="kn">import</span> <span class="n">Spectral6</span>
-
-<span class="c1"># Importamos &#39;widgetbox&#39; para agrupar herramientas, y &#39;row&#39; para organizar objetos visuales en filas</span>
-<span class="kn">from</span> <span class="nn">bokeh.layouts</span> <span class="kn">import</span> <span class="n">row</span><span class="p">,</span> <span class="n">column</span>
-
-<span class="c1"># Importamos la clase &#39;Figure&#39; para crear gráficos en Bokeh</span>
-<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">output_file</span>
-
-<span class="c1"># Importamos &#39;interact&#39; para permitir la interactividad en el Jupyter notebook</span>
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Ejecutamos la función <code class="docutils literal notranslate"><span class="pre">output_notebook()</span></code> para cargar BokehJS, lo que permite que las visualizaciones se muestren dentro del Jupyter notebook.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Carga BokehJS en el entorno del notebook</span>
-<span class="n">output_notebook</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">    <style>
-        .bk-notebook-logo {
-            display: block;
-            width: 20px;
-            height: 20px;
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAOkSURBVDiNjZRtaJVlGMd/1/08zzln5zjP1LWcU9N0NkN8m2CYjpgQYQXqSs0I84OLIC0hkEKoPtiH3gmKoiJDU7QpLgoLjLIQCpEsNJ1vqUOdO7ppbuec5+V+rj4ctwzd8IIbbi6u+8f1539dt3A78eXC7QizUF7gyV1fD1Yqg4JWz84yffhm0qkFqBogB9rM8tZdtwVsPUhWhGcFJngGeWrPzHm5oaMmkfEg1usvLFyc8jLRqDOMru7AyC8saQr7GG7f5fvDeH7Ej8CM66nIF+8yngt6HWaKh7k49Soy9nXurCi1o3qUbS3zWfrYeQDTB/Qj6kX6Ybhw4B+bOYoLKCC9H3Nu/leUTZ1JdRWkkn2ldcCamzrcf47KKXdAJllSlxAOkRgyHsGC/zRday5Qld9DyoM4/q/rUoy/CXh3jzOu3bHUVZeU+DEn8FInkPBFlu3+nW3Nw0mk6vCDiWg8CeJaxEwuHS3+z5RgY+YBR6V1Z1nxSOfoaPa4LASWxxdNp+VWTk7+4vzaou8v8PN+xo+KY2xsw6une2frhw05CTYOmQvsEhjhWjn0bmXPjpE1+kplmmkP3suftwTubK9Vq22qKmrBhpY4jvd5afdRA3wGjFAgcnTK2s4hY0/GPNIb0nErGMCRxWOOX64Z8RAC4oCXdklmEvcL8o0BfkNK4lUg9HTl+oPlQxdNo3Mg4Nv175e/1LDGzZen30MEjRUtmXSfiTVu1kK8W4txyV6BMKlbgk3lMwYCiusNy9fVfvvwMxv8Ynl6vxoByANLTWplvuj/nF9m2+PDtt1eiHPBr1oIfhCChQMBw6Aw0UulqTKZdfVvfG7VcfIqLG9bcldL/+pdWTLxLUy8Qq38heUIjh4XlzZxzQm19lLFlr8vdQ97rjZVOLf8nclzckbcD4wxXMidpX30sFd37Fv/GtwwhzhxGVAprjbg0gCAEeIgwCZyTV2Z1REEW8O4py0wsjeloKoMr6iCY6dP92H6Vw/oTyICIthibxjm/DfN9lVz8IqtqKYLUXfoKVMVQVVJOElGjrnnUt9T9wbgp8AyYKaGlqingHZU/uG2NTZSVqwHQTWkx9hxjkpWDaCg6Ckj5qebgBVbT3V3NNXMSiWSDdGV3hrtzla7J+duwPOToIg42ChPQOQjspnSlp1V+Gjdged7+8UN5CRAV7a5EdFNwCjEaBR27b3W890TE7g24NAP/mMDXRWrGoFPQI9ls/MWO2dWFAar/xcOIImbbpA3zgAAAABJRU5ErkJggg==);
-        }
-    </style>
-    <div>
-        <a href="https://bokeh.org" target="_blank" class="bk-notebook-logo"></a>
-        <span id="d8b5e140-305d-4745-83ec-8691be786eb5">Loading BokehJS ...</span>
-    </div>
-</div><script type="application/javascript">'use strict';
-(function(root) {
-  function now() {
-    return new Date();
-  }
-
-  const force = true;
-
-  if (typeof root._bokeh_onload_callbacks === "undefined" || force === true) {
-    root._bokeh_onload_callbacks = [];
-    root._bokeh_is_loading = undefined;
-  }
-
-const JS_MIME_TYPE = 'application/javascript';
-  const HTML_MIME_TYPE = 'text/html';
-  const EXEC_MIME_TYPE = 'application/vnd.bokehjs_exec.v0+json';
-  const CLASS_NAME = 'output_bokeh rendered_html';
-
-  /**
-   * Render data to the DOM node
-   */
-  function render(props, node) {
-    const script = document.createElement("script");
-    node.appendChild(script);
-  }
-
-  /**
-   * Handle when an output is cleared or removed
-   */
-  function handleClearOutput(event, handle) {
-    function drop(id) {
-      const view = Bokeh.index.get_by_id(id)
-      if (view != null) {
-        view.model.document.clear()
-        Bokeh.index.delete(view)
-      }
-    }
-
-    const cell = handle.cell;
-
-    const id = cell.output_area._bokeh_element_id;
-    const server_id = cell.output_area._bokeh_server_id;
-
-    // Clean up Bokeh references
-    if (id != null) {
-      drop(id)
-    }
-
-    if (server_id !== undefined) {
-      // Clean up Bokeh references
-      const cmd_clean = "from bokeh.io.state import curstate; print(curstate().uuid_to_server['" + server_id + "'].get_sessions()[0].document.roots[0]._id)";
-      cell.notebook.kernel.execute(cmd_clean, {
-        iopub: {
-          output: function(msg) {
-            const id = msg.content.text.trim()
-            drop(id)
-          }
-        }
-      });
-      // Destroy server and session
-      const cmd_destroy = "import bokeh.io.notebook as ion; ion.destroy_server('" + server_id + "')";
-      cell.notebook.kernel.execute(cmd_destroy);
-    }
-  }
-
-  /**
-   * Handle when a new output is added
-   */
-  function handleAddOutput(event, handle) {
-    const output_area = handle.output_area;
-    const output = handle.output;
-
-    // limit handleAddOutput to display_data with EXEC_MIME_TYPE content only
-    if ((output.output_type != "display_data") || (!Object.prototype.hasOwnProperty.call(output.data, EXEC_MIME_TYPE))) {
-      return
-    }
-
-    const toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
-
-    if (output.metadata[EXEC_MIME_TYPE]["id"] !== undefined) {
-      toinsert[toinsert.length - 1].firstChild.textContent = output.data[JS_MIME_TYPE];
-      // store reference to embed id on output_area
-      output_area._bokeh_element_id = output.metadata[EXEC_MIME_TYPE]["id"];
-    }
-    if (output.metadata[EXEC_MIME_TYPE]["server_id"] !== undefined) {
-      const bk_div = document.createElement("div");
-      bk_div.innerHTML = output.data[HTML_MIME_TYPE];
-      const script_attrs = bk_div.children[0].attributes;
-      for (let i = 0; i < script_attrs.length; i++) {
-        toinsert[toinsert.length - 1].firstChild.setAttribute(script_attrs[i].name, script_attrs[i].value);
-        toinsert[toinsert.length - 1].firstChild.textContent = bk_div.children[0].textContent
-      }
-      // store reference to server id on output_area
-      output_area._bokeh_server_id = output.metadata[EXEC_MIME_TYPE]["server_id"];
-    }
-  }
-
-  function register_renderer(events, OutputArea) {
-
-    function append_mime(data, metadata, element) {
-      // create a DOM node to render to
-      const toinsert = this.create_output_subarea(
-        metadata,
-        CLASS_NAME,
-        EXEC_MIME_TYPE
-      );
-      this.keyboard_manager.register_events(toinsert);
-      // Render to node
-      const props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
-      render(props, toinsert[toinsert.length - 1]);
-      element.append(toinsert);
-      return toinsert
-    }
-
-    /* Handle when an output is cleared or removed */
-    events.on('clear_output.CodeCell', handleClearOutput);
-    events.on('delete.Cell', handleClearOutput);
-
-    /* Handle when a new output is added */
-    events.on('output_added.OutputArea', handleAddOutput);
-
-    /**
-     * Register the mime type and append_mime function with output_area
-     */
-    OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
-      /* Is output safe? */
-      safe: true,
-      /* Index of renderer in `output_area.display_order` */
-      index: 0
-    });
-  }
-
-  // register the mime type if in Jupyter Notebook environment and previously unregistered
-  if (root.Jupyter !== undefined) {
-    const events = require('base/js/events');
-    const OutputArea = require('notebook/js/outputarea').OutputArea;
-
-    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
-      register_renderer(events, OutputArea);
-    }
-  }
-  if (typeof (root._bokeh_timeout) === "undefined" || force === true) {
-    root._bokeh_timeout = Date.now() + 5000;
-    root._bokeh_failed_load = false;
-  }
-
-  const NB_LOAD_WARNING = {'data': {'text/html':
-     "<div style='background-color: #fdd'>\n"+
-     "<p>\n"+
-     "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
-     "may be due to a slow or bad network connection. Possible fixes:\n"+
-     "</p>\n"+
-     "<ul>\n"+
-     "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
-     "<li>use INLINE resources instead, as so:</li>\n"+
-     "</ul>\n"+
-     "<code>\n"+
-     "from bokeh.resources import INLINE\n"+
-     "output_notebook(resources=INLINE)\n"+
-     "</code>\n"+
-     "</div>"}};
-
-  function display_loaded(error = null) {
-    const el = document.getElementById("d8b5e140-305d-4745-83ec-8691be786eb5");
-    if (el != null) {
-      const html = (() => {
-        if (typeof root.Bokeh === "undefined") {
-          if (error == null) {
-            return "BokehJS is loading ...";
-          } else {
-            return "BokehJS failed to load.";
-          }
-        } else {
-          const prefix = `BokehJS ${root.Bokeh.version}`;
-          if (error == null) {
-            return `${prefix} successfully loaded.`;
-          } else {
-            return `${prefix} <b>encountered errors</b> while loading and may not function as expected.`;
-          }
-        }
-      })();
-      el.innerHTML = html;
-
-      if (error != null) {
-        const wrapper = document.createElement("div");
-        wrapper.style.overflow = "auto";
-        wrapper.style.height = "5em";
-        wrapper.style.resize = "vertical";
-        const content = document.createElement("div");
-        content.style.fontFamily = "monospace";
-        content.style.whiteSpace = "pre-wrap";
-        content.style.backgroundColor = "rgb(255, 221, 221)";
-        content.textContent = error.stack ?? error.toString();
-        wrapper.append(content);
-        el.append(wrapper);
-      }
-    } else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(() => display_loaded(error), 100);
-    }
-  }
-
-  function run_callbacks() {
-    try {
-      root._bokeh_onload_callbacks.forEach(function(callback) {
-        if (callback != null)
-          callback();
-      });
-    } finally {
-      delete root._bokeh_onload_callbacks
-    }
-    console.debug("Bokeh: all callbacks have finished");
-  }
-
-  function load_libs(css_urls, js_urls, callback) {
-    if (css_urls == null) css_urls = [];
-    if (js_urls == null) js_urls = [];
-
-    root._bokeh_onload_callbacks.push(callback);
-    if (root._bokeh_is_loading > 0) {
-      console.debug("Bokeh: BokehJS is being loaded, scheduling callback at", now());
-      return null;
-    }
-    if (js_urls == null || js_urls.length === 0) {
-      run_callbacks();
-      return null;
-    }
-    console.debug("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
-    root._bokeh_is_loading = css_urls.length + js_urls.length;
-
-    function on_load() {
-      root._bokeh_is_loading--;
-      if (root._bokeh_is_loading === 0) {
-        console.debug("Bokeh: all BokehJS libraries/stylesheets loaded");
-        run_callbacks()
-      }
-    }
-
-    function on_error(url) {
-      console.error("failed to load " + url);
-    }
-
-    for (let i = 0; i < css_urls.length; i++) {
-      const url = css_urls[i];
-      const element = document.createElement("link");
-      element.onload = on_load;
-      element.onerror = on_error.bind(null, url);
-      element.rel = "stylesheet";
-      element.type = "text/css";
-      element.href = url;
-      console.debug("Bokeh: injecting link tag for BokehJS stylesheet: ", url);
-      document.body.appendChild(element);
-    }
-
-    for (let i = 0; i < js_urls.length; i++) {
-      const url = js_urls[i];
-      const element = document.createElement('script');
-      element.onload = on_load;
-      element.onerror = on_error.bind(null, url);
-      element.async = false;
-      element.src = url;
-      console.debug("Bokeh: injecting script tag for BokehJS library: ", url);
-      document.head.appendChild(element);
-    }
-  };
-
-  function inject_raw_css(css) {
-    const element = document.createElement("style");
-    element.appendChild(document.createTextNode(css));
-    document.body.appendChild(element);
-  }
-
-  const js_urls = ["https://cdn.bokeh.org/bokeh/release/bokeh-3.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-gl-3.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-tables-3.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-3.4.3.min.js"];
-  const css_urls = [];
-
-  const inline_js = [    function(Bokeh) {
-      Bokeh.set_log_level("info");
-    },
-function(Bokeh) {
-    }
-  ];
-
-  function run_inline_js() {
-    if (root.Bokeh !== undefined || force === true) {
-      try {
-            for (let i = 0; i < inline_js.length; i++) {
-      inline_js[i].call(root, root.Bokeh);
-    }
-
-      } catch (error) {display_loaded(error);throw error;
-      }if (force === true) {
-        display_loaded();
-      }} else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(run_inline_js, 100);
-    } else if (!root._bokeh_failed_load) {
-      console.log("Bokeh: BokehJS failed to load within specified timeout.");
-      root._bokeh_failed_load = true;
-    } else if (force !== true) {
-      const cell = $(document.getElementById("d8b5e140-305d-4745-83ec-8691be786eb5")).parents('.cell').data().cell;
-      cell.output_area.append_execute_result(NB_LOAD_WARNING)
-    }
-  }
-
-  if (root._bokeh_is_loading === 0) {
-    console.debug("Bokeh: BokehJS loaded, going straight to plotting");
-    run_inline_js();
-  } else {
-    load_libs(css_urls, js_urls, function() {
-      console.debug("Bokeh: BokehJS plotting callback run at", now());
-      run_inline_js();
-    });
-  }
-}(window));</script></div>
-</div>
-<ol class="arabic simple" start="4">
-<li><p>Vamos a codificar los puntos de datos (países) por color, dependiendo de la región a la que pertenezcan. Primero, crearemos una lista única de regiones a partir del DataFrame <code class="docutils literal notranslate"><span class="pre">data</span></code>, y luego utilizaremos <code class="docutils literal notranslate"><span class="pre">CategoricalColorMapper</span></code> para asignar un color a cada región.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creamos una lista de regiones únicas a partir de la columna &#39;region&#39; del DataFrame &#39;data&#39;</span>
-<span class="n">regions_list</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-
-<span class="c1"># Usamos &#39;CategoricalColorMapper&#39; para asignar un color de la paleta &#39;Spectral6&#39; a cada región</span>
-<span class="n">color_mapper</span> <span class="o">=</span> <span class="n">CategoricalColorMapper</span><span class="p">(</span><span class="n">factors</span><span class="o">=</span><span class="n">regions_list</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">Spectral6</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="5">
-<li><p>Utilizaremos la función <code class="docutils literal notranslate"><span class="pre">ColumnDataSource</span></code> para construir un diccionario que contendrá las variables utilizadas en la gráfica, al que llamaremos <strong>source_init</strong>. Además, crearemos otro diccionario llamado <strong>source_last</strong>, que nos permitirá actualizar la gráfica de manera dinámica a medida que se visualicen los datos por año. Este enfoque nos ayudará a gestionar eficientemente los datos y actualizar la visualización de manera interactiva.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear el ColumnDataSource inicial con datos del primer año disponible</span>
-<span class="n">source_init</span> <span class="o">=</span> <span class="n">ColumnDataSource</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span>
-    <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">gdp</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">)],</span>        <span class="c1"># Eje X: PIB del año mínimo</span>
-    <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">co2</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">)],</span>       <span class="c1"># Eje Y: emisiones de CO₂ del año mínimo</span>
-    <span class="s1">&#39;country&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">country</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">)],</span>  <span class="c1"># País correspondiente</span>
-    <span class="s1">&#39;region&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">region</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">)],</span>    <span class="c1"># Región correspondiente</span>
-    <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">)]</span>         <span class="c1"># Año (mínimo en el dataset)</span>
-<span class="p">})</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">source_last</span> <span class="o">=</span> <span class="n">ColumnDataSource</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">gdp</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">co2</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">})</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="6">
-<li><p>Creamos una figura inicial vacía con las siguientes configuraciones:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Establecemos el título como <code class="docutils literal notranslate"><span class="pre">Emisiones</span> <span class="pre">de</span> <span class="pre">CO2</span> <span class="pre">versus</span> <span class="pre">PIB</span> <span class="pre">en</span> <span class="pre">1964</span></code>.</p></li>
-<li><p>Definimos el rango del eje <code class="docutils literal notranslate"><span class="pre">x</span></code> desde <code class="docutils literal notranslate"><span class="pre">xmin</span></code> hasta <code class="docutils literal notranslate"><span class="pre">xmax</span></code>.</p></li>
-<li><p>Configuramos el rango del eje <code class="docutils literal notranslate"><span class="pre">y</span></code> desde <code class="docutils literal notranslate"><span class="pre">ymin</span></code> hasta <code class="docutils literal notranslate"><span class="pre">ymax</span></code>.</p></li>
-<li><p>Ajustamos el tipo de escala del eje <code class="docutils literal notranslate"><span class="pre">y</span></code> a logarítmica para reflejar mejor la distribución de los datos.</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;CO2 Emissions vs GDP in 1964&#39;</span><span class="p">,</span> <span class="n">y_axis_type</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="7">
-<li><p>Añadimos glifos circulares a la gráfica:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> 
-            <span class="n">fill_alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> 
-            <span class="n">source</span><span class="o">=</span><span class="n">source_init</span><span class="p">,</span> 
-            <span class="n">legend_label</span><span class="o">=</span><span class="s1">&#39;region&#39;</span><span class="p">,</span> 
-            <span class="n">color</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="s1">&#39;region&#39;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">color_mapper</span><span class="p">),</span>
-            <span class="n">size</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;"><b title="bokeh.models.renderers.glyph_renderer.GlyphRenderer">GlyphRenderer</b>(</div><div style="display: table-cell;">id&nbsp;=&nbsp;'p1136', <span id="p1142" style="cursor: pointer;">&hellip;)</span></div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">context_menu&nbsp;=&nbsp;None,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">coordinates&nbsp;=&nbsp;None,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">data_source&nbsp;=&nbsp;ColumnDataSource(id='p1058', ...),</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">glyph&nbsp;=&nbsp;Scatter(id='p1133', ...),</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">group&nbsp;=&nbsp;None,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">hover_glyph&nbsp;=&nbsp;None,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">js_event_callbacks&nbsp;=&nbsp;{},</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">js_property_callbacks&nbsp;=&nbsp;{},</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">level&nbsp;=&nbsp;'glyph',</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">muted&nbsp;=&nbsp;False,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">muted_glyph&nbsp;=&nbsp;Scatter(id='p1135', ...),</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">name&nbsp;=&nbsp;None,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">nonselection_glyph&nbsp;=&nbsp;Scatter(id='p1134', ...),</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">propagate_hover&nbsp;=&nbsp;False,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">selection_glyph&nbsp;=&nbsp;'auto',</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">subscribed_events&nbsp;=&nbsp;PropertyValueSet(),</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">syncable&nbsp;=&nbsp;True,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">tags&nbsp;=&nbsp;[],</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">view&nbsp;=&nbsp;CDSView(id='p1137', ...),</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">visible&nbsp;=&nbsp;True,</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">x_range_name&nbsp;=&nbsp;'default',</div></div><div class="p1141" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">y_range_name&nbsp;=&nbsp;'default')</div></div></div>
-<script>
-(function() {
-  let expanded = false;
-  const ellipsis = document.getElementById("p1142");
-  ellipsis.addEventListener("click", function() {
-    const rows = document.getElementsByClassName("p1141");
-    for (let i = 0; i < rows.length; i++) {
-      const el = rows[i];
-      el.style.display = expanded ? "none" : "table-row";
-    }
-    ellipsis.innerHTML = expanded ? "&hellip;)" : "&lsaquo;&lsaquo;&lsaquo;";
-    expanded = !expanded;
-  });
-})();
-</script>
-</div></div>
-</div>
-<ol class="arabic simple" start="7">
-<li><p>Establezca la ubicación de la leyenda en la esquina inferior derecha del gráfico, y agregue títulos a los ejes</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="o">.</span><span class="n">legend</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s1">&#39;bottom_right&#39;</span>
-<span class="n">plot</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">axis_label</span> <span class="o">=</span> <span class="s1">&#39;Income Per Person&#39;</span>
-<span class="n">plot</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">axis_label</span> <span class="o">=</span> <span class="s1">&#39;CO2 Emissions (tons per person)&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">plot</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="anadiendo-la-herramienta-hover">
-<h3><strong>Añadiendo la herramienta Hover</strong><a class="headerlink" href="#anadiendo-la-herramienta-hover" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hover</span> <span class="o">=</span> <span class="n">HoverTool</span><span class="p">(</span><span class="n">tooltips</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="s1">&#39;@country&#39;</span><span class="p">),(</span><span class="s1">&#39;GDP&#39;</span><span class="p">,</span><span class="s1">&#39;@x&#39;</span><span class="p">),(</span><span class="s1">&#39;CO2&#39;</span><span class="p">,</span><span class="s1">&#39;@y&#39;</span><span class="p">)])</span>
-<span class="n">plot</span><span class="o">.</span><span class="n">add_tools</span><span class="p">(</span><span class="n">hover</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">plot</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="anadiendo-un-slicer-al-grafico-estatico">
-<h3><strong>Añadiendo un slicer al gráfico estático</strong><a class="headerlink" href="#anadiendo-un-slicer-al-grafico-estatico" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Nombramos el archivo <strong>HTML</strong> de salida como <strong>co2_emissions</strong></p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_file</span><span class="p">(</span><span class="s1">&#39;iframe_figures/co2_emissions.html&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>Creamos la función <code class="docutils literal notranslate"><span class="pre">callback</span></code> usando <code class="docutils literal notranslate"><span class="pre">CustomJS</span></code> de la libreria bokeh la cual permitira actualizar nuestra figura. Usamos algunas pocas ordenes en lenguaje <code class="docutils literal notranslate"><span class="pre">JavaScript</span></code>. En este caso <code class="docutils literal notranslate"><span class="pre">cb_obj.value</span></code> contiene el modelo que <code class="docutils literal notranslate"><span class="pre">activa</span> <span class="pre">el</span> <span class="pre">callback</span></code></p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">callback</span> <span class="o">=</span> <span class="n">CustomJS</span><span class="p">(</span>
-    <span class="n">args</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">source_last</span><span class="o">=</span><span class="n">source_last</span><span class="p">,</span> <span class="n">source_init</span><span class="o">=</span><span class="n">source_init</span><span class="p">),</span> 
-    <span class="n">code</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    // Acceso a los datos del source inicial (el que se muestra en la gráfica)</span>
-<span class="s2">    var data_init = source_init.data;</span>
-
-<span class="s2">    // Capturar el valor del widget (ej: año seleccionado)</span>
-<span class="s2">    var yr = cb_obj.value;</span>
-
-<span class="s2">    // Obtener todos los años del source completo</span>
-<span class="s2">    var year = source_last.data[&#39;year&#39;];</span>
-
-<span class="s2">    // Crear arrays vacíos para los nuevos valores</span>
-<span class="s2">    var x_new = [];</span>
-<span class="s2">    var y_new = [];</span>
-
-<span class="s2">    // Recorrer todos los años del dataset completo</span>
-<span class="s2">    for(var i = 0; i &lt; year.length; i++) {</span>
-<span class="s2">        // Si el año coincide con el seleccionado, guardar los datos</span>
-<span class="s2">        if(year[i] == yr) {</span>
-<span class="s2">            x_new.push(source_last.data[&#39;x&#39;][i]);</span>
-<span class="s2">            y_new.push(source_last.data[&#39;y&#39;][i]);</span>
-<span class="s2">        }</span>
-<span class="s2">    }</span>
-
-<span class="s2">    // Actualizar la fuente inicial con los valores filtrados</span>
-<span class="s2">    data_init[&#39;x&#39;] = x_new;</span>
-<span class="s2">    data_init[&#39;y&#39;] = y_new;</span>
-
-<span class="s2">    // Notificar a Bokeh que los datos cambiaron → refrescar gráfica</span>
-<span class="s2">    source_init.change.emit();</span>
-<span class="s2">    &quot;&quot;&quot;</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Construimos el <code class="docutils literal notranslate"><span class="pre">slider</span></code> que utilizaremos para actualizar las figuras, y realizamos el llamado de la función <code class="docutils literal notranslate"><span class="pre">callback</span></code> que recibirá como input cada año que proviene del slider. La siguiente figura podrá ser visualizada desde su editor <code class="docutils literal notranslate"><span class="pre">VS</span> <span class="pre">Code</span></code>. Para visualizarla en su JBook deberá actualizar el html desde su navegador, para que la función <code class="docutils literal notranslate"><span class="pre">show()</span></code> pueda activarse y mostrarse en su página.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear deslizador para seleccionar el año</span>
-<span class="n">slider</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span>
-    <span class="n">start</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">),</span>   <span class="c1"># Año inicial (mínimo del dataset)</span>
-    <span class="n">end</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">),</span>     <span class="c1"># Año final (máximo del dataset)</span>
-    <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                 <span class="c1"># Avance de 1 en 1 año</span>
-    <span class="n">value</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">year</span><span class="p">),</span>   <span class="c1"># Valor inicial del deslizador</span>
-    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span>            <span class="c1"># Título que aparece en el control</span>
-<span class="p">)</span>
-
-<span class="c1"># Conectar el deslizador con la función de actualización (callback)</span>
-<span class="n">slider</span><span class="o">.</span><span class="n">js_on_change</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">,</span><span class="n">callback</span><span class="p">)</span>
-
-<span class="c1"># Organizar el deslizador y el gráfico en una misma columna</span>
-<span class="n">layout</span> <span class="o">=</span> <span class="n">column</span><span class="p">(</span><span class="n">slider</span><span class="p">,</span> <span class="n">plot</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="visualizacion-de-datos-a-traves-de-capas">
-<h2><strong>Visualización de datos a través de capas</strong><a class="headerlink" href="#visualizacion-de-datos-a-traves-de-capas" title="Link to this heading">#</a></h2>
-<p>Presentaremos <code class="docutils literal notranslate"><span class="pre">Altair</span></code>, una potente biblioteca de Python diseñada específicamente para la creación de gráficos interactivos. En esta sesión, demostraremos cómo utilizar Altair para generar visualizaciones interactivas en datos estratificados según diferentes variables categóricas. Para ilustrar sus capacidades, emplearemos un conjunto de datos real y crearemos gráficos de dispersión y de barras, destacando las principales características de los datos. Además, añadiremos una amplia gama de elementos interactivos para mejorar la experiencia visual y permitir una exploración dinámica de los datos.</p>
-<section id="funcionalidad-hover-y-tooltip">
-<h3><strong>Funcionalidad Hover y Tooltip</strong><a class="headerlink" href="#funcionalidad-hover-y-tooltip" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Importa el módulo <code class="docutils literal notranslate"><span class="pre">altair</span></code> como <code class="docutils literal notranslate"><span class="pre">alt</span></code>. Antes debe instalar altair usando <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">altair</span> <span class="pre">vega_datasets</span></code>.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>Cargar el conjunto de datos <code class="docutils literal notranslate"><span class="pre">hpi</span></code> y leer desde el conjunto de datos usando pandas:</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">filename</span> <span class="o">=</span> <span class="c1"># TU CODIGO</span>
-<span class="n">hpi_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hpi_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Proporcione el DataFrame seleccionado, en este caso <code class="docutils literal notranslate"><span class="pre">hpi_df</span></code>, a la función <code class="docutils literal notranslate"><span class="pre">alt.Chart</span></code> de Altair. Utilice la función <code class="docutils literal notranslate"><span class="pre">mark_circle()</span></code> para representar los puntos de datos en el gráfico de dispersión con círculos rellenos. Emplee la función <code class="docutils literal notranslate"><span class="pre">encode()</span></code> para asignar las variables correspondientes a los ejes <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span>. Aunque también utilizamos el parámetro <code class="docutils literal notranslate"><span class="pre">color</span></code> dentro de <code class="docutils literal notranslate"><span class="pre">encode()</span></code> para diferenciar los puntos de datos por la variable región mediante un código de colores, este paso es opcional.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">hpi_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;# TU CODIGO&#39;</span><span class="p">,</span>  <span class="c1"># Asigna la variable cuantitativa &#39;Wellbeing (0-10)&#39; al eje x.</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;# TU CODIGO&#39;</span><span class="p">,</span>  <span class="c1"># Asigna la variable cuantitativa &#39;Happy Planet Index&#39; al eje y.</span>
-    <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;# TU CODIGO&#39;</span><span class="p">,</span>  <span class="c1"># Colorea los puntos de datos según la variable categórica &#39;Region&#39;.</span>
-    <span class="n">tooltip</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Wellbeing (0-10)&#39;</span><span class="p">,</span> <span class="s1">&#39;Happy Planet Index&#39;</span><span class="p">,</span> <span class="s1">&#39;Life Expectancy (years)&#39;</span><span class="p">]</span>  <span class="c1"># Muestra información adicional al pasar el cursor sobre los puntos.</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="seleccion-de-los-valores-de-una-variable-categorica">
-<h3><strong>Selección de los valores de una variable categórica</strong><a class="headerlink" href="#seleccion-de-los-valores-de-una-variable-categorica" title="Link to this heading">#</a></h3>
-<p>Ahora, crearemos un gráfico interactivo que permitirá visualizar los puntos de datos correspondientes a una región específica. Utilizaremos la función <code class="docutils literal notranslate"><span class="pre">selection_single()</span></code> para seleccionar un conjunto determinado de puntos de datos. Al analizar el código, notará que los parámetros de esta función son bastante intuitivos. Para obtener más detalles o aclaraciones sobre su funcionamiento, puede consultar la documentación oficial en: <a class="reference external" href="https://altair-viz.github.io/user_guide/generated/api/altair.selection_single.html.">Altair Selection Single</a>.</p>
-<p>Cree una variable <code class="docutils literal notranslate"><span class="pre">input_dropdown</span></code> utilizando la función <code class="docutils literal notranslate"><span class="pre">binding_select()</span></code> y configure el parámetro <code class="docutils literal notranslate"><span class="pre">options</span></code> con la lista de regiones disponibles en nuestro conjunto de datos. A continuación, utilice la función <code class="docutils literal notranslate"><span class="pre">selection_single()</span></code> para permitir la selección de un conjunto específico de puntos de datos. Almacene la condición de selección en una variable llamada <code class="docutils literal notranslate"><span class="pre">color</span></code>, la cual determinará bajo qué condiciones se resaltarán los puntos seleccionados en el gráfico.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_dropdown</span> <span class="o">=</span> <span class="c1"># TU CODIGO  # Crea un menú desplegable con las regiones únicas del DataFrame.</span>
-<span class="n">selected_points</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span><span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Region&#39;</span><span class="p">],</span> <span class="n">bind</span> <span class="o">=</span> <span class="n">input_dropdown</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Select&#39;</span><span class="p">)</span>  <span class="c1"># Define una selección simple vinculada al menú desplegable por la variable &#39;Region&#39;.</span>
-<span class="n">color</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selected_points</span><span class="p">,</span>  <span class="c1"># Establece la condición para el color basado en la selección.</span>
-                      <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;Region:N&#39;</span><span class="p">),</span>  <span class="c1"># Si está seleccionada, se usa el color de &#39;Region&#39;.</span>
-                      <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;lightgray&#39;</span><span class="p">))</span>  <span class="c1"># Si no está seleccionada, los puntos se muestran en gris.</span>
-<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">hpi_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;Wellbeing (0-10):Q&#39;</span><span class="p">,</span>  <span class="c1"># Asigna &#39;Wellbeing (0-10)&#39; al eje x.</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;Happy Planet Index:Q&#39;</span><span class="p">,</span>  <span class="c1"># Asigna &#39;Happy Planet Index&#39; al eje y.</span>
-    <span class="n">color</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>  <span class="c1"># Aplica la condición de color basada en la selección.</span>
-    <span class="n">tooltip</span> <span class="o">=</span> <span class="s1">&#39;Region:N&#39;</span>  <span class="c1"># Muestra la región en el tooltip al pasar el cursor sobre un punto.</span>
-<span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
-    <span class="n">selected_points</span>  <span class="c1"># Añade la selección al gráfico.</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>En el siguiente código se crea un gráfico de barras interactivo utilizando Altair, donde se muestra el promedio del <code class="docutils literal notranslate"><span class="pre">Happy</span> <span class="pre">Planet</span> <span class="pre">Index</span></code> por región. Se implementa una selección interactiva que permite resaltar las barras correspondientes a cada región al seleccionar desde la leyenda. Además, se agregan barras de error que representan el intervalo de confianza (CI) para cada promedio, con las barras de error mostradas en color negro. Ambos gráficos, las barras y las barras de error, se combinan y permiten la interactividad, como hacer zoom o resaltar regiones específicas.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir selección para interactividad</span>
-<span class="n">highlight</span> <span class="o">=</span> <span class="c1"># TU CODIGO</span>
-
-<span class="c1"># Gráfico de barras con el promedio del Happy Planet Index y la selección interactiva</span>
-<span class="n">bar_chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">hpi_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Region:N&#39;</span><span class="p">,</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;mean(Happy Planet Index):Q&#39;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">highlight</span><span class="p">,</span> <span class="s1">&#39;Region:N&#39;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;lightgray&#39;</span><span class="p">))</span>  <span class="c1"># Colorea las barras seleccionadas</span>
-<span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
-    <span class="n">highlight</span>  <span class="c1"># Añadir selección interactiva</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>  <span class="c1"># Ajusta el ancho del gráfico</span>
-
-<span class="c1"># Añadir barras de error con intervalo de confianza (ci) en color negro</span>
-<span class="n">error_bars</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">hpi_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_errorbar</span><span class="p">(</span><span class="n">extent</span><span class="o">=</span><span class="s1">&#39;ci&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Region:N&#39;</span><span class="p">,</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;mean(Happy Planet Index):Q&#39;</span><span class="p">)</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>  <span class="c1"># Ajusta el ancho de las barras de error</span>
-
-<span class="c1"># Combinar ambos gráficos</span>
-<span class="p">(</span><span class="n">bar_chart</span> <span class="o">+</span> <span class="n">error_bars</span><span class="p">)</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="funcion-de-zoom-en-un-mapa-de-calor-estatico">
-<h3><strong>Función de zoom en un mapa de calor estático</strong><a class="headerlink" href="#funcion-de-zoom-en-un-mapa-de-calor-estatico" title="Link to this heading">#</a></h3>
-<p>A continuación, añadiremos la función de zoom al mapa de calor de las correlaciones.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">hpi_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_rect</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Happy Planet Index:Q&#39;</span><span class="p">,</span> <span class="nb">bin</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>  <span class="c1"># Eje X con &#39;Happy Planet Index&#39;, agrupado en intervalos (binning)</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Wellbeing (0-10):Q&#39;</span><span class="p">,</span> <span class="nb">bin</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>  <span class="c1"># Eje Y con &#39;Wellbeing&#39;, también agrupado en intervalos</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;greenblue&#39;</span><span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total Countries&#39;</span><span class="p">))</span>  <span class="c1"># Colorea los rectángulos según el recuento de países, con un esquema de color verde-azul</span>
-<span class="p">)</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>  <span class="c1"># Habilita la interactividad (zoom y desplazamiento)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor">
-<h3><strong>Dinámica de un gráfico de barras y un mapa de calor</strong><a class="headerlink" href="#dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor" title="Link to this heading">#</a></h3>
-<p>Vamos a vincular dinámicamente un gráfico de barras con un mapa de calor. Imagina un escenario en el que, al hacer clic en una barra del gráfico, el mapa de calor se actualiza automáticamente para mostrar los datos correspondientes a la región seleccionada. Por ejemplo, podrías hacer clic en una barra que representa una región y, a partir de eso, el mapa de calor de <code class="docutils literal notranslate"><span class="pre">Life</span> <span class="pre">Expectancy</span></code> frente a <code class="docutils literal notranslate"><span class="pre">Wellbeing</span></code> se ajustaría para mostrar únicamente los datos de los países de esa región específica. Esto permite una exploración más detallada y enfocada en los datos.</p>
-<ol class="arabic simple">
-<li><p>Seleccione la región mediante el método de <code class="docutils literal notranslate"><span class="pre">selection</span></code> y crea el <code class="docutils literal notranslate"><span class="pre">heatmap</span></code></p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">selected_region</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;single&quot;</span><span class="p">,</span> <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">])</span>  <span class="c1"># Definir una selección interactiva en el eje x (región)</span>
-
-<span class="n">heatmap</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">hpi_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_rect</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Wellbeing (0-10):Q&#39;</span><span class="p">,</span> <span class="nb">bin</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>  <span class="c1"># Eje X con &#39;Wellbeing&#39; agrupado en intervalos (binned)</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Life Expectancy (years):Q&#39;</span><span class="p">,</span> <span class="nb">bin</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>  <span class="c1"># Eje Y con &#39;Life Expectancy&#39; también agrupado en intervalos</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;greenblue&#39;</span><span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total Countries&#39;</span><span class="p">))</span>  <span class="c1"># Colorear según el recuento de países, usando un esquema de color verde-azul</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">350</span>  <span class="c1"># Ajustar el ancho del gráfico a 350 píxeles</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>Colocar los círculos en un mapa de calor</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">circles</span> <span class="o">=</span> <span class="n">heatmap</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">),</span>  <span class="c1"># Los puntos (círculos) tendrán color gris</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Size</span><span class="p">(</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Records in Selection&#39;</span><span class="p">))</span>  <span class="c1"># El tamaño de los puntos representa el número de registros en la selección</span>
-<span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span>
-    <span class="n">selected_region</span>  <span class="c1"># Filtra los puntos en función de la región seleccionada en el gráfico de barras</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Utilice la función <code class="docutils literal notranslate"><span class="pre">heatmap+circles</span> <span class="pre">|</span> <span class="pre">bars</span></code> para vincular dinámicamente el gráfico de barras y el mapa de calor</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bars</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">hpi_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Region:N&#39;</span><span class="p">,</span>  <span class="c1"># Eje X con las regiones (categórico)</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span>  <span class="c1"># Eje Y con el recuento de países por región</span>
-    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selected_region</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s2">&quot;steelblue&quot;</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s2">&quot;grey&quot;</span><span class="p">))</span>  <span class="c1"># Colorea las barras en azul para la región seleccionada y en gris para las no seleccionadas</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">350</span>  <span class="c1"># Ajusta el ancho del gráfico de barras</span>
-<span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">selected_region</span><span class="p">)</span>  <span class="c1"># Añade la selección interactiva en las barras</span>
-
-<span class="c1"># Combina el heatmap con los círculos, seguido por el gráfico de barras en un diseño horizontal</span>
-<span class="n">heatmap</span> <span class="o">+</span> <span class="n">circles</span> <span class="o">|</span> <span class="n">bars</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
 <section id="visualizacion-interactiva-de-mapas-con-datos-geograficos">
-<h2><strong>Visualización interactiva de mapas con datos geográficos</strong><a class="headerlink" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos" title="Link to this heading">#</a></h2>
+<h2><strong>Visualización interactiva de mapas con datos geográficos</strong><a class="headerlink" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos" title="Permalink to this heading">#</a></h2>
 <section id="creacion-de-un-mapa-coropletico">
-<h3><strong>Creación de un mapa coroplético</strong><a class="headerlink" href="#creacion-de-un-mapa-coropletico" title="Link to this heading">#</a></h3>
+<h3><strong>Creación de un mapa coroplético</strong><a class="headerlink" href="#creacion-de-un-mapa-coropletico" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -2110,7 +1073,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="ajuste-de-un-mapa-coropletico-mundial">
-<h3><strong>Ajuste de un mapa coroplético mundial</strong><a class="headerlink" href="#ajuste-de-un-mapa-coropletico-mundial" title="Link to this heading">#</a></h3>
+<h3><strong>Ajuste de un mapa coroplético mundial</strong><a class="headerlink" href="#ajuste-de-un-mapa-coropletico-mundial" title="Permalink to this heading">#</a></h3>
 <p>Supongamos que solo nos interesa visualizar el uso de internet en el continente de <strong>Sudamérica</strong>. Para lograr esto, podemos utilizar el parámetro <strong><code class="docutils literal notranslate"><span class="pre">geo_scope</span></code></strong> en la función <strong><code class="docutils literal notranslate"><span class="pre">update_layout()</span></code></strong> para hacer un <em>zoom</em> en esa región geográfica.</p>
 <p>El siguiente código muestra cómo hacerlo de manera rápida y sencilla:</p>
 <div class="cell docutils container">
@@ -2180,7 +1143,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="anadiendo-animacion-a-un-mapa-coropletico">
-<h3><strong>Añadiendo animación a un mapa coroplético</strong><a class="headerlink" href="#anadiendo-animacion-a-un-mapa-coropletico" title="Link to this heading">#</a></h3>
+<h3><strong>Añadiendo animación a un mapa coroplético</strong><a class="headerlink" href="#anadiendo-animacion-a-un-mapa-coropletico" title="Permalink to this heading">#</a></h3>
 <p>A continuación, añadiremos un componente deslizante al mapa para ver los registros en diferentes puntos temporales</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2211,7 +1174,7 @@ function(Bokeh) {
 </div>
 </section>
 <section id="mapas-coropleticos-con-graph-objects">
-<h3><strong>Mapas coropléticos con <code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong><a class="headerlink" href="#mapas-coropleticos-con-graph-objects" title="Link to this heading">#</a></h3>
+<h3><strong>Mapas coropléticos con <code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong><a class="headerlink" href="#mapas-coropleticos-con-graph-objects" title="Permalink to this heading">#</a></h3>
 <p><strong><code class="docutils literal notranslate"><span class="pre">graph_objects</span></code></strong> es una parte avanzada de la biblioteca <code class="docutils literal notranslate"><span class="pre">Plotly</span></code> que permite un mayor control y personalización sobre los gráficos. Al crear mapas coropléticos con graph_objects, puedes definir manualmente cada aspecto del gráfico, desde la estructura de los datos hasta las características visuales, como los colores, las etiquetas y la proyección del mapa.</p>
 <p>Esto ofrece más flexibilidad que <strong><code class="docutils literal notranslate"><span class="pre">px.choropleth</span></code></strong>, lo que resulta útil cuando necesitas una personalización detallada, como ajustar propiedades específicas de los datos, personalizar interacciones o modificar configuraciones visuales avanzadas. Sin embargo, requiere más código que las opciones más sencillas de <code class="docutils literal notranslate"><span class="pre">plotly.express</span></code>. Hagamos el siguiente ejemplo:</p>
 <ol class="arabic simple">
@@ -2403,12 +1366,16 @@ function(Bokeh) {
 
               
               
-              
-              
-                <footer class="prev-next-footer d-print-none">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -2416,7 +1383,6 @@ function(Bokeh) {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2432,7 +1398,6 @@ function(Bokeh) {
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-atipicos"><strong>Tratamiento de datos atípicos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr"><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento"><strong>Tratamiento</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-atipicos"><strong>Eliminación de datos atípicos</strong></a></li>
 </ul>
@@ -2442,21 +1407,6 @@ function(Bokeh) {
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva"><strong>Visualización interactiva</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aspecto-claves-de-las-visualizaciones-interactivas"><strong>Aspecto claves de las visualizaciones interactivas</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-nuestro-dataset"><strong>Preparación de nuestro dataset</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-del-grafico-estatico-con-visualizacion-interactiva"><strong>Creación del gráfico estático con visualización interactiva</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadiendo-la-herramienta-hover"><strong>Añadiendo la herramienta Hover</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadiendo-un-slicer-al-grafico-estatico"><strong>Añadiendo un slicer al gráfico estático</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-datos-a-traves-de-capas"><strong>Visualización de datos a través de capas</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcionalidad-hover-y-tooltip"><strong>Funcionalidad Hover y Tooltip</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccion-de-los-valores-de-una-variable-categorica"><strong>Selección de los valores de una variable categórica</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-de-zoom-en-un-mapa-de-calor-estatico"><strong>Función de zoom en un mapa de calor estático</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dinamica-de-un-grafico-de-barras-y-un-mapa-de-calor"><strong>Dinámica de un gráfico de barras y un mapa de calor</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva-de-mapas-con-datos-geograficos"><strong>Visualización interactiva de mapas con datos geográficos</strong></a><ul class="nav section-nav flex-column">
@@ -2487,7 +1437,6 @@ By Carlos de Oro Aguado
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
       © Copyright 2026, Msc Carlos de Oro Aguado.
@@ -2514,8 +1463,8 @@ By Carlos de Oro Aguado
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
